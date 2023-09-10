@@ -28,8 +28,8 @@ const LendingPage = () => {
   useEffect(() => {
 
     fetchMovieList(categoryId);
-
-  }, [page])
+// eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [page])// eslint-disable-next-line react-hooks/exhaustive-deps
 
 
   const fetchMovieList = (categoryId) => {

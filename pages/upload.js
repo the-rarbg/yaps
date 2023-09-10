@@ -33,7 +33,8 @@ const Upload = () => {
    
   setSelectedOption(_data)
     return setToken(localStorage.getItem("access_token"));
-  }, [])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])// eslint-disable-next-line react-hooks/exhaustive-deps
 useEffect(()=>{
 
 },[])
