@@ -50,7 +50,9 @@ const Details = () => {
 
   useEffect(() => {
     if (router.isReady) {
-      id = router.query.id;
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      id = router.query.id;// eslint-disable-next-line react-hooks/exhaustive-deps
+   // eslint-disable-next-line react-hooks/exhaustive-deps
       slug = router.query.slug;
       if (!id) return null;
       getDetails()

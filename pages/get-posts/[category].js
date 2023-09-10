@@ -37,11 +37,13 @@ const Latest = () => {
 
   useEffect(() => {
     fetchMovieList(cat);
-  }, [page])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [page])// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchMovieListRefresh(cat);
     setCat(categoryId)
-  }, [categoryId])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [categoryId])// eslint-disable-next-line react-hooks/exhaustive-deps
 
   const fetchMovieList = (cat) => {
    
@@ -107,8 +109,8 @@ const Latest = () => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
-    };
-  }, [page]);
+    };// eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [page]);// eslint-disable-next-line react-hooks/exhaustive-deps
 
 
   return (
