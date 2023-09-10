@@ -545,3 +545,11 @@ background:rgb(11 9 9 / 75%) !important;
     -webkit-filter: hue-rotate(-360deg);
   }
 }
+.active-link:focus {
+  outline: none; /* Remove the outline */
+  border: none;  /* Remove the border */
+}
+.icon-nav:focus {
+  outline: none; /* Remove the outline */
+  border: none;  /* Remove the border */
+}
