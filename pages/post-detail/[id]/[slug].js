@@ -86,7 +86,7 @@ const Details = () => {
     setLoader(true)
     let token = localStorage.getItem("access_token")
     getListComment(value, token).then((res) => {
-      console.log("response", res)
+
       setLoader(false)
       setCommentList(res?.data?.results)
     }).catch((err) => {
@@ -105,7 +105,7 @@ const Details = () => {
       comment: comment
     }
     postComment(data, token).then((res) => {
-      console.log("response", res)
+
       getCommentInfo(eid)
     }).catch((err) => {
       setLoader(false)

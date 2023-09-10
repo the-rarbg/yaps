@@ -18,7 +18,7 @@ export default function Search({ data, id, page }) {
   return (
     <>
       <Head>
-        <title>{id} - Search Results | Watcho</title>
+        <title>{id} - Search Results | Yaps</title>
       </Head>
       <SearchBar
         placeholder='Search for movies or TV series'

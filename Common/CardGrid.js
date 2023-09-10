@@ -15,7 +15,7 @@ export function formatBytes(bytes, decimals = 1) {
 
 
 const CardExpanded = (props) => {
-  console.log("pp",props?.blur)
+
   const router = useRouter();
   let name = props.item[`name`];
   let time = new Date(props.item[`timestamp`]);

@@ -39,15 +39,13 @@ useEffect(()=>{
 
 },[])
 
-  console.log("formInput", formInput)
-  console.log("select", selectedOption)
   const handleUpload = (e) => {
     e.preventDefault()
     let _genre = []
     _genre = selectedOption && selectedOption.map((item, index) => {
       return item.value;
     })
-    console.log("pp", _genre)
+
 
 
     if (!formInput?.name) {
@@ -126,7 +124,7 @@ useEffect(()=>{
     setLoader(true)
     createTorrent(data, token).then((res) => {
       setLoader(false)
-      console.log(res)
+
       ToastMsg("File Uploaded Successfully", "success")
       router.push("/lendingPage/")
     }).catch((err) => {
@@ -146,9 +144,6 @@ useEffect(()=>{
     _genre = selectedOption && selectedOption.map((item, index) => {
       return item.value;
     })
-    console.log("pp", _genre)
-
-
     if (!formInput?.name) {
       setErrors({ ...errors, name: "This is Mandatory Field" })
       return
@@ -226,7 +221,6 @@ useEffect(()=>{
     setLoader(true)
     updateTorrent(data, token).then((res) => {
       setLoader(false)
-      console.log(res)
       ToastMsg("Torrent Updated Successfully", "success")
       router.push("/lendingPage/")
     }).catch((err) => {
@@ -244,7 +238,6 @@ useEffect(()=>{
   
 
 
-  console.log("pppp", errors)
   const handleChange = (e) => {
     const { name, value } = e.target;
     setErrors({})
@@ -290,11 +283,9 @@ useEffect(()=>{
   { value: 'western', label: "Western" }, { value: 'short', label: "Short" }, { value: 'fantasy', label: "Fantasy" },
   { value: 'family', label: "Family" }]
 
-  console.log("sleect", selectedOption)
   useEffect(() => {
     setErrors({})
   }, [selectedOption])
-  console.log(selectedOption)
 
   return (
     <div>

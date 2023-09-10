@@ -22,7 +22,7 @@ const TorrentList = ({ setisTorrent,torrent_list, runtime }) => {
     },
   };
 
-  console.log("torrent_list", torrent_list)
+
   return (
     <>
 
