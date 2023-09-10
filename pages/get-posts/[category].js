@@ -51,7 +51,7 @@ const Latest = () => {
     let latest = ""
     setLoader(true)
     moviesListApi(page, category, latest).then((res) => {
-      console.log("page", res?.data?.results)
+
       setLoader(false)
       setMovieList([...movieList, ...res.data.results])
      
@@ -68,7 +68,7 @@ const Latest = () => {
     let latest = ""
     setLoader(true)
     moviesListApi(page, categoryId, latest).then((res) => {
-      console.log("page", res?.data?.results)
+
       setLoader(false)
       setMovieList(res.data.results)
     }).catch((err) => {
@@ -83,7 +83,7 @@ const Latest = () => {
     e.preventDefault()
     setLoader(true)
     getSearchResult(search).then((res) => {
-      console.log("page", res?.data?.results)
+
       setLoader(false)
       setMovieList(res.data.results)
     }).catch((err) => {

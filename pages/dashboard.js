@@ -23,11 +23,11 @@ const Dashboard = () => {
   const getInformation = (token) => {
     setLoader(true)
     getTorrentList(token).then((res) => {
-      console.log("log", res?.data)
+
       setList(res?.data?.results)
       setLoader(false)
     }).catch((err) => {
-      console.log("res", err)
+
       ToastMsg((err?.response?.data?.message || "something went wrong"), "error")
       if (err?.response?.status === 401) {
         localStorage.clear()
