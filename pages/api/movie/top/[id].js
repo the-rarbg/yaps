@@ -1,5 +1,5 @@
 import { getUrl2, movieTopRated } from '../../../../lib/tmdb'
-
+export const config = { runtime: 'edge' };
 export default async function handler(req, res) {
   const { id } = req.query
   

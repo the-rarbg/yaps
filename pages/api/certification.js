@@ -1,5 +1,5 @@
 import { getUrl } from '../../lib/tmdb'
-
+export const config = { runtime: 'edge' };
 export default async function handler(req, res) {
   try {
     const response = await fetch(getUrl('movie/602334/release_dates'))
