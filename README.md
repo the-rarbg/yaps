@@ -1,7 +1,7 @@
 
-# <img src = "https://media4.giphy.com/media/AuZXGzk5qKRpG54Ewl/giphy.gif?cid=ecf05e47jgpe7u14fp4yhajmqlmiy1jlf4xw5npgof5lr2qo&rid=giphy.gif&ct=s" width="45"> THE RARBG
+# <img src = "https://media4.giphy.com/media/AuZXGzk5qKRpG54Ewl/giphy.gif?cid=ecf05e47jgpe7u14fp4yhajmqlmiy1jlf4xw5npgof5lr2qo&rid=giphy.gif&ct=s" width="45"> Y.A.P.S Project
 
->Welcome to the 🎬 ``` THE RARBG ``` app! Yaps allows user to browse and search for their favorite movies or being based on any particular genre like horror, action, mystry, crime, family, fantasy, romance, music, and much More. Explore our app and you would fall in love 😍 for sure.
+>Welcome to the 🎬 ``` Y.A.P.S ``` app! Yaps allows user to browse and search for their favorite movies or being based on any particular genre like horror, action, mystry, crime, family, fantasy, romance, music, and much More. Explore our app and you would fall in love 😍 for sure.
 
 
 ## 🛠️ Built with :
