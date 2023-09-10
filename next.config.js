@@ -9,6 +9,7 @@ const nextConfig = {
     domains: ['source.unsplash.com', 'image.tmdb.org','i.therarbg.com','localhost'],
   },
   reactStrictMode: true,
+  distDir: "build",
   
 }
 
