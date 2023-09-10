@@ -25,7 +25,7 @@ export default function TV() {
   return (
     <>
       <Head>
-        <title>{tv.detail.name} | Watcho</title>
+        <title>{tv.detail.name} | Yaps</title>
       </Head>
       <SearchBar
         placeholder='Search for TV series'
