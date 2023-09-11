@@ -11,6 +11,17 @@
 - **Version Control**: Git
 - **Hosting**: Netlify, Github Pages, Vercel, CloudFlare
 
+# PM2 Deployment
+```
+pm2 start npm --name prod -- run "start"
+```
+# For DEV
+```
+npm install
+npm run dev
+```
+
+
 ## ✨ Features :
 - Browse movies by genre
 - Search for specific movies
