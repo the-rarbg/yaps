@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { getLinkByIMDB, getMovieCasts, getMovieDetail } from '../../../lib/tmdb'
 
 export default async function handler(req, res) {
