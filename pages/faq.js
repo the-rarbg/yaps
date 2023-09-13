@@ -55,8 +55,8 @@ const FAQ = () => {
     }
   }
   return (
-    <div className='max-lg:ml-[10%] min-[1524px]:ml-[-2%] min-[1700px]:ml-[-9%] min-[1900px]:ml-[-15%] min-[2000px]:ml-[-20%] min-[2300px]:ml-[-27%]'>
-      <h1 className='mb-10 text-2xl font-bold text-center text-white'>FAQ</h1>
+    <div className='max-lg:ml-[10%]  min-[1700px]:ml-[-9%] min-[1900px]:ml-[-15%] min-[2000px]:ml-[-20%] min-[2300px]:ml-[-27%]'>
+      <h1 className='mb-10 text-2xl font-bold text-center text-white '>FAQ</h1>
       <div className=' w-[80vw]'>
         <div className='grid grid-cols-1 gap-x-2 gap-y-6 md:grid-cols-2 '>
           {faqData.map((item, index) => {
