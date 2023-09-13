@@ -26,7 +26,7 @@ const Home = () => {
     setLoader(true)
     getSearchResult(search,checkboxInput).then((res) => {
       setSearchSuccess(true)
-
+      console.log("page", res?.data?.results)
       setLoader(false)
       setMovieList(res.data.results)
     }).catch((err) => {
@@ -39,7 +39,7 @@ const Home = () => {
   }
   const handleCheckboxChange = (event) => {
     const { value, checked } = event.target;
-
+   console.log("event",checked,value)
     if (checked) {
       setCheckboxInput([...checkboxInput, value]);
     } else {
@@ -47,6 +47,7 @@ const Home = () => {
     }
   };
 
+console.log("pp",checkboxInput)
   return (
     <div className="container  mx-auto py-3 font-medium bg-transparent min-h-screen  justify-center text-center font-montserrat">
       {loader ? <Loader /> : null}

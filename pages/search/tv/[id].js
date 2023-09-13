@@ -14,7 +14,7 @@ export default function SearchTV({ data, id, page }) {
   return (
     <>
       <Head>
-        <title>{id} - Search Results | Yaps</title>
+        <title>{id} - Search Results | Watcho</title>
       </Head>
       <SearchBar
         placeholder='Search for TV series'

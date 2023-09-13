@@ -1,7 +1,5 @@
 import moment from 'moment';
-
 import { useRouter } from 'next/router';
-
 import React from 'react'
 
 import Modal from "react-modal";
@@ -46,6 +44,104 @@ const TorrentList = ({ setisTorrent, torrent_list, runtime }) => {
 
   };
 
+  console.log("torrent_list", torrent_list)
+
+
+
+  const columns = [
+    {
+      name: 'Name',
+      selector: row => row.name,
+      sortable: true,
+
+    },
+    {
+      name: 'Action',
+
+      cell: (row, index) => {
+        let slug = row?.name.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '');
+
+        return (
+          <a onClick={() => router.push(`/post-detail/${row?.eid}/${slug}/`)}>
+            Download
+          </a>
+        )
+      },
+      width: "10%",
+      style: {
+        color: "#296ac8",
+        cursor: "pointer",
+
+      }
+    },
+    {
+      name: 'Category',
+      selector: row => row.category_str,
+      width: "10%",
+      sortable: true,
+    },
+    {
+      name: 'Date',
+      selector: row => moment(row?.last_checked).format("DD-MM-YYYY"),
+      width: "10%",
+      sortable: true,
+    },
+    {
+      name: 'Runtime',
+      selector: row => moment.utc(runtime * 1000).format('HH:mm:ss'),
+      width: "11%",
+      sortable: true,
+    },
+    {
+      name: 'Size',
+      selector: row => formatBytes(row?.size),
+      sortable: true,
+      width: "10%",
+      sortFunction: (a, b) => {
+
+        return a.size - b.size;
+      },
+    },
+    {
+      name: 'S',
+      selector: row => row?.seeders,
+      sortable: true,
+      width: "6%",
+      style: {
+        color: "#00FF00",
+
+
+      }
+
+    },
+    {
+      name: 'L',
+      selector: row => row.leechers,
+      sortable: true,
+      width: "6%",
+      style: {
+        color: "#dd0c0e",
+
+      }
+    },
+  ];
+  createTheme('dark', {
+    background: {
+      default: 'transparent',
+    },
+  });
+
+  const customCss = {
+
+    headCells: {
+      style: {
+        fontSize: "14px",
+        fontWeight: "700",
+        color: "#C2D8D3"
+      },
+    },
+
+  };
 
 
   console.log("torrent_list", torrent_list)
@@ -65,17 +161,10 @@ const TorrentList = ({ setisTorrent, torrent_list, runtime }) => {
       selector: row => row.name,
 
       sortable: true,
-
-
-
     },
 
     {
-
       name: 'Action',
-
-
-
       cell: (row, index) => {
 
         let slug = row?.name.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '');
@@ -260,15 +349,7 @@ const TorrentList = ({ setisTorrent, torrent_list, runtime }) => {
 
         onRequestClose={() => setisTorrent(false)}
 
-      >
-
-
-
-
-
-
-
-        {
+      >  {
 
           torrent_list.length > 0 ?
 
@@ -323,11 +404,6 @@ const TorrentList = ({ setisTorrent, torrent_list, runtime }) => {
                   </span>
 
                 </div>
-
-
-
-
-
                 <div className="flex  text-[14px] h-auto pt-1.5 justify-end long-and-truncated font-light gap-4">
 
 
