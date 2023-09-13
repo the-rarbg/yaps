@@ -15,7 +15,7 @@ export default function GenreMovie({ data, id, name, page }) {
   return (
     <div>
       <Head>
-        <title>{name} - Movies | Yaps</title>
+        <title>{name} - Movies | Watcho</title>
       </Head>
       <SearchBar
         placeholder='Search for movies'

@@ -16,7 +16,7 @@ export const loginApi = (data) => {
   return axios.post(url, data, { headers: headersApplicationJson })
 }
 export const moviesListApi = (page, category, time) => {
-  let url = `${API_BASE}/get-posts/category:${category}:time:45D:format:json/?page=${page}`;
+  let url = `${API_BASE}/get-posts/category:${category}:time:50D:format:json/?page=${page}`;
   return axios.get(url, { headers: headersApplicationJson })
 }
 

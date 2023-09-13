@@ -8,7 +8,7 @@ export default function TV({ data }) {
   return (
     <>
       <Head>
-        <title>TV Series | Yaps</title>
+        <title>TV Series | Watcho</title>
       </Head>
       <SearchBar
         placeholder='Search for TV series'
