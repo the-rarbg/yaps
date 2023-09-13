@@ -5,7 +5,7 @@ export default function Custom404() {
   return (
     <div className='my-20 flex flex-col items-center justify-center'>
       <Head>
-        <title>404 - Not Found | Watcho</title>
+        <title>404 - Not Found | Yaps</title>
       </Head>
       <h1 className='my-20 text-xl md:text-4xl'>404 - Page Not Found</h1>
       <Link href='/' passHref>

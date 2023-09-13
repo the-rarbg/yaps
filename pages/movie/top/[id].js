@@ -19,7 +19,7 @@ export default function TopRatedMovies() {
   return (
     <div>
       <Head>
-        <title>Top Rated Movies | Watcho</title>
+        <title>Top Rated Movies | Yaps</title>
       </Head>
       <SearchBar
         placeholder='Search for movies'

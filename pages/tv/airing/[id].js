@@ -19,7 +19,7 @@ export default function AiringTVSeries() {
   return (
     <div>
       <Head>
-        <title>TV Series Airing Today | Watcho</title>
+        <title>TV Series Airing Today | Yaps</title>
       </Head>
       <SearchBar
         placeholder='Search for TV Series'

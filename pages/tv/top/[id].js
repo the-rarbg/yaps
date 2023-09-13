@@ -19,7 +19,7 @@ export default function TopRatedTVSeries() {
   return (
     <div>
       <Head>
-        <title>Top Rated TV Series | Watcho</title>
+        <title>Top Rated TV Series | Yaps</title>
       </Head>
       <SearchBar
         placeholder='Search for TV Series'
