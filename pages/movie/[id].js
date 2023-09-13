@@ -43,7 +43,7 @@ const handleClose =()=>{
 
   return (
     <>
-    
+   
       <Head>
         <title>{movie?.detail?.title} | </title>
       </Head>

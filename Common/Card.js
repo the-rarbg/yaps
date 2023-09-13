@@ -30,7 +30,7 @@ const Card = (props) => {
     <div className="imagefit bg-cover rounded mx-auto justify-center items-center inline-flex ml-2" style={{'backgroundImage':`url("${props.item[`thumbnail`] ? props.item[`thumbnail`] : props.categoryId==="XXX"?"https://i.therarbg.com/xnp.jpg": "https://i.therarbg.com/np.jpg"}")`,width:"50px",height:"50px"}}>
     </div>
    
-      <div className="text-off-white flex items-center text-[14px] w-[90%] text-left h-auto pt-1.5 text-ellipsis overflow-hidden pl-4 font-medium break-all">
+      <div className="text-off-white  flex items-center text-[14px] w-[90%] text-left h-auto pt-1.5 text-ellipsis overflow-hidden pl-4 font-medium break-all">
       
         {props?.item?.name}
      
