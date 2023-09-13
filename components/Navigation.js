@@ -114,7 +114,7 @@ export default function Navigation() {
         <NavigationIcon href='/faq'>
           <svg
             data-tooltip-id='my-tooltip'
-            data-tooltip-content='FaQ'
+            data-tooltip-content='FAQ'
             width='24'
             height='24'
             fill='currentColor'
