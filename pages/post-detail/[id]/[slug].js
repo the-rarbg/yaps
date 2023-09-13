@@ -50,9 +50,7 @@ const Details = () => {
 
   useEffect(() => {
     if (router.isReady) {
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-      id = router.query.id;// eslint-disable-next-line react-hooks/exhaustive-deps
-   // eslint-disable-next-line react-hooks/exhaustive-deps
+      id = router.query.id;
       slug = router.query.slug;
       if (!id) return null;
       getDetails()
@@ -86,7 +84,7 @@ const Details = () => {
     setLoader(true)
     let token = localStorage.getItem("access_token")
     getListComment(value, token).then((res) => {
-
+      console.log("response", res)
       setLoader(false)
       setCommentList(res?.data?.results)
     }).catch((err) => {
@@ -105,7 +103,7 @@ const Details = () => {
       comment: comment
     }
     postComment(data, token).then((res) => {
-
+      console.log("response", res)
       getCommentInfo(eid)
     }).catch((err) => {
       setLoader(false)

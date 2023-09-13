@@ -4,7 +4,7 @@ export default function AppIcon() {
   const router = useRouter()
   return (
     <svg
-      className={`h-[20px] w-[25px] lg:h-[25.6px] lg:w-[32px] icon-nav `}
+      className={`h-[20px] w-[25px] lg:h-[25.6px] lg:w-[32px] ${router.pathname == '/' ? 'active-link' : 'icon-nav'}`}
       data-tooltip-id="my-tooltip"
       data-tooltip-content="Home"
       width='1em'

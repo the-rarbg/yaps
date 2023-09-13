@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home | Yaps</title>
+        <title>Home | Watcho</title>
       </Head>
       <SearchBar searchPath={pathToSearchAll} />
 
