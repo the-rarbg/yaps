@@ -313,20 +313,20 @@ useEffect(()=>{
             }} className='w-[85%]'>
             <div className="grid gap-6 mb-6 md:grid-cols-2">
               <div>
-                <label htmlFor="first_name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title name</label>
+                <label htmlFor="first_name" className="block mb-2 text-sm font-light text-gray-900 dark:text-white">Title name</label>
                 <input type="text" id="first_name" name="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Name" value={formInput?.name} onChange={handleChange} />
                 <span className='text-red-400 text-[13px] '>{errors?.name}</span>
               </div>
 
               <div>
-                <label htmlFor="file" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Short Name</label>
+                <label htmlFor="file" className="block mb-2 text-sm font-light text-gray-900 dark:text-white">Short Name</label>
                 <input type="text" id="id" name="short_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-[7px] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Short Name" value={formInput?.short_name} onChange={handleChange} />
                 <span className='text-red-400 text-[13px] '>{errors?.short_name}</span>
               </div>
 
 
               <div>
-                <label htmlFor="language" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Language</label>
+                <label htmlFor="language" className="block mb-2 text-sm font-light text-gray-900 dark:text-white">Language</label>
                 <select name="language" id="language" className="bg-gray-50 cursor-pointer border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value={formInput?.language} onChange={handleChange} placeholder="Flowbite"  >
                   <option >
                     Select
@@ -342,7 +342,7 @@ useEffect(()=>{
                 <span className='text-red-400 text-[13px] '>{errors?.language}</span>
               </div>
               <div>
-                <label htmlFor="category_str" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
+                <label htmlFor="category_str" className="block mb-2 text-sm font-light text-gray-900 dark:text-white">Category</label>
                 <select id="category_str" name="category_str" className="bg-gray-50 cursor-pointer border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value={formInput?.category_str} onChange={handleChange} placeholder="Flowbite" >
                   <option>
                     Select
@@ -362,7 +362,7 @@ useEffect(()=>{
 
 
               <div>
-                <label htmlFor="language" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Type</label>
+                <label htmlFor="language" className="block mb-2 text-sm font-light text-gray-900 dark:text-white">Type</label>
                 <select name="type" id="language" className="bg-gray-50 border cursor-pointer border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value={formInput?.type} onChange={handleChange} placeholder="Flowbite" >
                   <option>
                     Select
@@ -378,7 +378,7 @@ useEffect(()=>{
                 <span className='text-red-400 text-[13px] '>{errors?.type}</span>
               </div>
               <div >
-                <label htmlFor="info_hash" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Size (in Bytes)</label>
+                <label htmlFor="info_hash" className="block mb-2 text-sm font-light text-gray-900 dark:text-white">Size (in Bytes)</label>
 
 
                 <div className='flex relative'>
@@ -391,7 +391,7 @@ useEffect(()=>{
 
               </div>
               <div >
-                <label htmlFor="info_hash" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Imdb ID</label>
+                <label htmlFor="info_hash" className="block mb-2 text-sm font-light text-gray-900 dark:text-white">Imdb ID</label>
 
 
                 <div className='flex relative'>
@@ -406,7 +406,7 @@ useEffect(()=>{
 
             </div>
             <div className="mb-6 text-white">
-              <label htmlFor="category_str" className="block mb-2 text-sm font-medium text-white dark:text-white">Genre</label>
+              <label htmlFor="category_str" className="block mb-2 text-sm font-light text-white dark:text-white">Genre</label>
               <Select
                 className="react-select-container "
                 classNamePrefix="react-select"
@@ -431,7 +431,7 @@ useEffect(()=>{
 
 
             <div className="mb-6">
-              <label htmlFor="info_hash" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Thumbnail Images Urls</label>
+              <label htmlFor="info_hash" className="block mb-2 text-sm font-light text-gray-900 dark:text-white">Thumbnail Images Urls</label>
 
 
               <div className='flex relative'>
@@ -445,7 +445,7 @@ useEffect(()=>{
             </div>
 
             <div className="mb-6">
-              <label htmlFor="info_hash" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Add Images Urls</label>
+              <label htmlFor="info_hash" className="block mb-2 text-sm font-light text-gray-900 dark:text-white">Add Images Urls</label>
               {
               fileInput&&  fileInput.map((item, index) => {
                   return (
@@ -468,13 +468,13 @@ useEffect(()=>{
 
             </div>
             <div className="mb-6">
-              <label htmlFor="info_hash" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Torrent Hash</label>
+              <label htmlFor="info_hash" className="block mb-2 text-sm font-light text-gray-900 dark:text-white">Torrent Hash</label>
               <input type="text" name="info_hash" id="info_hash" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="309626C8000F9C006782B097E7B6EAADD7F7C3E7" value={formInput?.info_hash} onChange={handleChange} />
               <span className='text-red-400 text-[13px] '>{errors?.info_hash}</span>
             </div>
 
             <div className="mb-6">
-              <label htmlFor="tag" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Torrent Descriptions</label>
+              <label htmlFor="tag" className="block mb-2 text-sm font-light text-gray-900 dark:text-white">Torrent Descriptions</label>
               <textarea name="descr" rows={6} id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value={formInput?.descr} onChange={handleChange} placeholder="" >
               </textarea>
               <span className='text-red-400 text-[13px] '>{errors?.descr}</span>
@@ -484,9 +484,9 @@ useEffect(()=>{
               <div className="flex items-center h-5">
                 <input id="remember" type="checkbox" value="" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"  />
               </div>
-              <label htmlFor="remember" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" className="text-primary-600 hover:underline dark:text-primary-500">terms and conditions</a>.</label>
+              <label htmlFor="remember" className="ml-2 text-sm font-light text-gray-900 dark:text-gray-300">I agree with the <a href="#" className="text-primary-600 hover:underline dark:text-primary-500">terms and conditions</a>.</label>
             </div> */}
-            <button type="submit" className="bg-primary/10 text-primary border-primary my-3 hover:bg-primary/30 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-1.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700" style={{ border: "solid 0.5px" }} >Submit</button>
+            <button type="submit" className="bg-primary/10 text-primary border-primary my-3 hover:bg-primary/30 font-light rounded-lg text-sm w-full sm:w-auto px-5 py-1.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700" style={{ border: "solid 0.5px" }} >Submit</button>
           </form>
 
         </div>

@@ -49,7 +49,7 @@ const Home = () => {
 
 console.log("pp",checkboxInput)
   return (
-    <div className="container  mx-auto py-3 font-medium bg-transparent min-h-screen  justify-center text-center font-montserrat">
+    <div className="container  mx-auto py-3 font-light bg-transparent min-h-screen  justify-center text-center font-montserrat">
       {loader ? <Loader /> : null}
       <div>
         <p className='text-[3rem] md:text-[6rem] font-bold leading-[3.5rem] md:leading-[7rem] pt-16'> This World.<br />At Your Fingertips.</p>
