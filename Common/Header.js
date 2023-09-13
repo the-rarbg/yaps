@@ -46,7 +46,7 @@ useEffect(()=>{
 },[])
   return (
     <div className=''>
-    <header className="hidden bg-background-header/25 text-sm font-medium md:flex sticky top-0 font-montserrat backdrop-blur-3xl px-8 md:px-16 justify-between">
+    <header className="hidden bg-background-header/25 text-sm font-light md:flex sticky top-0 font-montserrat backdrop-blur-3xl px-8 md:px-16 justify-between">
 
 
 

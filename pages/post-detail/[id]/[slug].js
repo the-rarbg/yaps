@@ -193,7 +193,7 @@ const Details = () => {
               {
                 trackers.map((item, index) => {
                   return (
-                    <p className='p-1 long-and-truncated font-medium w-fit break-all' key={index}>
+                    <p className='p-1 long-and-truncated font-light w-fit break-all' key={index}>
                       {item}
                     </p>
                   )
