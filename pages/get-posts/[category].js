@@ -15,8 +15,8 @@ import CardCompact from '../../Common/CardCompact';
 
 const Latest = () => {
   const router = useRouter()
-  const { category, time } = router.query;
-  const categoryId = category ? category.split(':')[1] : "Movies";
+  const { category } = router.query;
+  const categoryId = category ? category.split(':')[1] : null;
 
   let data = [{ name: "Movie", cat: "Movies", time: "10D", color: "#ee7633" },
   { name: "TV-Show", cat: "TV", time: "10D", color: "#7affb8" },
@@ -39,9 +39,9 @@ const Latest = () => {
     fetchMovieList(cat);
   }, [page])
   useEffect(() => {
-    fetchMovieListRefresh(cat);
-    setCat(categoryId)
-  }, [categoryId])
+    fetchMovieListRefresh(category?.split(':')[1]);
+    setCat(category?.split(':')[1])
+  }, [category])
 
   const fetchMovieList = (cat) => {
    
@@ -113,7 +113,7 @@ const Latest = () => {
 
   return (
     <div className='text-center font-montserrat'>
-      {loader ? <Loader /> : null}
+      {!movieList.length>0 ? <Loader /> : null}
 
       <div className='w-full justify-end'>
 
@@ -137,7 +137,7 @@ const Latest = () => {
                   setCat(item?.cat)
                   setPage(1)
                   router.push(`/get-posts/category:${item?.cat}`)
-                }} key={index} className="flex bg-primary/15 cursor-pointer  font-medium text-[14px] rounded lowercase my-1 mx-2 px-2 py-0.5 hover:bg-[#008000] hover:text-white"
+                }} key={index} className="flex bg-primary/15 cursor-pointer font-light text-[15px] rounded lowercase my-1 mx-2 px-2 py-0.5 hover:bg-[#008000] hover:text-white"
                   style={{ color: cat === item?.cat ? "#fff" : item?.color, background: cat === item?.cat ? "#008000" : "" }}>
                   <label className='cursor-pointer'>{item?.name} </label></div>
               )
