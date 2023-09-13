@@ -37,13 +37,11 @@ const Latest = () => {
 
   useEffect(() => {
     fetchMovieList(cat);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [page])// eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [page])
   useEffect(() => {
     fetchMovieListRefresh(cat);
     setCat(categoryId)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [categoryId])// eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [categoryId])
 
   const fetchMovieList = (cat) => {
    
@@ -51,7 +49,7 @@ const Latest = () => {
     let latest = ""
     setLoader(true)
     moviesListApi(page, category, latest).then((res) => {
-
+      console.log("page", res?.data?.results)
       setLoader(false)
       setMovieList([...movieList, ...res.data.results])
      
@@ -68,7 +66,7 @@ const Latest = () => {
     let latest = ""
     setLoader(true)
     moviesListApi(page, categoryId, latest).then((res) => {
-
+      console.log("page", res?.data?.results)
       setLoader(false)
       setMovieList(res.data.results)
     }).catch((err) => {
@@ -83,7 +81,7 @@ const Latest = () => {
     e.preventDefault()
     setLoader(true)
     getSearchResult(search).then((res) => {
-
+      console.log("page", res?.data?.results)
       setLoader(false)
       setMovieList(res.data.results)
     }).catch((err) => {
@@ -109,8 +107,8 @@ const Latest = () => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
-    };// eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [page]);// eslint-disable-next-line react-hooks/exhaustive-deps
+    };
+  }, [page]);
 
 
   return (

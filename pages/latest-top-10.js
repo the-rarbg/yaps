@@ -28,19 +28,19 @@ const LendingPage = () => {
   useEffect(() => {
 
     fetchMovieList(categoryId);
-// eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [page])// eslint-disable-next-line react-hooks/exhaustive-deps
+
+  }, [page])
 
 
   const fetchMovieList = (categoryId) => {
     let latest = time ? time : "10D"
     setLoader(true)
     moviesTopListApi(page, categoryId, latest).then((res) => {
-   
+      console.log("page", res?.data?.top_posts_by_category)
       setLoader(false)
       setMovieList(res?.data?.top_posts_by_category)
     }).catch((err) => {
-
+      console.log("error", err)
       ToastMsg("Some thing went wrong ", "error")
       setLoader(false)
     })
