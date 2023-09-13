@@ -38,7 +38,7 @@ const faqData = [
   {
     question: 'What is the difference between a seed and a leech?',
     answer:
-      ' A "Seed" is a user who has a complete copy of the file being shared and is actively sharing it with others while "Leech" is a user who is downloading the file but is not sharing it with others.}',
+      ' A "Seed" is a user who has a complete copy of the file being shared and is actively sharing it with others while "Leech" is a user who is downloading the file but is not sharing it with others.',
   },
 ]
 
