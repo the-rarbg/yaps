@@ -7,7 +7,7 @@ const CardGenre = React.forwardRef(
         href={href}
         onClick={onClick}
         ref={ref}
-        className={`card-hover-animation m-2 flex h-44 w-44 grow items-center justify-center rounded-lg p-8 text-center text-xl font-medium even:bg-app-semi-dark-blue ${oddBgColor}`}
+        className={`card-hover-animation m-2 flex h-44 w-44 grow items-center justify-center rounded-lg p-8 text-center text-xl font-light even:bg-app-semi-dark-blue ${oddBgColor}`}
       >
         {text}
       </a>

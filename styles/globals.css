@@ -20,11 +20,11 @@
   }
 
   .heading-sm {
-    @apply text-app-heading-md font-medium;
+    @apply text-app-heading-md font-light;
   }
 
   .heading-xs {
-    @apply text-app-heading-xs font-medium;
+    @apply text-app-heading-xs font-light;
   }
 
   .section-title {
@@ -454,6 +454,7 @@ background:rgb(11 9 9 / 75%) !important;
 }
 
 .zoomcss{
+  
   zoom: 0.;
   @media(max-width: 767px){
     zoom:0.5;

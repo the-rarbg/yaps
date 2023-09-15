@@ -12,10 +12,12 @@ import FilmResources from '../../components/FilmResources'
 import FilmSynopsis from '../../components/FilmSynopsis'
 import Loading from '../../components/Loading'
 import SearchBar from '../../components/SearchBar'
-import { fetcher, pathToSearchMovie } from '../../utils'
+import { fetcher, pathToSearchMovie, renderResults, sliceArray } from '../../utils'
 import YouTube from "react-youtube";
 
 import TorrentList from '../../Common/TorrentList'
+import CardNormal from "../../components/CardNormal"
+import Heading from '../../components/Heading'
 
 export default function Movie() {
   const router = useRouter()
@@ -43,7 +45,7 @@ const handleClose =()=>{
 
   return (
     <>
-    
+   
       <Head>
         <title>{movie?.detail?.title} | </title>
       </Head>
@@ -84,6 +86,10 @@ const handleClose =()=>{
             </section>
 
           </section>
+
+        
+
+
           {movie?.imdb?.imdb?.video_list[0]?.key ? <div className='text-gray-300'>
            
             <YouTube videoId={movie?.imdb?.imdb?.video_list[0]?.key} style={{ borderRadius: "1px" }}
@@ -92,6 +98,25 @@ const handleClose =()=>{
             : null}
           <br />
        {movie?.credits?.cast?   <FilmCasts casts={movie?.credits?.cast} />:null}
+
+       <section
+          className='w-full overflow-hidden md:mb-10 lg:overflow-visible'>
+          <Heading
+            title={"You may like also"}
+            isHomePage={true}
+            isTrending={true}
+            media_type={false}
+          />
+          <section
+            className={
+             'h-scroll relative flex gap-x-4 overflow-x-scroll  sm:gap-x-10 2xs:mt-2'   }>
+            {renderResults(
+              sliceArray(movie?.detail?.recommendations?.results || [], movie?.detail?.recommendations?.results.length),
+              CardNormal,
+              "movie"
+            )}
+          </section>
+        </section>
         </div>
       ) : (
         <Loading />

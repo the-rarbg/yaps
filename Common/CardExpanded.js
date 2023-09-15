@@ -27,7 +27,7 @@ const CardExpanded = (props) => {
     <div className="w-40 h-44  bg-cover imagefit rounded mx-auto justify-center items-center inline-flex" style={{'backgroundImage':`url("${props.item[`t`] ? props.item[`t`] : props.categoryId==="XXX"?"https://i.therarbg.com/xnp.jpg": "https://i.therarbg.com/np.jpg"}")`}}>
     </div>
     <br />
-      <div className="text-off-white text-[12px] h-auto pt-1.5 long-and-truncated font-medium w-fit break-all" style={{fontSize:"12px"}}>
+      <div className="text-off-white text-[12px] h-auto pt-1.5 long-and-truncated font-light w-fit break-all" style={{fontSize:"12px"}}>
       <span>
         {name}
       </span>

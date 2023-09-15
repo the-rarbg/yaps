@@ -18,8 +18,8 @@ export default function Pagination({
           onClick={goToPreviousPage}
           className={
             isFirst
-              ? 'disabled-link flex cursor-not-allowed items-center justify-center rounded-lg rounded-r-none border-2 py-2 pl-4 pr-6 font-medium'
-              : 'flex items-center justify-center rounded-lg rounded-r-none border-2 py-2 pl-4 pr-6 font-medium hover:bg-app-pure-white hover:text-app-dark-blue'
+              ? 'disabled-link flex cursor-not-allowed items-center justify-center rounded-lg rounded-r-none border-2 py-2 pl-4 pr-6 font-light'
+              : 'flex items-center justify-center rounded-lg rounded-r-none border-2 py-2 pl-4 pr-6 font-light hover:bg-app-pure-white hover:text-app-dark-blue'
           }
         >
           <TiArrowLeftThick className='mr-2' />
@@ -34,8 +34,8 @@ export default function Pagination({
           onClick={goToNextPage}
           className={
             isLast
-              ? 'disabled-link flex cursor-not-allowed items-center justify-center rounded-lg rounded-l-none border-2 py-2 pr-4 pl-6 font-medium'
-              : 'flex items-center justify-center rounded-lg rounded-l-none border-2 py-2 pr-4 pl-6 font-medium hover:bg-app-pure-white hover:text-app-dark-blue'
+              ? 'disabled-link flex cursor-not-allowed items-center justify-center rounded-lg rounded-l-none border-2 py-2 pr-4 pl-6 font-light'
+              : 'flex items-center justify-center rounded-lg rounded-l-none border-2 py-2 pr-4 pl-6 font-light hover:bg-app-pure-white hover:text-app-dark-blue'
           }
         >
           <span>Next</span>
