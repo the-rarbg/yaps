@@ -28,7 +28,7 @@ const CardExpanded = (props) => {
     }
     let slug =  name.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '');
      router.push(`/post-detail/${props.item?.eid}/${slug}/`)
-    }} key={props.index} className="my-3  mt-6 zoom overflow-hidden cursor-pointer py-2 bg-card rounded-md flex-col justify-center inline-flex  hover:bg-primary/10 border border-off-white/10 hover:border-primary/50 zoomcss" style={{width:"200px"}}>
+    }} key={props.index} className="my-3  mt-6 zoom overflow-hidden cursor-pointer py-2 bg-card rounded-md fab flex-col justify-center inline-flex  hover:bg-primary/10 hover_effect  hover:border-primary/50 zoomcss" style={{width:"200px"}}>
     <div className="w-40 h-44 bg-cover imagefit rounded mx-auto justify-center items-center inline-flex" style={{'backgroundImage':`url("${props.item[`thumbnail`] ? props.item[`thumbnail`] : props.categoryId==="XXX"?"https://i.therarbg.com/xnp.jpg": "https://i.therarbg.com/np.jpg"}")`}}>
     </div>
     <br />
