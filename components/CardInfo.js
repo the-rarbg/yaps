@@ -12,7 +12,7 @@ export default function CardInfo({
     <div
       className={
         isTrending
-          ? 'absolute left-4 bottom-4 z-40 h-fit w-fit truncate text-ellipsis'
+          ? 'absolute left-4 bottom-4 z-40 h-fit w-fit truncate text-ellipsis hover_effect'
           : null
       }
     >
