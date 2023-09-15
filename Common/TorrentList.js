@@ -106,7 +106,7 @@ const TorrentList = ({ setisTorrent, torrent_list, runtime }) => {
       name: 'S',
       selector: row => row?.seeders,
       sortable: true,
-      width: "6%",
+      width: "7%",
       style: {
         color: "#00FF00",
 
@@ -118,7 +118,7 @@ const TorrentList = ({ setisTorrent, torrent_list, runtime }) => {
       name: 'L',
       selector: row => row.leechers,
       sortable: true,
-      width: "6%",
+      width: "7%",
       style: {
         color: "#dd0c0e",
 
