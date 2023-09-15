@@ -5,7 +5,7 @@ const Streaming = () => {
     const { id } = router.query;
   return (
     < >
-      <iframe src={`https://vidsrc.me/embed/movie?imdb=${id}`} frameborder="0" style={{width: '100%' ,height: '92vh'}} allowfullscreen="allowfullscreen"></iframe>
+      <iframe src={`https://vidsrc.me/embed/movie?imdb=${id}`} frameBorder="0" style={{width: '100%' ,height: '92vh'}} allowfullscreen="allowfullscreen"></iframe>
     </>
   )
 }
