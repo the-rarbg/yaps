@@ -25,7 +25,7 @@ const Card = (props) => {
     }
     let slug =  name.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '');
      router.push(`/post-detail/${props.item?.eid}/${slug}/`)
-  }} key={props.index} style={{marginBottom:"10px"}} className={`my-2 overflow-hidden w-full  ${props?.page ==="dashboard"?"":"cursor-pointer"} py-2 bg-card rounded-md flex justify-center hover:bg-primary/10 border border-off-white/10 hover:border-primary/50 flex-col  md:flex-row `}>
+  }} key={props.index} style={{marginBottom:"10px"}} className={`my-2 overflow-hidden w-full  ${props?.page ==="dashboard"?"":"cursor-pointer"} py-2 bg-card  rounded-md flex justify-center hover:bg-primary/10  hover:border-primary/50 flex-col  md:flex-row `}>
     <div className='flex  p-2'>
     <div className="imagefit bg-cover rounded mx-auto justify-center items-center inline-flex ml-2" style={{'backgroundImage':`url("${props.item[`thumbnail`] ? props.item[`thumbnail`] : props.categoryId==="XXX"?"https://i.therarbg.com/xnp.jpg": "https://i.therarbg.com/np.jpg"}")`,width:"50px",height:"50px"}}>
     </div>
