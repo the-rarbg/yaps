@@ -227,7 +227,7 @@ const TorrentList = ({ setisTorrent, torrent_list, runtime }) => {
 
               }} className={`my-3 cursor-pointer  w-[]   py-2 bg-card rounded-md flex justify-center hover:bg-primary/10 border border-off-white/5 hover:border-primary/50 flex-col  md:flex-row`}>
 
-                <div className="row-custom   text-[14px] justify-end h-auto pt-1.5 text-ellipsis overflow-hidden pl-4 font-medium ">
+                <div className="row-custom   text-[14px] justify-end h-auto pt-1.5 text-ellipsis overflow-hidden pl-4 font-light ">
 
                   <span>
 

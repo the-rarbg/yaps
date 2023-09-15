@@ -22,7 +22,7 @@ const handlegetLink =()=>{
        <a
           
        onClick={()=>handlegetLink()}
-       className='mb-4 mr-4 flex w-40 cursor-pointer items-center justify-between rounded-md border-none bg-app-greyish-blue py-3 px-8 text-sm font-medium text-app-pure-white hover:bg-app-pure-white hover:text-app-dark-blue'
+       className='mb-4 mr-4 flex w-40 cursor-pointer items-center justify-between rounded-md border-none bg-app-greyish-blue py-3 px-8 text-sm font-light text-app-pure-white hover:bg-app-pure-white hover:text-app-dark-blue'
       
        rel='noreferrer'
      >
@@ -36,7 +36,7 @@ const handlegetLink =()=>{
       {!props?.imdb ? null : (
         <a
           href={`https://www.imdb.com/title/${props?.imdb}`}
-          className='mb-4 flex w-40 cursor-pointer items-center justify-between rounded-md border-none bg-app-greyish-blue py-3 px-8 text-sm font-medium text-app-pure-white hover:bg-app-pure-white hover:text-app-dark-blue'
+          className='mb-4 flex w-40 cursor-pointer items-center justify-between rounded-md border-none bg-app-greyish-blue py-3 px-8 text-sm font-light text-app-pure-white hover:bg-app-pure-white hover:text-app-dark-blue'
           target='_blank'
           rel='noreferrer'
         >
@@ -46,7 +46,7 @@ const handlegetLink =()=>{
       )}
       {/* <a
         href={trailer}
-        className="mb-4 flex w-full cursor-pointer items-center justify-between rounded-md border-none bg-app-semi-dark-blue py-4 px-8 text-sm font-medium text-app-pure-white hover:bg-app-greyish-blue">
+        className="mb-4 flex w-full cursor-pointer items-center justify-between rounded-md border-none bg-app-semi-dark-blue py-4 px-8 text-sm font-light text-app-pure-white hover:bg-app-greyish-blue">
         <p>Trailer</p>
         <FaPlay className="text-base" />
       </a> */}
