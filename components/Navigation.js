@@ -18,14 +18,14 @@ export default function Navigation() {
     setToken(temp)
   }, [])
   return (
-    <nav className='sticky top-0 z-50 flex items-center justify-between bg-app-semi-dark-blue p-5 md:mx-6 md:mb-[33px] md:mt-6 md:rounded-[10px] lg:fixed lg:left-0 lg:mr-0 lg:h-5/6 lg:flex-col lg:py-9'>
+    <nav className='sticky top-0 z-50 flex items-center justify-around bg-app-semi-dark-blue p-5 md:mx-6 md:mb-[33px] md:mt-6 md:rounded-[10px] lg:fixed lg:left-0 lg:my-12 lg:mr-0 lg:h-5/6 lg:flex-col lg:py-9'>
       <Tooltip id='my-tooltip' place='bottom-start' events='hover' />
       <Link href='/' passHref>
         <a>
           <AppLogo />
         </a>
       </Link>
-      <div className='nav-res flex w-1/2 items-center justify-between 2xs:w-[70%] lg:h-[400px] lg:flex-col'>
+      <div className='nav-res flex w-1/2 items-center justify-between 2xs:w-[70%] lg:my-5 lg:h-[300px] lg:flex-col'>
         {/* <NavigationIcon href='/'>
           <svg
             className={router.pathname === '/' ? 'active-link' : 'icon-nav'}
