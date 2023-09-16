@@ -27,13 +27,24 @@ const handlegetLink =()=>{
        rel='noreferrer'
      >
        <p>Download</p>
-       <FaLink className='text-base' />
+     
      </a>
       )}
 
-
-     
-      {!props?.imdb ? null : (
+ {!props?.imdb ? null : (
+       <a
+          
+       onClick={()=>router.push(`/streaming?id=${props?.imdb}`)}
+       className='mb-4 mr-4 flex w-40 cursor-pointer items-center justify-between rounded-md border-none bg-app-greyish-blue py-3 px-8 text-sm font-light text-app-pure-white hover:bg-app-pure-white hover:text-app-dark-blue'
+      
+       rel='noreferrer'
+     >
+        <FaPlay className='text-base' />
+       <p>Play Now</p>
+      
+     </a>
+      )}
+      {/* {!props?.imdb ? null : (
         <a
           href={`https://www.imdb.com/title/${props?.imdb}`}
           className='mb-4 flex w-40 cursor-pointer items-center justify-between rounded-md border-none bg-app-greyish-blue py-3 px-8 text-sm font-light text-app-pure-white hover:bg-app-pure-white hover:text-app-dark-blue'
@@ -43,7 +54,7 @@ const handlegetLink =()=>{
           <p>IMDB</p>
           <FaImdb className='text-base' />
         </a>
-      )}
+      )} */}
       {/* <a
         href={trailer}
         className="mb-4 flex w-full cursor-pointer items-center justify-between rounded-md border-none bg-app-semi-dark-blue py-4 px-8 text-sm font-light text-app-pure-white hover:bg-app-greyish-blue">
