@@ -149,7 +149,7 @@ const Details = () => {
     <div>
       {loader ? <Loader /> : null}
       <Head>
-        <title>Download | Yaps</title>
+        <title>{data?.name} | Yaps</title>
       </Head>
       <div className='w-full pb-5 m-auto'>
         <div className="w-full bg-card bg-opacity-10 rounded-lg border-gray-200 border-opacity-30 justify-start flex flex-col md:flex-row">
