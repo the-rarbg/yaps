@@ -555,11 +555,12 @@ background:rgb(11 9 9 / 75%) !important;
   border: none;  /* Remove the border */
 }
 .hover_effect{
-  opacity: 0.6;
+  opacity: 0.7;
 }
 .hover_effect:hover {
   opacity: 1;
   transform: scale(1.05);
+
   /* box-shadow: 0 0 15px #ffee10; */
   transition: ease-out .3s;
 }
