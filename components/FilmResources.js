@@ -27,7 +27,7 @@ const handlegetLink =()=>{
        rel='noreferrer'
      >
        <p>Download</p>
-       <FaLink className='text-base' />
+     
      </a>
       )}
 
@@ -39,8 +39,9 @@ const handlegetLink =()=>{
       
        rel='noreferrer'
      >
+        <FaPlay className='text-base' />
        <p>Play Now</p>
-       <FaLink className='text-base' />
+      
      </a>
       )}
       {/* {!props?.imdb ? null : (
