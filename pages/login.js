@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { getProfileDetails, loginApi } from '../service/service';
 import { Loader } from '../Common/Loader';
 import ToastMsg from '../Common/ToastMsg';
-
+import Head from 'next/head'
 const Login = () => {
   const router = useRouter()
   const { page } = router.query;
@@ -68,6 +68,9 @@ setLoader(true)
 
   return (
     <div className='flex h-[90vh] justify-center items-center'>
+       <Head>
+        <title>Login | Yaps</title>
+      </Head>
       {loader?<Loader/>:null}
       <div className='flex-colomn w-[90%] text-center'>
         <h1 className='text-[48px] justify-center'>Login</h1>

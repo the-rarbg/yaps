@@ -7,6 +7,7 @@ import { getSearchResult } from '../service/service';
 import { Loader } from '../Common/Loader'
 import { CompactList, ExpandedList } from '../SVG/listing'
 import ToastMsg from '../Common/ToastMsg'
+import Head from 'next/head'
 
 let data1 = [{ name: "Movie", cat: "Movies", time: "10D" }, { name: "TV-Show", cat: "TV", time: "10D" }, { name: "Games", cat: "Games", time: "10D" }, { name: "Music", cat: "Music", time: "10D" }, { name: "Anime", cat: "Anime", time: "10D" }, { name: "Books", cat: "Books", time: "10D" }, { name: "Other", cat: "Other", time: "10D" }, { name: "XXX", cat: "XXX", time: "1D" }]
 
@@ -47,9 +48,12 @@ const Home = () => {
     }
   };
 
-console.log("pp",checkboxInput)
+
   return (
     <div className="container  mx-auto py-3 font-light bg-transparent min-h-screen  justify-center text-center font-montserrat">
+        <Head>
+        <title>Register | Yaps</title>
+      </Head>
       {loader ? <Loader /> : null}
       <div>
         <p className='text-[3rem] md:text-[6rem] font-bold leading-[3.5rem] md:leading-[7rem] pt-16'> This World.<br />At Your Fingertips.</p>

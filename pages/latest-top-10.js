@@ -1,7 +1,7 @@
 import React from 'react'
 import { Loader } from '../Common/Loader'
 import { moviesTopListApi } from '../service/service';
-
+import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router';
 import Card from '../Common/Card';
@@ -54,6 +54,9 @@ const LendingPage = () => {
   transform: 'translate(-50%, -50%)',}
   return (
     <div className='text-center font-montserrat'>
+       <Head>
+        <title>Top 10 Movies | Yaps</title>
+      </Head>
       {loader ? <Loader /> : null}
       <br />
 

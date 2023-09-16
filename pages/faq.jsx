@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Head from 'next/head'
 const faqData = [
   {
     question: 'What is YAPS?',
@@ -55,6 +56,9 @@ const FAQ = () => {
 
   return (
     <div className='max-lg:ml-[10%]  min-[1700px]:ml-[-9%] min-[1900px]:ml-[-15%] min-[2000px]:ml-[-20%] min-[2300px]:ml-[-27%]'>
+       <Head>
+        <title>Faq | Yaps</title>
+      </Head>
       <h1 className='mb-10 text-2xl font-bold text-center text-white '>HELP CENTER</h1>
       <div className=' w-[80vw]'>
         <div className='grid grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-2 '>
