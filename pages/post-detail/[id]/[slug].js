@@ -171,7 +171,8 @@ const Details = () => {
                   router.push(`/streaming?id=${data?.imdb}`)
                 }} >Play Now</button>
                 <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10  border-primary  text-[15px] text-gray-100 rounded bg-gradient-to-r from-green-400 via-blue-500 to-blue-600 hover:text-primary' onClick={() => {
-                  window.open(magnateDownload, '_self')
+                window.open(magnateDownload,"_self");
+                
                 }}  >&#129522; Magnet Download</button>
               </div>
               <div className='align-bottom flex bottom-2 justify-end'>
