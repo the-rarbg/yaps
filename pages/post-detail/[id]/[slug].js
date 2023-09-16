@@ -1,11 +1,10 @@
 import { useRouter } from 'next/router';
-import React, { useEffect, useState, useSyncExternalStore } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Loader } from '../../../Common/Loader';
 import { getListComment, movieDetailsPost, postComment } from '../../../service/service';
 import moment from 'moment';
 import { formatBytes } from '../../../Common/CardExpanded';
 import YouTube from "react-youtube";
-import { FaRegCopy } from 'react-icons/fa'
 import ToastMsg from '../../../Common/ToastMsg';
 const Details = () => {
 
