@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import Select from 'react-select';
 import { formatBytes } from '../Common/CardExpanded';
 
-
+import Head from 'next/head'
 const Upload = () => {
   const [token, setToken] = useState("")
   const [loader, setLoader] = useState(false)
@@ -297,6 +297,9 @@ useEffect(()=>{
 
   return (
     <div>
+       <Head>
+        <title>Upload | Yaps</title>
+      </Head>
       {loader ? <Loader /> : null}
       <div className='w-[50%] pb-5 m-auto'>
 

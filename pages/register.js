@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Loader } from '../Common/Loader';
 import ToastMsg from '../Common/ToastMsg';
 import { registerApi } from '../service/service';
-
+import Head from 'next/head'
 
 const Register = () => {
   const router = useRouter()
@@ -63,6 +63,9 @@ const Register = () => {
   }
   return (
     <div className='flex h-[90vh] justify-center items-center'>
+       <Head>
+        <title>Register | Yaps</title>
+      </Head>
       {loader ? <Loader /> : null}
       <div className='flex-colomn w-[90%] text-center'>
         <h1 className='text-[48px] justify-center'>Register Here</h1>

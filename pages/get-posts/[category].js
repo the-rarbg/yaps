@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 import CardExpanded from '../../Common/CardExpanded';
 import { CompactList, ExpandedList, FilterIcon } from '../../SVG/listing';
 import CardCompact from '../../Common/CardCompact';
-
+import Head from 'next/head'
 
 
 
@@ -113,6 +113,9 @@ const Latest = () => {
 
   return (
     <div className='text-center font-montserrat'>
+       <Head>
+        <title>Browse | Yaps</title>
+      </Head>
       {!movieList.length>0 ? <Loader /> : null}
 
       <div className='w-full justify-end'>

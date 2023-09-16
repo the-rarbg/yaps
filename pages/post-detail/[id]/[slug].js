@@ -6,6 +6,7 @@ import moment from 'moment';
 import { formatBytes } from '../../../Common/CardExpanded';
 import YouTube from "react-youtube";
 import ToastMsg from '../../../Common/ToastMsg';
+import Head from 'next/head'
 const Details = () => {
 
   let trackers = [
@@ -147,7 +148,9 @@ const Details = () => {
   return (
     <div>
       {loader ? <Loader /> : null}
-
+      <Head>
+        <title>Download | Yaps</title>
+      </Head>
       <div className='w-full pb-5 m-auto'>
         <div className="w-full bg-card bg-opacity-10 rounded-lg border-gray-200 border-opacity-30 justify-start flex flex-col md:flex-row">
           <div className="w-[50%] md:w-[15%] mx-auto p-2 relative">

@@ -3,7 +3,7 @@ import Card from '../Common/Card';
 import { Loader } from '../Common/Loader'
 import ToastMsg from '../Common/ToastMsg'
 import { getTorrentList } from '../service/service'
-
+import Head from 'next/head'
 const Dashboard = () => {
 
 
@@ -38,16 +38,18 @@ const Dashboard = () => {
   }
   return (
     <>
+    
+     <Head>
+        <title>Dashboard | Yaps</title>
+      </Head>
       <div className="flex justify-center">
+
         <div className='text-center mt-4 text-[32px] font-bold w-[95%]'>
           {loader ? <Loader /> : null}
           <h1>Dashboard</h1>
           <div className='text-[16px] font-md text-right mt-3'>
             <h1> {"Welcome " + userData?.first_name + " " + userData?.last_name}</h1>
           </div>
-
-
-
         </div>
 
       </div>
