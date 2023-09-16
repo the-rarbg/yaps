@@ -185,20 +185,20 @@ const Details = () => {
           <div className="w-full md:w-[35%] text-gray-200 text-opacity-80 text-[16px] p-2 h-auto flex-1 min-w-0 md:mx-1 relative text-right" >
             <div className='flex flex-col justify-around h-full'>
               <div className='flex flex-col items-end'>
-                <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10 text-gray-100 border-primary my-3 text-[15px] rounded bg-gradient-to-r from-green-400 via-purple-500  to-purple-600  hover:text-primary' onClick={() => {
+                <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10 text-gray-100 border-primary my-3 text-[15px] rounded bg-gradient-to-r from-green-400 via-purple-500  to-purple-600  hover:text-app-dark-blue' onClick={() => {
                   window.open(torrentDownload, '_self')
                 }} >Torrent Download</button>
-                <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10 text-gray-100 border-primary my-3 text-[15px] rounded bg-gradient-to-r from-green-400 via-purple-500  to-purple-600  hover:text-primary' onClick={() => {
+                <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10 text-gray-100 border-primary my-3 text-[15px] rounded bg-gradient-to-r from-[#420075] via-purple-500  to-[#FF0054]  hover:text-app-dark-blue' onClick={() => {
                   router.push(`/streaming?id=${data?.imdb}`)
                 }} >Play Now</button>
 
-                <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10  border-primary  text-[15px] my-3 text-gray-100 rounded bg-gradient-to-r from-green-400 via-blue-500 to-blue-600 hover:text-primary' onClick={() => {
+                <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10  border-primary  text-[15px] my-3 text-gray-100 rounded bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-900 hover:text-app-dark-blue' onClick={() => {
 
                   copyToClipBoard()
 
 
                 }}  >&#129522; Copy To Clipboard   </button>
-                <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10  border-primary  text-[15px] text-gray-100 rounded bg-gradient-to-r from-green-400 via-blue-500 to-blue-600 hover:text-primary' onClick={() => {
+                <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10  border-primary  text-[15px] text-gray-100 rounded bg-gradient-to-r from-green-400 via-blue-500 to-blue-600 hover:text-app-dark-blue' onClick={() => {
 
                   window.open(magnateDownload, '_blank');
 
