@@ -165,13 +165,13 @@ const Details = () => {
             <div className='flex flex-col justify-around h-full'>
               <div className='flex flex-col items-end'>
                 <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10 text-gray-100 border-primary my-4 text-[15px] rounded bg-gradient-to-r from-green-400 via-purple-500  to-purple-600  hover:text-primary' onClick={() => {
-                  window.open(torrentDownload, '_blank')
+                  window.open(torrentDownload, '_self')
                 }} >Torrent Download</button>
                   <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10 text-gray-100 border-primary my-4 text-[15px] rounded bg-gradient-to-r from-green-400 via-purple-500  to-purple-600  hover:text-primary' onClick={() => {
                   router.push(`/streaming?id=${data?.imdb}`)
                 }} >Play Now</button>
                 <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10  border-primary  text-[15px] text-gray-100 rounded bg-gradient-to-r from-green-400 via-blue-500 to-blue-600 hover:text-primary' onClick={() => {
-                  window.open(magnateDownload, '_blank')
+                  window.open(magnateDownload, '_self')
                 }}  >&#129522; Magnet Download</button>
               </div>
               <div className='align-bottom flex bottom-2 justify-end'>

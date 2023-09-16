@@ -563,9 +563,7 @@ background:rgb(11 9 9 / 75%) !important;
   /* box-shadow: 0 0 15px #ffee10; */
   transition: ease-out .3s;
 }
-.hover_effect-1{
-  opacity: 0.6;
-}
+
 .hover_effect-1:hover {
   transform: scale(1.0025);
   box-shadow: 0 0 15px #ffee10;
