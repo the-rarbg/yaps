@@ -57,13 +57,13 @@ const FAQ = () => {
     <div className='max-lg:ml-[10%]  min-[1700px]:ml-[-9%] min-[1900px]:ml-[-15%] min-[2000px]:ml-[-20%] min-[2300px]:ml-[-27%]'>
       <h1 className='mb-10 text-2xl font-bold text-center text-white '>HELP CENTER</h1>
       <div className=' w-[80vw]'>
-        <div className='grid grid-cols-1 gap-x-2 gap-y-6 md:grid-cols-2 '>
+        <div className='grid grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-2 '>
           {faqData.map((item, index) => {
             console.log(index,openIndices.includes(index))
             return (
               <div
                 key={index}
-                className={`cursor-pointer rounded-lg bg-[#171E31] px-4 py-5 shadow-sm shadow-slate-800 `}
+                className={`cursor-pointer rounded-lg bg-[#171E31] px-4 py-5 shadow-sm hover_effect-1 shadow-slate-800 `}
                 onClick={() => toggleAnswer(index)}>
                 <div className='flex items-center justify-between '>
                   <h3 className='text-xl font-light text-white '>
