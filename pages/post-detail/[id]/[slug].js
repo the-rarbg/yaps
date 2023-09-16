@@ -5,6 +5,8 @@ import { getListComment, movieDetailsPost, postComment } from '../../../service/
 import moment from 'moment';
 import { formatBytes } from '../../../Common/CardExpanded';
 import YouTube from "react-youtube";
+import { FaRegCopy } from 'react-icons/fa'
+import ToastMsg from '../../../Common/ToastMsg';
 const Details = () => {
 
   let trackers = [
@@ -123,6 +125,25 @@ const Details = () => {
       autoplay: 0,
     },
   };
+  const [disabledToast,setDisabledToast]=useState(false)
+  const copyToClipBoard = async() => {
+ if(disabledToast){
+  return
+  }
+    try {
+
+      await navigator.clipboard.writeText(magnateDownload);
+      ToastMsg("Copied!","success")
+      setDisabledToast(true)
+      setTimeout(()=>{
+        setDisabledToast(false)
+      },3000)
+    } 
+    catch (err) {
+      console.log("pp",err)
+      ToastMsg('Failed to copy!',"error");
+    }
+  };
 
   return (
     <div>
@@ -137,7 +158,7 @@ const Details = () => {
           <div className="w-[94%] md:w-[50%] flex flex-col justify-around text-gray-200 text-opacity-80 text-[16px] p-2 h-auto  long-and-truncated ">
             <h1 >{data?.name}</h1>
             <div className='flex space-x-4 '>
-              <a  href={`/get-posts/category:${data?.category_str}`}  className='cursor-pointer px-2 bg-primary/10 text-primary border-primary my-4 text-xs hover:bg-primary/30' style={{ border: "none", fontWeight: "400" }}>{data?.category_str}</a>
+              <a href={`/get-posts/category:${data?.category_str}`} className='cursor-pointer px-2 bg-primary/10 text-primary border-primary my-4 text-xs hover:bg-primary/30' style={{ border: "none", fontWeight: "400" }}>{data?.category_str}</a>
               <span className='px-2 bg-primary/10 text-primary border-primary my-4 text-xs hover:bg-primary/30' style={{ border: "none", fontWeight: "400" }}> &#128077; {data?.imdb_data?.rating}</span>
               {/* <span className='px-2 bg-primary/10 text-primary border-primary my-4 text-xs hover:bg-primary/30' style={{ border: "none", fontWeight: "400" }}> &#x1F44D; 0</span> */}
             </div>
@@ -164,17 +185,30 @@ const Details = () => {
           <div className="w-full md:w-[35%] text-gray-200 text-opacity-80 text-[16px] p-2 h-auto flex-1 min-w-0 md:mx-1 relative text-right" >
             <div className='flex flex-col justify-around h-full'>
               <div className='flex flex-col items-end'>
-                <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10 text-gray-100 border-primary my-4 text-[15px] rounded bg-gradient-to-r from-green-400 via-purple-500  to-purple-600  hover:text-primary' onClick={() => {
+                <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10 text-gray-100 border-primary my-3 text-[15px] rounded bg-gradient-to-r from-green-400 via-purple-500  to-purple-600  hover:text-primary' onClick={() => {
                   window.open(torrentDownload, '_self')
                 }} >Torrent Download</button>
-                  <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10 text-gray-100 border-primary my-4 text-[15px] rounded bg-gradient-to-r from-green-400 via-purple-500  to-purple-600  hover:text-primary' onClick={() => {
+                <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10 text-gray-100 border-primary my-3 text-[15px] rounded bg-gradient-to-r from-green-400 via-purple-500  to-purple-600  hover:text-primary' onClick={() => {
                   router.push(`/streaming?id=${data?.imdb}`)
                 }} >Play Now</button>
+
+                <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10  border-primary  text-[15px] my-3 text-gray-100 rounded bg-gradient-to-r from-green-400 via-blue-500 to-blue-600 hover:text-primary' onClick={() => {
+
+                  copyToClipBoard()
+
+
+                }}  >&#129522; Copy To Clipboard   </button>
                 <button className='w-full xl:w-[70%] px-[2rem] py-2 bg-primary/10  border-primary  text-[15px] text-gray-100 rounded bg-gradient-to-r from-green-400 via-blue-500 to-blue-600 hover:text-primary' onClick={() => {
-                window.open(magnateDownload,"_self");
-                
-                }}  >&#129522; Magnet Download</button>
+
+                  window.open(magnateDownload, '_blank');
+
+
+                }}  >&#129522; Magnet Download  </button>
+
+
+
               </div>
+
               <div className='align-bottom flex bottom-2 justify-end'>
                 <button className='px-[1.4rem] w-[50%] xl:w-[35%] py-2 bg-primary/10 text-primary rounded border-primary mr-[0.4rem]  text-[13px] hover:bg-primary/30 mt-4' style={{ border: "none", fontWeight: "400" }} onClick={() => {
                   window.location.reload()

@@ -4,7 +4,7 @@ import { RecoilRoot } from 'recoil'
 import Layout from '../components/Layout'
 import '../styles/globals.css'
 import '../styles/nprogress.css'
-
+import { ToastContainer } from 'react-toastify';
 NProgress.configure({ showSpinner: false })
 Router.events.on('routeChangeStart', () => NProgress.start())
 Router.events.on('routeChangeComplete', () => NProgress.done())
@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <RecoilRoot>
       <Layout>
+      <ToastContainer />
         <Component {...pageProps} />
       </Layout>
     </RecoilRoot>
