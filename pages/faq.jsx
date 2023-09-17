@@ -56,24 +56,23 @@ const FAQ = () => {
 
   return (
     <div className='max-lg:ml-[10%]  min-[1700px]:ml-[-9%] min-[1900px]:ml-[-15%] min-[2000px]:ml-[-20%] min-[2300px]:ml-[-27%]'>
-       <Head>
+      <Head>
         <title>Faq | Yaps</title>
       </Head>
-      <h1 className='mb-10 text-2xl font-bold text-center text-white '>HELP CENTER</h1>
+      <h1 className='mb-10 text-center text-2xl font-bold text-white '>
+        HELP CENTER
+      </h1>
       <div className=' w-[80vw]'>
         <div className='grid grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-2 '>
           {faqData.map((item, index) => {
-            console.log(index,openIndices.includes(index))
             return (
               <div
                 key={index}
-                className={`cursor-pointer rounded-lg bg-[#171E31] px-4 py-5 shadow-sm hover_effect-1 shadow-slate-800 `}
+                className={`hover_effect-1 cursor-pointer rounded-lg bg-[#171E31] px-4 py-5 shadow-sm shadow-slate-800 `}
                 onClick={() => toggleAnswer(index)}>
-                <div className='flex items-center justify-between '>
-                  <h3 className='text-xl font-light text-white '>
-                    {item.question}
-                  </h3>
-                </div>
+                <h3 className='text-xl font-light text-white '>
+                  {item.question}
+                </h3>
                 {openIndices.includes(index) && (
                   <div className='mt-6 text-gray-500'>{item.answer}</div>
                 )}
