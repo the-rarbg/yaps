@@ -71,19 +71,19 @@ const Register = () => {
         <h1 className='text-[48px] justify-center'>Register Here</h1>
         <form onSubmit={handleSubmit}>
           <div className='w-4/12 mx-auto flex my-3 items-center border-b-[1px] border-primary px-1'>
-            <input value={formInput?.first_name} maxLength={35} name="first_name" type='text' className='bg-transparent w-full py-4 font-light text-lg outline-none  placeholder:font-montserrat font-montserrat' onChange={handleInput} placeholder='Enter First Name ' />
+            <input value={formInput?.first_name} maxLength={35} name="first_name" type='text' className='text-app-dark-blue dark:text-app-pure-white dark:placeholder:text-app-pure-white placeholder:text-app-dark-blue bg-transparent w-full py-4 font-light text-lg outline-none  placeholder:font-montserrat font-montserrat' onChange={handleInput} placeholder='Enter First Name ' />
           </div>
           <div className='w-4/12 mx-auto flex my-3 items-center border-b-[1px] border-primary px-1'>
-            <input value={formInput?.last_name} maxLength={35} name="last_name" type='text' className='bg-transparent w-full py-4 font-light text-lg outline-none  placeholder:font-montserrat font-montserrat' onChange={handleInput} placeholder='Enter Last Name ' />
+            <input value={formInput?.last_name} maxLength={35} name="last_name" type='text' className='text-app-dark-blue dark:text-app-pure-white dark:placeholder:text-app-pure-white placeholder:text-app-dark-blue bg-transparent w-full py-4 font-light text-lg outline-none  placeholder:font-montserrat font-montserrat' onChange={handleInput} placeholder='Enter Last Name ' />
           </div>
           <div className='w-4/12 mx-auto flex my-3 items-center border-b-[1px] border-primary px-1'>
-            <input value={formInput?.username} maxLength={35} name="username" type='text' className='bg-transparent w-full py-4 font-light text-lg outline-none  placeholder:font-montserrat font-montserrat' onChange={handleInput} placeholder='Enter username' />
+            <input value={formInput?.username} maxLength={35} name="username" type='text' className='text-app-dark-blue dark:text-app-pure-white dark:placeholder:text-app-pure-white placeholder:text-app-dark-blue bg-transparent w-full py-4 font-light text-lg outline-none  placeholder:font-montserrat font-montserrat' onChange={handleInput} placeholder='Enter username' />
           </div>
           <div className='w-4/12 mx-auto flex my-3 items-center border-b-[1px] border-primary px-1'>
-            <input value={formInput?.email} maxLength={35} name="email" type='text' className='bg-transparent w-full py-4 font-light text-lg outline-none  placeholder:font-montserrat font-montserrat' onChange={handleInput} placeholder='Enter Email' />
+            <input value={formInput?.email} maxLength={35} name="email" type='text' className='text-app-dark-blue dark:text-app-pure-white dark:placeholder:text-app-pure-white placeholder:text-app-dark-blue bg-transparent w-full py-4 font-light text-lg outline-none  placeholder:font-montserrat font-montserrat' onChange={handleInput} placeholder='Enter Email' />
           </div>
           <div className='w-4/12 mx-auto flex my-3 items-center border-b-[1px] border-primary px-1'>
-            <input value={formInput?.password} maxLength={50} name="password" type='password' className='bg-transparent w-full py-4 font-light text-lg outline-none  placeholder:font-montserrat font-montserrat' onChange={handleInput} placeholder='Enter Password ' />
+            <input value={formInput?.password} maxLength={50} name="password" type='password' className='text-app-dark-blue dark:text-app-pure-white dark:placeholder:text-app-pure-white placeholder:text-app-dark-blue bg-transparent w-full py-4 font-light text-lg outline-none  placeholder:font-montserrat font-montserrat' onChange={handleInput} placeholder='Enter Password ' />
           </div>
 
           <button className='px-[50px] py-[0.35rem] bg-primary/10 text-primary border-primary my-4 text-md hover:bg-primary/30' style={{ border: "solid 0.5px", fontWeight: "400" }} type="submit" >Submit</button>

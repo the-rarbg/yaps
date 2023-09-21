@@ -152,7 +152,7 @@ const Details = () => {
         <title>{data?.name} | Yaps</title>
       </Head>
       <div className='w-full pb-5 m-auto'>
-        <div className="w-full bg-card bg-opacity-10 rounded-lg border-gray-200 border-opacity-30 justify-start flex flex-col md:flex-row">
+        <div className="w-full bg-white dark:dark:bg-card bg-white bg-opacity-10 rounded-lg border-gray-200 border-opacity-30 justify-start flex flex-col md:flex-row">
           <div className="w-[50%] md:w-[15%] mx-auto p-2 relative">
             <img src={data?.thumbnail ? data?.thumbnail : "https://i.therarbg.com/np.jpg"} width={800} height={100} alt='movie' />
           </div>
@@ -229,7 +229,7 @@ const Details = () => {
               <span className={`cursor-pointer mb-[5px]  px-[0.5rem] rounded  ${highligth === "Trackers" ? "bg-primary/10" : ""}`} onClick={() => setHighLight("Trackers")} >Trackers</span>
               <span className={`cursor-pointer mb-[5px]  px-[0.5rem] rounded  ${highligth === "More" ? "bg-primary/10" : ""}`} onClick={() => setHighLight("More")} >More Info</span>
             </div>
-            <div className='p-2 text-gray-300 overflow-y-scroll bg-card bg-opacity-10 h-[300px] rounded-lg border-gray-200 border-opacity-30' style={{ fontSize: "14px" }}>
+            <div className='p-2 text-gray-300 overflow-y-scroll dark:bg-card bg-white bg-opacity-10 h-[300px] rounded-lg border-gray-200 border-opacity-30' style={{ fontSize: "14px" }}>
               {
                 trackers.map((item, index) => {
                   return (
@@ -254,7 +254,7 @@ const Details = () => {
 
           <div className='text-gray-300'>
             <span className='pl-5'>Similar Torrents</span>
-            <div className='bg-card pt-2 w-full bg-opacity-10 overflow-y-scroll rounded-lg  h-[300px] border-gray-200 border-opacity-30' style={{ marginTop: '17px' }}>
+            <div className='dark:bg-card bg-white pt-2 w-full bg-opacity-10 overflow-y-scroll rounded-lg  h-[300px] border-gray-200 border-opacity-30' style={{ marginTop: '17px' }}>
               {data?.recomendations.length > 0 ?
                 data?.recomendations?.map((item, index) => {
                   return (
@@ -289,12 +289,12 @@ const Details = () => {
 
         </div>
 
-        <div className="w-full mt-[2rem] p-10 bg-card bg-opacity-10 rounded-lg border-gray-200 border-opacity-30 justify-start inline-grid relative">
+        <div className="w-full mt-[2rem] p-10 dark:bg-card bg-white bg-opacity-10 rounded-lg border-gray-200 border-opacity-30 justify-start inline-grid relative">
           <div className='mb-2  w-[90%]'>
             {
               commentList?.map((item, index) => {
                 return (
-                  <div key={index} className='p-3 bg-card bg-opacity-10 rounded-lg border-gray-200 border-opacity-30'>
+                  <div key={index} className='p-3 dark:bg-card bg-white bg-opacity-10 rounded-lg border-gray-200 border-opacity-30'>
                     <h1>{item?.info?.user}:</h1><span>
                       {item?.comment || "This IS A GOOD movie"}
                     </span>
@@ -304,7 +304,7 @@ const Details = () => {
             }
           </div>
           <div className='mb-2 w-[90%]'>
-            <input type="text" className='w-full  border-gray-200 w-[90%] rounded border-opacity-30 text-[12px] bg-card bg-opacity-10 p-2 px-3 text-gray-500' onChange={(e) => setComment(e.target.value)} placeholder="Write your comments here" />
+            <input type="text" className='w-full  border-gray-200 w-[90%] rounded border-opacity-30 text-[12px] dark:bg-card bg-white bg-opacity-10 p-2 px-3 text-gray-500' onChange={(e) => setComment(e.target.value)} placeholder="Write your comments here" />
             <button onClick={postCommentInfo} className='px-2 py-[2.5px] rounded w-[100px] bg-primary/10 text-primary border-primary my-4 text-xs hover:bg-primary/30' style={{ border: "solid 0.5px", fontWeight: "400" }} >POST</button>
           </div>
         </div>

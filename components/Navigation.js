@@ -31,8 +31,13 @@ export default function Navigation() {
         onClick={() => setIsOpen(false)}
         className={`  overlay backdrop ${isOpen ? 'active' : ''}`}></div>
       <div
+<<<<<<< Updated upstream
         className={` sidebar backdrop  hide-scrollbar   ${
           isOpen ? 'active ' : ''
+=======
+        className={` sidebar backdrop hide-scrollbar active ${
+          isOpen ? 'translate-x-0' : 'translate-x-[-100%]'
+>>>>>>> Stashed changes
         } `}>
         <nav>
           <ul className='ml-2 mt-4 '>

@@ -1,6 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
@@ -15,6 +16,7 @@ module.exports = {
         circles: "url('/assets/images/background-cicles.png')",
       },
       colors: {
+        "light-white":"#e3e4e8",
         "background": "#0D0F0B",
         "background-header": "#131313",
         "primary": "#2f6af5",

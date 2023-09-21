@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import useSWR from 'swr'
 import FilmCasts from '../../components/FilmCasts'
 import FilmGenres from '../../components/FilmGenres'
@@ -86,10 +86,6 @@ const handleClose =()=>{
             </section>
 
           </section>
-
-        
-
-
           {movie?.imdb?.imdb?.video_list[0]?.key ? <div className='text-gray-300'>
            
             <YouTube videoId={movie?.imdb?.imdb?.video_list[0]?.key} style={{ borderRadius: "1px" }}

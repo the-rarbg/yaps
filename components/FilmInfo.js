@@ -10,41 +10,41 @@ export default function FilmInfo({
   return (
     <>
       {media_type === 'movie' ? (
-        <div className='mb-6 flex items-center justify-between text-left text-sm lg:w-10/12 lg:text-lg'>
+        <div className='mb-6 flex items-center dark:text-app-placeholder text-app-dark-blue justify-between text-left text-sm lg:w-10/12 lg:text-lg'>
           <div>
-            <p className='mb-1 text-app-placeholder'>Length</p>
-            <p className='text-app-pure-white'>{length}</p>
+            <p className='mb-1 '>Length</p>
+            <p className=''>{length.split("?")[0]}</p>
           </div>
           <div>
-            <p className='mb-1 text-app-placeholder'>Language</p>
-            <p className='text-app-pure-white'>{language}</p>
+            <p className='mb-1 '>Language</p>
+            <p className=''>{language}</p>
           </div>
           <div>
-            <p className='mb-1 text-app-placeholder'>Year</p>
-            <p className='text-app-pure-white'>{year}</p>
+            <p className='mb-1'>Year</p>
+            <p className=''>{year}</p>
           </div>
           <div>
-            <p className='mb-1 text-app-placeholder'>Status</p>
-            <p className='text-app-pure-white'>{status}</p>
+            <p className='mb-1'>Status</p>
+            <p className=''>{status}</p>
           </div>
         </div>
       ) : (
-        <div className='mb-6 flex items-center justify-between text-left text-sm lg:w-11/12 lg:text-lg'>
+        <div className='mb-6 flex items-center justify-between text-left  dark:text-app-placeholder text-app-dark-blue  text-sm lg:w-11/12 lg:text-lg'>
           <div>
-            <p className='mb-1 text-app-placeholder'>Language</p>
-            <p className='text-app-pure-white'>{language}</p>
+            <p className='mb-1 '>Language</p>
+            <p className=''>{language}</p>
           </div>
           <div>
-            <p className='mb-1 text-app-placeholder'>First Air</p>
-            <p className='text-app-pure-white'>{firstAir}</p>
+            <p className='mb-1 '>First Air</p>
+            <p className=''>{firstAir}</p>
           </div>
           <div>
-            <p className='mb-1 text-app-placeholder'>Last Air</p>
-            <p className='text-app-pure-white'>{lastAir}</p>
+            <p className='mb-1 '>Last Air</p>
+            <p className=''>{lastAir}</p>
           </div>
           <div>
-            <p className='mb-1 text-app-placeholder'>Status</p>
-            <p className='text-app-pure-white'>{status}</p>
+            <p className='mb-1 '>Status</p>
+            <p className=''>{status}</p>
           </div>
         </div>
       )}

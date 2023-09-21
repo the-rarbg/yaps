@@ -66,7 +66,7 @@ const LendingPage = () => {
 
       </div>
       <div className='flex justify-center m-2 w-full relative '>
-        <div className=" bg-card w-[54%] rounded-xl  justify-center align-middle p-2">
+        <div className=" dark:bg-card bg-app-semi-dark-blue w-[54%] rounded-xl  justify-center align-middle p-2">
           <span>Top 10 Movies</span>
         </div>
       </div>
@@ -85,7 +85,7 @@ const LendingPage = () => {
         <br/>
         <br/>
         <div className='w-auto mb-[3rem]  p-2 relative text-center flex rounded-xl overflow-hidden'>
-          
+
         <div className={`flex  flex-wrap py-8 justify-evenly`}>
           {movieList?.Movies?.map((item, index) => {
             if (ListType === 'compact') {
@@ -106,7 +106,7 @@ const LendingPage = () => {
 
 
       <div className='flex m-5 justify-center'>
-        <div className="flex bg-card w-[50%] rounded-xl  justify-center align-middle p-2">
+        <div className="flex  dark:bg-card bg-app-semi-dark-blue  w-[50%] rounded-xl  justify-center align-middle p-2">
           <span>Top 10 Anime Torrents</span>
         </div>
       </div>
@@ -126,7 +126,7 @@ const LendingPage = () => {
         </div>
       </div>
       <div className='flex m-5 justify-center'>
-        <div className="flex bg-card w-[50%] rounded-xl  justify-center align-middle p-2">
+        <div className="flex  dark:bg-card bg-app-semi-dark-blue  w-[50%] rounded-xl  justify-center align-middle p-2">
           <span>Top 10 TV Shows</span>
         </div>
       </div>
@@ -150,7 +150,7 @@ const LendingPage = () => {
 
 
       <div className='flex m-5 justify-center'>
-        <div className="flex bg-card w-[50%] rounded-xl  justify-center align-middle p-2">
+        <div className="flex  dark:bg-card bg-app-semi-dark-blue  w-[50%] rounded-xl  justify-center align-middle p-2">
           <span>Top 10 XXX</span>
         </div>
       </div>
@@ -177,7 +177,7 @@ const LendingPage = () => {
 
 
       <div className='flex m-5 justify-center'>
-        <div className="flex bg-card w-[50%] rounded-xl  justify-center align-middle p-2">
+        <div className="flex  dark:bg-card bg-app-semi-dark-blue w-[50%] rounded-xl  justify-center align-middle p-2">
           <span>Top 10 Music Torrents</span>
         
 
@@ -204,7 +204,7 @@ const LendingPage = () => {
 
 
       <div className='flex m-5 justify-center'>
-        <div className="flex bg-card w-[50%] rounded-xl  justify-center align-middle p-2">
+        <div className="flex dark:bg-card bg-app-semi-dark-blue w-[50%] rounded-xl  justify-center align-middle p-2">
           <span>Top 10 Books Torrents</span>
         
 
@@ -234,7 +234,7 @@ const LendingPage = () => {
 
 
       <div className='flex m-5 justify-center'>
-        <div className="flex bg-card w-[50%] rounded-xl  justify-center align-middle p-2">
+        <div className="flex dark:bg-card bg-app-semi-dark-blue w-[50%] rounded-xl  justify-center align-middle p-2">
           <span>Top 10 Games Torrents</span>
         
 
@@ -261,7 +261,7 @@ const LendingPage = () => {
 
 
       <div className='flex m-5 justify-center'>
-        <div className="flex bg-card w-[50%] rounded-xl  justify-center align-middle p-2">
+        <div className="flex dark:bg-card bg-app-semi-dark-blue w-[50%] rounded-xl  justify-center align-middle p-2">
           <span>Top 10 Documentaries Torrents</span>
         
 
@@ -286,7 +286,7 @@ const LendingPage = () => {
         </div>
       </div>
       <div className='flex m-5 justify-center'>
-        <div className="flex bg-card w-[50%] rounded-xl  justify-center align-middle p-2">
+        <div className="flex dark:bg-card bg-app-semi-dark-blue w-[50%] rounded-xl  justify-center align-middle p-2">
           <span>Top 10 Apps Torrents</span>
         
 

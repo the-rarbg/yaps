@@ -1,5 +1,4 @@
 import useSWR from 'swr'
-import { getUrl2 } from '../lib/tmdb'
 import { fetcher, renderResults, sliceArray } from '../utils'
 import CardNormal from './CardNormal'
 import Heading from './Heading'
@@ -26,7 +25,7 @@ export default function Collection({
         <section
           className={
             isTrending
-              ? 'mb-6 h-full w-full overflow-hidden md:mb-10 lg:overflow-visible'
+              ? 'mb-6 h-full w-full overflow-hidden md:mb-10 lg:overflow-visible '
               : 'mb-6 md:mb-10'
           }>
           <Heading

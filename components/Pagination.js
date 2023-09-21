@@ -19,14 +19,14 @@ export default function Pagination({
           className={
             isFirst
               ? 'disabled-link flex cursor-not-allowed items-center justify-center rounded-lg rounded-r-none border-2 py-2 pl-4 pr-6 font-light'
-              : 'flex items-center justify-center rounded-lg rounded-r-none border-2 py-2 pl-4 pr-6 font-light hover:bg-app-pure-white hover:text-app-dark-blue'
+              : 'flex items-center justify-center rounded-lg rounded-r-none border-2 py-2 pl-4 pr-6 font-light hover:bg-light-white hover:text-app-dark-blue'
           }
         >
           <TiArrowLeftThick className='mr-2' />
           <span>Prev</span>
         </a>
       </Link>
-      <p className='border-t-2 border-b-2 bg-app-pure-white py-2 px-4 text-app-dark-blue'>
+      <p className='border-t-2 border-b-2 bg-light-white dark:bg-app-greyish-blue py-2 px-4 dark:text-app-pure-white text-app-dark-blue'>
         Page {currentPage} of {totalPages}
       </p>
       <Link href={nextHref} as={nextHref}>
@@ -35,7 +35,7 @@ export default function Pagination({
           className={
             isLast
               ? 'disabled-link flex cursor-not-allowed items-center justify-center rounded-lg rounded-l-none border-2 py-2 pr-4 pl-6 font-light'
-              : 'flex items-center justify-center rounded-lg rounded-l-none border-2 py-2 pr-4 pl-6 font-light hover:bg-app-pure-white hover:text-app-dark-blue'
+              : 'flex items-center justify-center rounded-lg rounded-l-none border-2 py-2 pr-4 pl-6 font-light hover:bg-light-white hover:text-app-dark-blue'
           }
         >
           <span>Next</span>

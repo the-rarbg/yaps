@@ -11,12 +11,12 @@ export default function Heading({
     <div className='mb-4 flex items-end justify-between sm:mb-6'>
       {isHomePage ? (
         <div className='flex items-end'>
-          <h2 className='section-title py-px sm:py-0'>{title}</h2>
+          <h2 className='section-title py-px sm:py-0 text-app-dark-blue dark:text-app-pure-white'>{title}</h2>
          {media_type&& <p
             className={
               media_type === 'movie'
-                ? 'ml-2 rounded-md border-2 py-px px-2 text-[8px] font-light uppercase tracking-wider text-app-pure-white sm:ml-4 sm:text-[10px]'
-                : 'ml-2 rounded-md border-2 border-app-pure-white bg-app-pure-white py-px px-2 text-[8px] font-light uppercase tracking-wider text-app-dark-blue sm:ml-4 sm:text-[10px] '
+                ? 'ml-2 rounded-md border-2 py-px px-2 text-[8px] font-light border-app-dark-blue dark:border-app-pure-white uppercase tracking-wider text-app-dark-blue dark:text-app-pure-white sm:ml-4 sm:text-[10px]'
+                : 'ml-2 rounded-md border-2 border-app-dark-blue dark:border-app-pure-white dark:bg-app-dark-blue bg-light-white py-px px-2 text-[8px] font-light uppercase tracking-wider dark:text-app-pure-white text-app-dark-blue sm:ml-4 sm:text-[10px] '
             }>
             { media_type}
           </p>}

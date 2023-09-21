@@ -59,9 +59,13 @@ const FAQ = () => {
       <Head>
         <title>Faq | Yaps</title>
       </Head>
+<<<<<<< Updated upstream
       <h1 className='mb-10 text-center text-2xl font-bold text-white '>
         HELP CENTER
       </h1>
+=======
+      <h1 className='mb-10 text-2xl font-bold text-center text-app-dark-blue dark:text-white '>HELP CENTER</h1>
+>>>>>>> Stashed changes
       <div className=' w-[80vw]'>
         <div className='grid grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-2 '>
           {faqData.map((item, index) => {
