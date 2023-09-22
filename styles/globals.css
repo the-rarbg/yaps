@@ -44,22 +44,13 @@
   }
 
   .active-link {
-<<<<<<< Updated upstream
     @apply fill-app-pure-white transition duration-150 ease-linear fill-app-red;
-=======
-    @apply fill-app-pure-white fill-app-red transition duration-150 ease-linear;
->>>>>>> Stashed changes
   }
 
   .disabled-link {
     pointer-events: none;
   }
 
-<<<<<<< Updated upstream
-
-
-=======
->>>>>>> Stashed changes
   /* Custom horizontal scroll for trending section */
   .h-scroll::-webkit-scrollbar {
     border-radius: 10px;
@@ -176,18 +167,10 @@
 }
 
 input::placeholder {
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
   opacity: 0.5;
 }
 
 input {
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
   opacity: 0.9;
 }
 
@@ -213,21 +196,13 @@ a {
   position: relative;
 }
 
-<<<<<<< Updated upstream
-.checkbox>span {
-=======
 .checkbox > span {
->>>>>>> Stashed changes
   color: #fff;
   padding: 0 1.3rem 1rem 0.5rem;
   font-size: 13px;
 }
 
-<<<<<<< Updated upstream
-.checkbox>input {
-=======
 .checkbox > input {
->>>>>>> Stashed changes
   margin-top: 2px;
   height: 14px;
   width: 14px;
@@ -240,7 +215,6 @@ a {
   transition-duration: 0.3s;
   background-color: transparent;
   cursor: pointer;
-<<<<<<< Updated upstream
 }
 
 .checkbox>input:checked {
@@ -261,7 +235,6 @@ a {
 
 .checkbox>input:active {
   border: 2px solid #34495E;
-=======
 }
 
 .checkbox > input:checked {
@@ -282,7 +255,6 @@ a {
 
 .checkbox > input:active {
   border: 2px solid #34495e;
->>>>>>> Stashed changes
 }
 
 .long-and-truncated {
@@ -442,11 +414,7 @@ a {
 }
 
 ._2kL0S {
-<<<<<<< Updated upstream
   background: #41B883 !important;
-=======
-  background: #41b883 !important;
->>>>>>> Stashed changes
 }
 
 /* ._2Jtxm { background-color: #e7eaf3; } */
@@ -471,16 +439,11 @@ a {
 table,
 tr,
 td {
-<<<<<<< Updated upstream
-  font-family: "Roboto", sans-serif;
-=======
   font-family: 'Roboto', sans-serif;
->>>>>>> Stashed changes
 }
 
 .react-select-container .react-select__control {
   background: rgb(74 85 104 / 1);
-<<<<<<< Updated upstream
   background-color: #34495E;
 }
 
@@ -515,7 +478,6 @@ td {
   background: rgb(11 9 9 / 75%) !important;
 }
 
-=======
   background-color: #34495e;
 }
 
@@ -547,7 +509,6 @@ td {
   background: rgb(11 9 9 / 75%) !important;
 }
 
->>>>>>> Stashed changes
 .row-custom {
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -555,23 +516,13 @@ td {
   overflow: hidden;
   width: 250px;
 
-<<<<<<< Updated upstream
   @media(max-width: 767px) {
-=======
-  @media (max-width: 767px) {
->>>>>>> Stashed changes
     width: 90%;
   }
 }
 
 .row-custom-tren {
-<<<<<<< Updated upstream
-
-
-  @media(max-width: 767px) {
-=======
   @media (max-width: 767px) {
->>>>>>> Stashed changes
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -580,24 +531,15 @@ td {
 }
 
 .bgfilter {
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
   border-radius: 20px;
   padding-top: 1px;
   padding-bottom: 1px;
   margin-right: 12px;
   max-width: 100px;
   justify-content: space-around;
-<<<<<<< Updated upstream
-
   @media(min-width: 767px) {
     margin-left: 17%;
   }
-=======
->>>>>>> Stashed changes
-
   @media (min-width: 767px) {
     margin-left: 17%;
   }
@@ -605,19 +547,12 @@ td {
 
 .shift-right {
   justify-content: end;
-
-<<<<<<< Updated upstream
-  @media(max-width: 767px) {
-=======
   @media (max-width: 767px) {
->>>>>>> Stashed changes
     justify-content: center;
   }
 }
 
 .zoomcss {
-<<<<<<< Updated upstream
-
   zoom: 0.;
 
   @media(max-width: 767px) {
@@ -641,7 +576,6 @@ td {
 
 .gap {
   @media(max-width: 767px) {
-=======
   zoom: 0;
 
   @media (max-width: 767px) {
@@ -665,17 +599,12 @@ td {
 
 .gap {
   @media (max-width: 767px) {
->>>>>>> Stashed changes
     justify-content: space-between;
   }
 }
 
 .mright {
-<<<<<<< Updated upstream
-  @media(min-width: 700px) {
-=======
   @media (min-width: 700px) {
->>>>>>> Stashed changes
     margin-left: 21%;
   }
 }
@@ -689,14 +618,11 @@ td {
 }
 
 .bg-card {
-<<<<<<< Updated upstream
   background-color: #171e30;
-=======
   background-color: #171e26;
 }
 .bg-light-card {
   background-color: lightblue;
->>>>>>> Stashed changes
 }
 
 .imagefit {
@@ -716,21 +642,15 @@ td {
 .zoom {
   zoom: 1;
 
-<<<<<<< Updated upstream
-  @media(max-width: 767px) {
-=======
   @media (max-width: 767px) {
->>>>>>> Stashed changes
     zoom: 0.5;
   }
 }
 
 .mt-6 {
-<<<<<<< Updated upstream
   @media(min-width: 767px) {
 =======
   @media (min-width: 767px) {
->>>>>>> Stashed changes
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -749,19 +669,12 @@ td {
   -webkit-text-fill-color: transparent;
   -webkit-animation: hue 10s infinite linear;
 
-<<<<<<< Updated upstream
   @media(max-width: 767px) {
     font-size: 1.2rem;
   }
 
-  @media(max-width: 348px) {
-=======
-  @media (max-width: 767px) {
-    font-size: 1.2rem;
-  }
 
   @media (max-width: 348px) {
->>>>>>> Stashed changes
     font-size: 0.9rem;
   }
 }
@@ -804,58 +717,32 @@ td {
 .hover_effect-1:hover {
   transform: scale(1.0025);
   box-shadow: 0 0 15px #ffee10;
-<<<<<<< Updated upstream
   transition: ease-out .3s;
 }
 
 
-/* Sidebar.css */
-=======
-  transition: ease-out 0.3s;
-}
->>>>>>> Stashed changes
 .overlay {
   position: fixed;
   opacity: 1;
   top: 0;
   left: 0;
   height: 100%;
-<<<<<<< Updated upstream
-=======
   transform: translateX(-200%);
-
->>>>>>> Stashed changes
   width: 100%;
   background-color: #333;
   overflow-x: hidden;
   transition: all 5s;
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 }
 
 .overlay.active {
   opacity: 0;
-<<<<<<< Updated upstream
-  z-index: 10;
-
-}
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -296px;
-=======
-  transform: translateX(0%);
-
   z-index: 10;
 }
+
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
->>>>>>> Stashed changes
   height: 100%;
   width: 296px;
   overflow-x: hidden;
@@ -864,9 +751,6 @@ td {
   -webkit-backdrop-filter: blur(100px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(16, 20, 30, 0.25);
-<<<<<<< Updated upstream
-
-
 }
 
 .sidebar.active {
@@ -874,7 +758,6 @@ td {
   border-right: #5a6a90 solid 1px;
   z-index: 89;
 }
-=======
 }
 /*
 .sidebar.active {
@@ -883,7 +766,6 @@ td {
   z-index: 89;
 }
 */
->>>>>>> Stashed changes
 
 /* Transparent Backdrop */
 .backdrop {
@@ -898,10 +780,6 @@ td {
   display: block;
 }
 
-<<<<<<< Updated upstream
-/* Hide the scrollbar for both horizontal and vertical scrolling */
-=======
->>>>>>> Stashed changes
 .hide-scrollbar {
   scrollbar-width: none;
   /* Firefox */
@@ -909,7 +787,6 @@ td {
   /* Internet Explorer and Edge */
 }
 
-<<<<<<< Updated upstream
 /* Hide the scrollbar for WebKit based browsers like Chrome and Safari */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
@@ -918,4 +795,3 @@ td {
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
->>>>>>> Stashed changes
