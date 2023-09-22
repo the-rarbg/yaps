@@ -10,7 +10,7 @@ const Tv = () => {
     <Head>
         <title>Play Tv | Yaps</title>
       </Head>
-      <iframe src={`https://vidsrc.me/embed/tv?${tmdb?(`tmdb=${tmdb}`):(`imdb=${id}`)}`} frameBorder="0" style={{width: '100%' ,height: '92vh'}} allowfullscreen="allowfullscreen"></iframe>
+      <iframe src={`https://vidsrc.me/embed/tv?${tmdb?(`tmdb=${tmdb}`):(`imdb=${id}`)}&color=5a6990`} frameBorder="0" style={{width: '100%' ,height: '92vh'}} allowfullscreen="allowfullscreen"></iframe>
     </>
   )
 }

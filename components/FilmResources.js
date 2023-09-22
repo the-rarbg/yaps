@@ -2,6 +2,7 @@
 import { useRouter } from 'next/router'
 import {  useState } from 'react'
 import { FaImdb, FaLink, FaPlay } from 'react-icons/fa'
+import {BsDownload} from "react-icons/bs";
 
 
 
@@ -22,10 +23,11 @@ const handlegetLink =()=>{
        <a
           
        onClick={()=>handlegetLink()}
-       className='mb-4 mr-4 flex w-40 cursor-pointer items-center justify-between rounded-md border-none bg-app-greyish-blue py-3 px-8 text-sm font-light text-app-pure-white hover:bg-app-pure-white hover:text-app-dark-blue'
+       className='mb-4 mr-4 flex w-40 cursor-pointer items-center justify-between rounded-md border-none bg-app-dark-blue dark:bg-app-greyish-blue py-3 px-8 text-sm font-light text-app-pure-white hover:bg-app-dark-blue hover:text-blue-300 dark:hover:bg-light-white dark:hover:text-app-dark-blue'
       
        rel='noreferrer'
      >
+           <BsDownload className={"text-base"}/>
        <p>Download</p>
      
      </a>
@@ -55,7 +57,7 @@ const handlegetLink =()=>{
       {/* {!props?.imdb ? null : (
         <a
           href={`https://www.imdb.com/title/${props?.imdb}`}
-          className='mb-4 flex w-40 cursor-pointer items-center justify-between rounded-md border-none bg-app-greyish-blue py-3 px-8 text-sm font-light text-app-pure-white hover:bg-app-pure-white hover:text-app-dark-blue'
+          className='mb-4 flex w-40 cursor-pointer items-center justify-between rounded-md border-none bg-app-greyish-blue py-3 px-8 text-sm font-light text-app-pure-white hover:bg-light-white hover:text-app-dark-blue'
           target='_blank'
           rel='noreferrer'
         >

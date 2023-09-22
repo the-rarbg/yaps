@@ -1,5 +1,7 @@
-import React from 'react';
-import {useRouter } from 'next/router';
+import React, { useEffect } from 'react'
+import { useRouter } from 'next/router'
+import { useTheme } from 'next-themes'
+
 export function formatBytes(bytes, decimals = 1) {
   if (!+bytes) return '0 Bytes'
 
@@ -12,45 +14,61 @@ export function formatBytes(bytes, decimals = 1) {
   return `${parseFloat((bytes / Math.pow(k, i)).toFixed(dm))} ${sizes[i]}`
 }
 
-
-
-const CardExpanded = (props) => {
-  console.log("pp",props?.blur)
-  const router = useRouter();
-  let name = props.item[`name`];
-  let time = new Date(props.item[`timestamp`]);
+const CardExpanded = props => {
+  const { theme, setTheme } = useTheme()
+  const router = useRouter()
+  let name = props.item[`name`]
+  let time = new Date(props.item[`timestamp`])
   return (
-  <div onClick={()=>{
-   
-    if( props?.blur==true){
-      props?.setBlur(false)
-      return;
-    }
-    let slug =  name.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '');
-     router.push(`/post-detail/${props.item?.eid}/${slug}/`)
-    }} key={props.index} className="my-3  mt-6 zoom overflow-hidden cursor-pointer py-2 bg-card rounded-md fab flex-col justify-center inline-flex  hover:bg-primary/10 hover_effect  hover:border-primary/50 zoomcss" style={{width:"200px"}}>
-    <div className="w-40 h-44 bg-cover imagefit rounded mx-auto justify-center items-center inline-flex" style={{'backgroundImage':`url("${props.item[`thumbnail`] ? props.item[`thumbnail`] : props.categoryId==="XXX"?"https://i.therarbg.com/xnp.jpg": "https://i.therarbg.com/np.jpg"}")`}}>
+    <div
+      onClick={() => {
+        if (props?.blur == true) {
+          props?.setBlur(false)
+          return
+        }
+        let slug = name
+          .toLowerCase()
+          .trim()
+          .replace(/[^\w\s-]/g, '')
+          .replace(/[\s_-]+/g, '-')
+          .replace(/^-+|-+$/g, '')
+        router.push(`/post-detail/${props.item?.eid}/${slug}/`)
+      }}
+      key={props.index}
+      className={`zoom grid_hover_effect my-3 mt-6 scale-125 cursor-pointer overflow-hidden py-2 ${
+        theme === 'dark' ? 'bg-app-semi-dark-blue' : 'bg-app-shady-white'
+      } fab zoomcss inline-flex flex-col justify-center   rounded-md  hover:border-primary/50 hover:dark:bg-primary/10 `}
+      style={{ width: '200px' }}>
+      <div
+        className='imagefit mx-auto inline-flex h-44 w-40 items-center justify-center rounded bg-cover brightness-100'
+        style={{
+          backgroundImage: `url("${
+            props.item[`thumbnail`]
+              ? props.item[`thumbnail`]
+              : props.categoryId === 'XXX'
+              ? 'https://i.therarbg.com/xnp.jpg'
+              : 'https://i.therarbg.com/np.jpg'
+          }")`,
+        }}></div>
+      <br />
+      <div
+        className='k long-and-truncated h-auto w-fit break-all pt-1.5 font-light text-black hover:text-app-dark-blue dark:text-white '
+        style={{ fontSize: '12px' }}>
+        <span>{props?.item?.name}</span>
+      </div>
+      <div
+        className='s long-and-truncated flex h-auto justify-between pt-1.5 font-light text-black hover:text-app-dark-blue dark:text-white '
+        style={{ fontSize: '10px' }}>
+        <span>{props.item['c'] || props.categoryId}</span>
+        <span>・</span>
+        <span>
+          {time.getDate()}-{time.getMonth() + 1}-{time.getFullYear()}
+        </span>
+        <span>・</span>
+        <span>{formatBytes(props.item['size'] || props.item['s'])}</span>
+      </div>
     </div>
-    <br />
-      <div className="text-off-white  h-auto pt-1.5 long-and-truncated font-light w-fit break-all" style={{fontSize:"12px"}}>
-      <span>
-      {props?.item?.name}
-      </span>
-    </div>
-    <div className="flex text-off-white  h-auto pt-1.5 long-and-truncated font-light justify-between" style={{fontSize:"10px"}}>
-      <span >
-        {props.item['c'] || props.categoryId}
-      </span>
-      <span>・</span>
-      <span >
-        {time.getDate()}-{time.getMonth()+1}-{time.getFullYear()}
-      </span>
-      <span>・</span>
-      <span >
-        {formatBytes(props.item['size']||props.item['s'])}
-      </span>
-    </div>
-  </div>);
-};
+  )
+}
 
-export default CardExpanded;
+export default CardExpanded

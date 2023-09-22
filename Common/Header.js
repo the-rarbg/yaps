@@ -46,11 +46,7 @@ useEffect(()=>{
 },[])
   return (
     <div className=''>
-    <header className="hidden bg-background-header/25 text-sm font-light md:flex sticky top-0 font-montserrat backdrop-blur-3xl px-8 md:px-16 justify-between">
-
-
-
-    
+    <header className="hidden dark:bg-background-header/25 bg-white text-sm font-light md:flex sticky top-0 font-montserrat backdrop-blur-3xl px-8 md:px-16 justify-between">
       <span className='mx-6 cursor-pointer hover:text-green-400 text-xl font-semibold my-4' onClick={()=>route.push("/")}>theRARBG</span>
 
       <div className='hidden md:flex mx-auto font-normal items-center'>
@@ -81,7 +77,7 @@ useEffect(()=>{
       }}  >{token?"Logout":"Login"}</button>
     </header>
       {/*Mobile Hamburger Menu */}
-      <div className={`${showNav?"h-screen":"h-[60px]"} transition-all ease-in-out duration-500 z-20   md:hidden bg-background-header/25 w-full fixed top-0 font-montserrat backdrop-blur-3xl px-8 md:px-16 flex flex-col`}>
+      <div className={`${showNav?"h-screen":"h-[60px]"} transition-all ease-in-out duration-500 z-20   md:hidden bg-white dark:bg-background-header/25 w-full fixed top-0 font-montserrat backdrop-blur-3xl px-8 md:px-16 flex flex-col`}>
         <div className='h-[60px] w-full flex justify-between items-center'>
         <span className='mx-6 cursor-pointer hover:text-green-400 text-xl font-semibold' onClick={()=>route.push("/")}>theRARBG</span>
         <img src='/navIcon.png' alt="The Navigation Icon" className='w-8 h-8 cursor-pointer' onClick={() => setShowNav(!showNav)}/>  

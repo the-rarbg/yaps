@@ -20,7 +20,7 @@ export default function CardInfo({
         className={
           isTrending
             ? 'mt-2 mb-1 flex text-[11px] font-light text-app-pure-white md:text-[15px]'
-            : 'mt-2 mb-1 flex text-[11px] font-light text-app-grey md:text-[13px]'
+            : 'mt-2 mb-1 flex text-[11px] font-light text-black dark:text-app-pure-white md:text-[15px]'
         }
       >
         <p>{renderYear(year)}</p>
@@ -43,7 +43,7 @@ export default function CardInfo({
         className={
           isTrending
             ? 'md:heading-sm text-ellips w-[200px] truncate text-sm font-bold capitalize text-app-pure-white sm:w-[420px] md:h-6'
-            : 'md:heading-xs text-ellips w-[150px] truncate text-sm font-bold capitalize text-app-pure-white sm:w-[180px] md:w-[200px] lg:w-[268px]'
+            : 'md:heading-xs text-ellips w-[150px] truncate text-sm font-bold capitalize text-black dark:text-app-pure-white sm:w-[180px] md:w-[200px] lg:w-[268px]'
         }
       >
         {title}
@@ -62,7 +62,7 @@ function renderYear(year) {
 
 function renderCategoryIcon(category) {
   if (category === 'movie') {
-    return <IconCategoryMovie className='pl-1 text-base' />
+    return <IconCategoryMovie className='pl-1 text-base dark:fill-white fill-black ' />
   } else {
     return <IconCategoryTv className='pl-1 text-base' />
   }

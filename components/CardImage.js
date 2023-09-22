@@ -24,7 +24,7 @@ export default function CardImage({ isTrending, src, alt }) {
         />
       </div>
       {/* TODO: Add this back only after the bookmark feature is implemented */}
-      {/* <div className="group absolute top-2 right-2 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-app-dark-blue opacity-50 hover:bg-app-pure-white hover:opacity-100">
+      {/* <div className="group absolute top-2 right-2 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-app-dark-blue opacity-50 hover:bg-light-white hover:opacity-100">
         <IconBookmarkEmpty className="group-hover:app-transition fill-transparent stroke-app-pure-white group-hover:stroke-black" />
       </div> */}
     </div>
