@@ -11,7 +11,7 @@ const Movies = () => {
      <Head>
         <title>Play Movies | Yaps</title>
       </Head>
-      <iframe src={`https://vidsrc.me/embed/movie?${tmdb?`tmdb=${tmdb}`:`imdb=${id}`}`} frameBorder="0" style={{width: '100%' ,height: '92vh'}} allowfullscreen="allowfullscreen"></iframe>
+      <iframe src={`https://vidsrc.me/embed/movie?${tmdb?`tmdb=${tmdb}`:`imdb=${id}&color=fc4544`}`} frameBorder="0" style={{width: '100%' ,height: '92vh'}} allowfullscreen="allowfullscreen"></iframe>
       
     </>
   )

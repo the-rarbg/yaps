@@ -56,7 +56,7 @@ const Dashboard = () => {
       <br />
       <br />
 
-      <div className='w-auto mb-[3rem] mx-4 md:mx-[9rem] bg-card relative text-center flex rounded-xl overflow-hidden'>
+      <div className='w-auto mb-[3rem] mx-4 md:mx-[9rem] dark:bg-card bg-white relative text-center flex rounded-xl overflow-hidden'>
 
         <div className={`flex-1 px-4 flex-wrap py-8 justify-center`}>
           {list.length > 0 ? list?.map((item, index) => {
