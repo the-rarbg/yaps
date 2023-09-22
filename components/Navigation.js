@@ -26,19 +26,19 @@ export default function Navigation() {
   }
 
   return (
-    <nav className=' sticky top-0 z-50 flex items-center justify-between bg-app-semi-dark-blue p-5 md:mx-6 md:mb-[33px] md:mt-6 md:rounded-[10px] lg:fixed lg:left-0 lg:my-12 lg:mr-0 lg:h-5/6 lg:flex-col lg:py-9'>
+    <nav className=' sticky top-0 z-50 flex items-center justify-between  bg-[#e6e6e6] p-5 shadow-md shadow-black dark:bg-app-semi-dark-blue md:mx-6 md:mb-[33px] md:mt-6 md:rounded-[10px] lg:fixed lg:left-0 lg:my-12 lg:mr-0 lg:h-5/6 lg:flex-col lg:py-9'>
       <div
         onClick={() => setIsOpen(false)}
         className={`  overlay backdrop ${isOpen ? 'active' : ''}`}></div>
       <div
-        className={` sidebar backdrop  hide-scrollbar   ${
-          isOpen ? 'active ' : ''
+        className={` sidebar backdrop hide-scrollbar active ${
+          isOpen ? 'translate-x-0' : 'translate-x-[-100%]'
         } `}>
         <nav>
           <ul className='ml-2 mt-4 '>
             <li>
               <button
-                className='duration-400 mb-3 flex items-baseline rounded-full bg-[#5a6a90] px-3  py-1 text-gray-200 hover:bg-gray-600'
+                className='duration-400 mb-3 flex items-baseline rounded-full bg-white  px-3 py-1  text-black hover:bg-gray-600 dark:bg-[#5a6a90] dark:text-gray-200'
                 onClick={() => {
                   setIsOpen(false)
                 }}>
@@ -50,7 +50,7 @@ export default function Navigation() {
             </li>
             <li
               onClick={() => setIsOpen(false)}
-              className='m-2 cursor-pointer rounded-xl border-2 border-gray-900 p-4'>
+              className='m-2 cursor-pointer rounded-xl border-2 border-gray-400 p-4 dark:border-gray-900'>
               <NavigationIcon href='/latest-top-10'>
                 <svg
                   data-tooltip-id='my-tooltip'
@@ -71,7 +71,7 @@ export default function Navigation() {
             </li>
             <li
               onClick={() => setIsOpen(false)}
-              className='m-2 cursor-pointer rounded-xl border-2 border-gray-900 p-4 '>
+              className='m-2 cursor-pointer rounded-xl border-2 border-gray-400 p-4 dark:border-gray-900 '>
               <div
                 className='flex'
                 onClick={() =>
@@ -96,7 +96,7 @@ export default function Navigation() {
             </li>
             <li
               onClick={() => setIsOpen(false)}
-              className='m-2 cursor-pointer rounded-xl border-2 border-gray-900 p-4'>
+              className='m-2 cursor-pointer rounded-xl border-2 border-gray-400 p-4  dark:border-gray-900'>
               <NavigationIcon href='/search'>
                 <svg
                   data-tooltip-id='my-tooltip'
@@ -105,7 +105,9 @@ export default function Navigation() {
                   height='24'
                   fill='currentColor'
                   className={
-                    router.pathname == '/search' ? 'active-link' : 'icon-nav'
+                    router.pathname == '/search'
+                      ? 'active-link  !text-gray-600'
+                      : 'icon-nav'
                   }
                   viewBox='0 0 16 16'>
                   <path d='M6.5 13a6.474 6.474 0 0 0 3.845-1.258h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.008 1.008 0 0 0-.115-.1A6.471 6.471 0 0 0 13 6.5 6.502 6.502 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13Zm0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z' />
@@ -115,7 +117,7 @@ export default function Navigation() {
             </li>
             <li
               onClick={() => setIsOpen(false)}
-              className='m-2 cursor-pointer rounded-xl border-2 border-gray-900 p-4'>
+              className='m-2 cursor-pointer rounded-xl border-2 border-gray-400 p-4  dark:border-gray-900'>
               <NavigationIcon href='/movie'>
                 <IconNavMovie />
                 <p className='ml-2'>Movie</p>
@@ -123,7 +125,7 @@ export default function Navigation() {
             </li>
             <li
               onClick={() => setIsOpen(false)}
-              className='m-2 cursor-pointer rounded-xl border-2 border-gray-900 p-4'>
+              className='m-2 cursor-pointer rounded-xl border-2 border-gray-400 p-4  dark:border-gray-900'>
               <NavigationIcon
                 href='/tv'
                 data-tooltip-id='my-tooltip'
@@ -134,7 +136,7 @@ export default function Navigation() {
             </li>
             <li
               onClick={() => setIsOpen(false)}
-              className='m-2 cursor-pointer rounded-xl border-2 border-gray-900 p-4'>
+              className='m-2 cursor-pointer rounded-xl border-2 border-gray-400 p-4 dark:border-gray-900'>
               <NavigationIcon href={token ? '/upload' : '/login?page=upload'}>
                 <svg
                   data-tooltip-id='my-tooltip'
@@ -153,7 +155,7 @@ export default function Navigation() {
             </li>
             <li
               onClick={() => setIsOpen(false)}
-              className='m-2 cursor-pointer rounded-xl border-2 border-gray-900 p-4'>
+              className='m-2 cursor-pointer rounded-xl border-2 border-gray-400 p-4  dark:border-gray-900'>
               {/* faq */}
               <NavigationIcon href='/faq'>
                 <svg

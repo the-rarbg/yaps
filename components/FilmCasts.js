@@ -17,7 +17,7 @@ function renderCasts(arr) {
       return (
         <li
           key={cast.credit_id}
-          className='mr-2 mb-2 flex items-center justify-center rounded-md border-[1px] py-px px-2 text-app-pure-white'
+          className='mr-2 mb-2 flex items-center justify-center rounded-md dark:border-app-pure-white border-app-dark-blue border-[1px] py-px px-2 text-app-dark-blue dark:text-app-pure-white'
         >
           {cast.name}
         </li>

@@ -59,23 +59,31 @@ const FAQ = () => {
       <Head>
         <title>Faq | Yaps</title>
       </Head>
-      <h1 className='mb-10 text-center text-2xl font-bold text-white '>
+      <h1 className='mb-10 text-center text-2xl font-bold text-app-dark-blue dark:text-white '>
         HELP CENTER
       </h1>
       <div className=' w-[80vw]'>
-        <div className='grid grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-2 '>
+        <div className='grid grid-cols-2 gap-x-4 gap-y-6 md:grid-cols-2 '>
           {faqData.map((item, index) => {
             return (
               <div
-                key={index}
-                className={`hover_effect-1 cursor-pointer rounded-lg bg-[#171E31] px-4 py-5 shadow-sm shadow-slate-800 `}
-                onClick={() => toggleAnswer(index)}>
+                key={index * 2}
+                className={`hover_effect-1 ${
+                  openIndices.includes(index) ? 'max-h-64' : 'max-h-16'
+                } cursor-pointer overflow-hidden rounded-lg bg-[#171E31] px-4 py-5 shadow-sm shadow-slate-800 transition duration-[0.5s] ease-in-out `}
+                onClick={() => {
+                  toggleAnswer(index)
+                }}>
                 <h3 className='text-xl font-light text-white '>
                   {item.question}
                 </h3>
-                {openIndices.includes(index) && (
-                  <div className='mt-6 text-gray-500'>{item.answer}</div>
-                )}
+                <div
+                  key={index}
+                  className={`${
+                    openIndices.includes(index) ? 'opacity-1  ' : 'opacity-0'
+                  } mt-6 text-gray-500 transition duration-300 ease-in-out`}>
+                  {item.answer}
+                </div>
               </div>
             )
           })}

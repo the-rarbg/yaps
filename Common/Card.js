@@ -37,7 +37,7 @@ const Card = (props) => {
     </div>
     </div>
    
-    <div className="flex shift-right  items-center  text-off-white text-[14px] h-auto pt-1.5 long-and-truncated font-light gap-4 " style={{fontSize:"12px"}}>
+    <div className="flex shift-right  items-center  text-app-dark-blue dark:text-off-white text-[14px] h-auto pt-1.5 long-and-truncated font-light gap-4 " style={{fontSize:"12px"}}>
       <span className='w-14'>
         {props.item['c'] || props.categoryId}
       </span>
