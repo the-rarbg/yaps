@@ -693,18 +693,14 @@ td {
   border: none;
   /* Remove the border */
 }
-
-.hover_effect {
-  opacity: 0.7;
-}
-
 .hover_effect:hover {
-  opacity: 1;
   transform: scale(1.05);
-  /* box-shadow: 0 0 15px #ffee10; */
-  transition: ease-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
-
+.grid_hover_effect:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
 .hover_effect-1:hover {
   transform: scale(1.0025);
   box-shadow: 0 0 15px #ffee10;
@@ -717,7 +713,7 @@ td {
   top: 0;
   left: 0;
   height: 100%;
-  transform: translateX(-200%);
+  transform: translateX(-100px);
   width: 100%;
   background-color: #333;
   overflow-x: hidden;
@@ -745,7 +741,6 @@ td {
 
 .sidebar.active {
   left: 0;
-  border-right: #5a6a90 solid 1px;
   z-index: 89;
 }
 /*
@@ -778,4 +773,23 @@ td {
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+
+/*animation for sidebar*/
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.sidebar-main{
+  z-index: 900;
+  animation: myAnim 0.3s ease-in-out forwards;
+
 }

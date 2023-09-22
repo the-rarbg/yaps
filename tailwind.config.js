@@ -17,6 +17,7 @@ module.exports = {
       },
       colors: {
         'light-white': 'rgb(245,245,245,255)',
+        'app-shady-white': '#e6e6e6',
         background: '#0D0F0B',
         'background-header': '#131313',
         primary: '#2f6af5',

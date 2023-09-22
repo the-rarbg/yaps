@@ -236,7 +236,7 @@ const Latest = () => {
         </div>
       </div>
       <br /> <br />
-      <div className='relative mb-[3rem]   flex w-auto overflow-hidden rounded-xl text-center'>
+      <div className='relative mb-[3rem]   flex w-auto overflow-hidden  rounded-xl text-center'>
         <div className={`flex w-full flex-wrap justify-evenly p-2  py-8  `}>
           {movieList?.map((item, index) => {
             if (ListType === 'compact') {
