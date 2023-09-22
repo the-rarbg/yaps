@@ -7,7 +7,7 @@ import { FaImdb, FaLink, FaPlay } from 'react-icons/fa'
 
  const  FilmResources = (props)=> {
   const router = useRouter()
-const [loader,setLoader]=useState(false)
+
 const handlegetLink =()=>{
   props?.handleClose()
 }
@@ -31,10 +31,18 @@ const handlegetLink =()=>{
      </a>
       )}
 
- {!props?.imdb ? null : (
+   {!(props?.imdb||props?.tmdb) ? null : (
        <a
           
-       onClick={()=>router.push(`/streaming?id=${props?.imdb}`)}
+       onClick={()=>{
+         if(router?.pathname==="/tv/[id]"){
+          router.push(`/play/tv/?${props?.tmdb?(`tmdb=${props?.tmdb}`):(`id=${props?.imdb}`)}`)
+         }
+         else{
+          router.push(`/play/movies/?${props?.tmdb?(`tmdb=${props?.tmdb}`):(`id=${props?.imdb}`)}`)
+         }
+        
+        }}
        className='mb-4 mr-4 flex w-40 cursor-pointer items-center justify-between rounded-md border-none bg-app-greyish-blue py-3 px-8 text-sm font-light text-app-pure-white hover:bg-app-pure-white hover:text-app-dark-blue'
       
        rel='noreferrer'
