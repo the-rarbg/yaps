@@ -1,5 +1,6 @@
-import React from 'react';
-import {useRouter } from 'next/router';
+import React from 'react'
+import { useRouter } from 'next/router'
+import { useTheme } from 'next-themes'
 
 function formatBytes(bytes, decimals = 1) {
   if (!+bytes) return '0 Bytes'
@@ -12,46 +13,85 @@ function formatBytes(bytes, decimals = 1) {
 
   return `${parseFloat((bytes / Math.pow(k, i)).toFixed(dm))} ${sizes[i]}`
 }
+function cleanMovieNames(movieName) {
+  const pattern =
+    /(2160p|1080p|720p|360p|4320p|H265|BluRay|Rip|10 bit|DV|HDR10|ita|eng|AC3|5\.1|sub|Licdom|UpScaled|5 1|su)/gi
 
+  const cleanedNames = movieName.replace(pattern, '').trim()
 
-const Card = (props) => {
-  const router = useRouter();
-  let name = props.item[`name`];
-  let time = new Date(props.item[`timestamp`]);
+  return cleanedNames
+}
+
+const Card = props => {
+  const router = useRouter()
+  const { theme, setTheme } = useTheme()
+  let name = props.item[`name`]
+  let time = new Date(props.item[`timestamp`])
   return (
-  <div onClick={()=>{
-    if(props?.page ==="dashboard" || props?.blur){
-      return;
-    }
-    let slug =  name.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '');
-     router.push(`/post-detail/${props.item?.eid}/${slug}/`)
-  }} key={props.index} style={{marginBottom:"10px"}} className={`my-2 overflow-hidden w-full  ${props?.page ==="dashboard"?"":"cursor-pointer"} py-2 bg-card  rounded-md flex justify-center hover:bg-primary/10  hover:border-primary/50 flex-col  md:flex-row `}>
-    <div className='flex  p-2'>
-    <div className="imagefit bg-cover rounded mx-auto justify-center items-center inline-flex ml-2" style={{'backgroundImage':`url("${props.item[`thumbnail`] ? props.item[`thumbnail`] : props.categoryId==="XXX"?"https://i.therarbg.com/xnp.jpg": "https://i.therarbg.com/np.jpg"}")`,width:"50px",height:"50px"}}>
-    </div>
-   
-      <div className="text-off-white  flex items-center text-[14px] w-[90%] text-left h-auto pt-1.5 text-ellipsis overflow-hidden pl-4 font-light break-all">
-      
-        {props?.item?.name}
-     
-    </div>
-    </div>
-   
-    <div className="flex shift-right  items-center  text-app-dark-blue dark:text-off-white text-[14px] h-auto pt-1.5 long-and-truncated font-light gap-4 " style={{fontSize:"12px"}}>
-      <span className='w-14'>
-        {props.item['c'] || props.categoryId}
-      </span>
-     
-      <span className='w-14'>
-        {time.getDate()||""}-{time.getMonth()+1||""}-{time.getFullYear()||""}
-      </span>
-     
-      <span className='w-14'>
-        {formatBytes(props.item['size'])}
-      </span>
-     {props?.page ==="dashboard"?  <span onClick={()=>{router.push(`/upload?data=${JSON.stringify(props?.item)}`)}} className='font-light cursor-pointer text-primary' >Edit</span>:null}
-    </div>
-  </div>);
-};
+    <div
+      onClick={() => {
+        if (props?.page === 'dashboard' || props?.blur) {
+          return
+        }
+        let slug = name
+          .toLowerCase()
+          .trim()
+          .replace(/[^\w\s-]/g, '')
+          .replace(/[\s_-]+/g, '-')
+          .replace(/^-+|-+$/g, '')
+        router.push(`/post-detail/${props.item?.eid}/${slug}/`)
+      }}
+      key={props.index}
+      style={{ marginBottom: '20px' }}
+      className={` my-2 ${
+        props?.page === 'dashboard' ? '' : 'cursor-pointer'
+      } ${
+        theme === 'dark' ? 'bg-card' : 'bg-app-shady-white'
+      }  hover_effect flex w-full  flex-col justify-center !overflow-visible rounded-md py-2 hover:border-primary/50 hover:bg-primary/50  md:flex-row `}>
+      <div className='flex  p-2'>
+        <div
+          className='imagefit movie_image mx-auto ml-2 inline-flex items-center justify-center rounded bg-cover'
+          style={{
+            backgroundImage: `url("${
+              props.item[`thumbnail`]
+                ? props.item[`thumbnail`]
+                : props.categoryId === 'XXX'
+                ? 'https://i.therarbg.com/xnp.jpg'
+                : 'https://i.therarbg.com/np.jpg'
+            }")`,
+            width: '50px',
+            height: '50px',
+          }}></div>
 
-export default Card;
+        <div
+          className={`flex  h-auto w-[90%] items-center overflow-visible  text-ellipsis break-all pl-4 pt-1.5 text-left text-[14px] font-light text-black  dark:text-white `}>
+          {cleanMovieNames(props?.item?.name)}
+        </div>
+      </div>
+
+      <div
+        className='shift-right long-and-truncated  flex  h-auto items-center gap-4 pt-1.5 text-[14px] font-light text-app-dark-blue dark:text-white'
+        style={{ fontSize: '12px' }}>
+        <span className='w-14'>{props.item['c'] || props.categoryId}</span>
+
+        <span className='w-14'>
+          {time.getDate() || ''}-{time.getMonth() + 1 || ''}-
+          {time.getFullYear() || ''}
+        </span>
+
+        <span className='w-14'>{formatBytes(props.item['size'])}</span>
+        {props?.page === 'dashboard' ? (
+          <span
+            onClick={() => {
+              router.push(`/upload?data=${JSON.stringify(props?.item)}`)
+            }}
+            className='cursor-pointer font-light text-primary'>
+            Edit
+          </span>
+        ) : null}
+      </div>
+    </div>
+  )
+}
+
+export default Card

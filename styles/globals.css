@@ -694,15 +694,27 @@ td {
   /* Remove the border */
 }
 
-.hover_effect {
-  opacity: 0.7;
+.hover_effect * {
+  transform-origin: center;
+  transition: ease-in-out 0.3s;
 }
+.movie_image {
+  z-index: 999;
+  transition: ease-in-out 0.3s;
+}
+.hover_effect:hover .movie_image {
+  transform: scale(2) translateX(-50%);
 
-.hover_effect:hover {
-  opacity: 1;
-  transform: scale(1.05);
+  transform-origin: right;
+}
+.grid_hover_effect:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
+.hover_effect:hover * {
+  transform: scale(1.1);
   /* box-shadow: 0 0 15px #ffee10; */
-  transition: ease-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 .hover_effect-1:hover {

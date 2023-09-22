@@ -26,7 +26,7 @@ export default function Navigation() {
   }
 
   return (
-    <nav className=' sticky top-0 z-50 flex items-center justify-between  bg-[#e6e6e6] p-5 shadow-md shadow-black dark:bg-app-semi-dark-blue md:mx-6 md:mb-[33px] md:mt-6 md:rounded-[10px] lg:fixed lg:left-0 lg:my-12 lg:mr-0 lg:h-5/6 lg:flex-col lg:py-9'>
+    <nav className=' bg-app-shady-white sticky top-0 z-50 flex items-center  justify-between p-5 shadow-md shadow-black dark:bg-app-semi-dark-blue md:mx-6 md:mb-[33px] md:mt-6 md:rounded-[10px] lg:fixed lg:left-0 lg:my-12 lg:mr-0 lg:h-5/6 lg:flex-col lg:py-9'>
       <div
         onClick={() => setIsOpen(false)}
         className={`  overlay backdrop ${isOpen ? 'active' : ''}`}></div>
