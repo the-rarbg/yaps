@@ -31,17 +31,17 @@ const CardExpanded = props => {
         router.push(`/post-detail/${props.item?.pk}/${slug}/`)
       }}
       key={props.index}
-      className={` my-3 mt-6 inline-flex cursor-pointer flex-col justify-center overflow-hidden rounded-md py-2 ${
+      className={` my-3 mt-6 inline-flex md:h-44 cursor-pointer flex-col justify-center overflow-hidden rounded-md py-2 ${
         theme === 'dark' ? 'bg-card ' : ' bg-app-shady-white'
       }   fab zoomcss grid_hover_effect hover:border-primary/50`}
       style={{ width: '200px' }}>
       <div
-        className='imagefit mx-auto  inline-flex h-44 w-40 items-center justify-center rounded bg-cover'
+        className='imagefit mx-auto  inline-flex h-44 w-44 items-center justify-center rounded bg-cover '
         style={{
           backgroundImage: `url("${
             props.item[`t`]
               ? props.item[`t`]
-              : props.categoryId === 'XXX'
+              : props.categoryId === 'XXX'  
               ? 'https://i.therarbg.com/xnp.jpg'
               : 'https://i.therarbg.com/np.jpg'
           }")`,

@@ -39,7 +39,7 @@ const CardCompact = props => {
       }   hover_effect flex flex-col justify-center rounded-md  hover:border-primary/50  hover:dark:bg-app-dark-blue  md:flex-row`}>
       <div className='flex p-2'>
         <div
-          className='imagefit movie_image mx-auto ml-2 inline-flex items-center justify-center rounded bg-cover'
+          className='imagefit  mx-auto ml-2 inline-flex items-center justify-center rounded bg-cover'
           style={{
             backgroundImage: `url("${
               props.item[`t`]

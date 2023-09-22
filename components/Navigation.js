@@ -10,6 +10,7 @@ import NavigationIcon from './NavigationIcon'
 import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip } from 'react-tooltip'
 import { MdOutlineArrowBackIos } from 'react-icons/md'
+import {ThemeToggler} from "./ThemeToggler";
 
 export default function Navigation() {
   const router = useRouter()
@@ -172,6 +173,9 @@ export default function Navigation() {
                 </svg>
                 <p className='ml-2'>Help Center</p>
               </NavigationIcon>
+            </li>
+            <li>
+              <ThemeToggler parentComponent={"sidebar"}/>
             </li>
           </ul>
         </nav>
