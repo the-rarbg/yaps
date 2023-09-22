@@ -211,7 +211,7 @@ const Details = () => {
                   }}>
                   Torrent Download
                 </button>
-                <button
+         { data?.imdb&&      <button
                   className='my-3 w-full rounded border-primary bg-primary/10 bg-gradient-to-r from-[#420075] via-purple-500 to-[#FF0054] px-[2rem] py-2 text-[15px] text-gray-100  hover:text-app-dark-blue  xl:w-[70%]'
                   onClick={() => {
                     if(data?.category_str==="Movies"){
@@ -225,7 +225,7 @@ const Details = () => {
                   }}>
                   Play Now
                 </button>
-
+}
                 <button
                   className='my-3 w-full rounded border-primary bg-primary/10  bg-gradient-to-r  from-violet-500 via-purple-500 to-indigo-900 px-[2rem] py-2 text-[15px] text-gray-100 hover:text-app-dark-blue xl:w-[70%]'
                   onClick={() => {
