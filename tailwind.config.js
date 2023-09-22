@@ -16,12 +16,12 @@ module.exports = {
         circles: "url('/assets/images/background-cicles.png')",
       },
       colors: {
-        "light-white":"#e3e4e8",
-        "background": "#0D0F0B",
-        "background-header": "#131313",
-        "primary": "#2f6af5",
-        "seconday":"#fc4545",
-        "off-white": "#E5E7EB",
+        'light-white': '#e3e4e8',
+        background: '#0D0F0B',
+        'background-header': '#131313',
+        primary: '#2f6af5',
+        seconday: '#fc4545',
+        'off-white': '#E5E7EB',
         'app-pure-white': 'hsl(0, 0%, 100%)', // #FFFFFF
         'app-red': 'hsl(0, 97%, 63%)', // #FC4747
         'app-dark-blue': 'hsl(223, 30%, 9%)', // #10141E
