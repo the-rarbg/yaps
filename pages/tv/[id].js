@@ -50,6 +50,8 @@ export default function TV() {
             <FilmResources
               website={tv.detail.homepage}
               imdb={tv.detail.imdb_id}
+              tmdb={id}
+              path={router.pathname}
             />
           </section>
         </section>
