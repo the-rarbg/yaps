@@ -6,7 +6,8 @@ export function ThemeToggler() {
   const { theme, setTheme } = useTheme()
   useEffect(() => {
     setMounted(true)
-    setTheme('dark')
+    if (localStorage.getItem('theme')) setTheme(localStorage.getItem('theme'))
+    else setTheme('dark')
   }, [])
   useEffect(() => {
     if (mounted) {
@@ -15,6 +16,7 @@ export function ThemeToggler() {
           .querySelector('.dark-mode-btn')
           .classList.toggle('rotate-[360deg]')
       })
+      localStorage.setItem('theme', theme)
     }
   }, [mounted])
   if (!mounted) {
@@ -22,7 +24,7 @@ export function ThemeToggler() {
   } else {
     return (
       <div
-        className={`right-16 absolute  top-2 z-50 rounded-3xl p-2 md:right-24 md:top-[33px] lg:right-5 lg:top-5  ${
+        className={`absolute right-16  top-2 z-50 rounded-3xl p-2 md:right-24 md:top-[33px] lg:right-5 lg:top-5  ${
           theme !== 'dark' ? 'bg-app-semi-dark-blue' : 'bg-app-pure-white'
         } h-12 w-12 text-white`}>
         <div className={'h-full w-full rounded-3xl'}>

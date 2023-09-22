@@ -83,9 +83,7 @@ const Latest = () => {
   const [cat, setCat] = useState(categoryId)
   const [search, setSearch] = useState(false)
   const { theme, setTheme } = useTheme()
-  useEffect(() => {
-    setTheme(theme)
-  })
+  setTheme(theme)
   useEffect(() => {
     fetchMovieList(cat)
   }, [page])
