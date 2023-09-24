@@ -5,12 +5,20 @@ import CardInfo from './CardInfo'
 export default function CardNormal({ id, category, rating, src, title, year }) {
   const router = useRouter()
 
-  const handleClick = () => {
-    if (category === 'movie') {
-      router.push(`/movie/${id}`)
-    } else if (category === 'tv') {
-      router.push(`/tv/${id}`)
-    }
+  const handleClick = (e) => {
+      if (e.ctrlKey) {
+          if (category === 'movie') {
+              window.open(`/movie/${id}`)
+          } else if (category === 'tv') {
+              window.ope(`/tv/${id}`)
+          }
+      } else {
+          if (category === 'movie') {
+              router.push(`/movie/${id}`)
+          } else if (category === 'tv') {
+              router.push(`/tv/${id}`)
+          }
+      }
   }
 
   return (

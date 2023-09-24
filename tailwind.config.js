@@ -16,7 +16,7 @@ module.exports = {
         circles: "url('/assets/images/background-cicles.png')",
       },
       colors: {
-        'light-white': 'rgb(245,245,245,255)',
+        'light-white': '#f6f4e9',
         'app-shady-white': '#e6e6e6',
         background: '#0D0F0B',
         'background-header': '#131313',
