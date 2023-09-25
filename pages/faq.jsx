@@ -4,7 +4,7 @@ const faqData = [
   {
     question: 'What is YAPS?',
     answer:
-      'YAPS (Yet another piracy site) is a torrent site that allows users to download and share copyrighted content such as movies, music, software, and more...',
+      'YAPS (Yet another piracy site) is a torrent site that allows users to download and share copyrighted content such as movies, music, software, and more.',
   },
   {
     question: 'How does YAPS work?',
@@ -24,7 +24,7 @@ const faqData = [
   {
     question: 'Is it safe to download from Yaps?',
     answer:
-      "We allow only verified torrents to be uploaded on our site.Yet there are no absolutes when it comes to protection .User should always scan/test whatever there download's and don't take anything for granted. Mistakes often happen as the uploaders are also humans, or someone could just simply want to trick us. From our side, as a site, we try our best to keep you protected but that does NOT mean you should let your guards down.",
+      "We allow only verified torrents to be uploaded on our site.Yet there are no absolutes when it comes to protection .User should always scan/test whatever they download and don't take anything for granted. Mistakes often happen as the uploaders are also humans, or someone could just simply want to trick us. From our side, as a site, we try our best to keep you protected but that does NOT mean you should let your guards down.",
   },
   {
     question: 'Is there any rule to maintain  the ratio ?',
