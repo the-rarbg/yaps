@@ -27,7 +27,7 @@ export function ThemeToggler({parentComponent}) {
                 <div
                     className={` right-16 top-20 z-50 rounded-3xl p-2 lg:block hidden lg:absolute static md:right-24 md:top-[33px] lg:right-5 lg:top-5  ${
                         theme !== 'dark' ? 'bg-app-semi-dark-blue' : 'bg-app-pure-white'
-                    } h-12 w-12 text-white`}>
+                    } h-9 w-9 text-white`}>
                     <div className={'h-full w-full rounded-3xl'}>
                         <div
                             onClick={() => {
