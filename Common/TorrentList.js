@@ -24,14 +24,14 @@ const TorrentList = ({setisTorrent, torrent_list, runtime}) => {
             transform: 'translate(-50%, -50%)',
             background: "#171e30",
             maxHeight: "700px",
-            maxWidth: "1300px",
-            width: "120%",
+            maxWidth: "1500px",
+            border:'0px',
+            width: "100%",
             borderColor: "#454851",
         },
 
     };
 
-    console.log("torrent_list", torrent_list)
     const qualityRegex = /(4K|720p|1080p|2160p|720P|360P|360p|1080P)/i;
 
     const columns = [
@@ -53,7 +53,7 @@ const TorrentList = ({setisTorrent, torrent_list, runtime}) => {
                     </a>
                 )
             },
-            width: "9%",
+            width: "8%",
             style: {
                 color: "#296ac8",
                 cursor: "pointer",
@@ -63,13 +63,13 @@ const TorrentList = ({setisTorrent, torrent_list, runtime}) => {
         {
             name: 'Category',
             selector: row => row.category_str,
-            width: "9%",
+            width: "8%",
             sortable: true,
         },
         {
-            name: "Quality",
+            name: "Res",
             selector: row => row.name.match(qualityRegex) ? row.name.match(qualityRegex)[0] : '',
-            width: '8%',
+            width: '6%',
             sortable: true,
             sortFunction: (a, b) => {
                 function compareQuality(a, b) {
@@ -113,10 +113,7 @@ const TorrentList = ({setisTorrent, torrent_list, runtime}) => {
             width: "5%",
             style: {
                 color: "#00FF00",
-
-
             }
-
         },
         {
             name: 'L',
