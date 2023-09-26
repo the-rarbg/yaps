@@ -17,8 +17,6 @@ const handlegetLink =()=>{
   return (
     
     <div className='mb-10 flex flex-wrap'>
-    
-       
         {!props?.imdb ? null : (
        <a
           
