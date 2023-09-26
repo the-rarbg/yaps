@@ -1,184 +1,187 @@
 import moment from 'moment'
-import { useRouter } from 'next/router'
+import {useRouter} from 'next/router'
 import React from 'react'
 
 import Modal from 'react-modal'
 
-import { formatBytes } from './CardExpanded'
+import {formatBytes} from './CardExpanded'
 
-import DataTable, { createTheme } from 'react-data-table-component'
-import { useTheme } from 'next-themes'
+import DataTable, {createTheme} from 'react-data-table-component'
+import {useTheme} from 'next-themes'
 
-const TorrentList = ({ setisTorrent, torrent_list, runtime }) => {
-  const { theme, settheme } = useTheme()
-  const router = useRouter()
+const TorrentList = ({setisTorrent, torrent_list, runtime}) => {
+    const theme = useTheme()
+    const router = useRouter()
 
-  const customStyles = {
-    content: {
-      top: '50%',
-      left: '50%',
-      right: 'auto',
-      bottom: 'auto',
-      marginRight: '-50%',
-      transform: 'translate(-50%, -50%)',
-      background: '#171e30',
-      maxHeight: '700px',
-      maxWidth: '1500px',
-      border: '0px',
-      width: '100%',
-      borderColor: '#454851',
-    },
-  }
+    const customStyles = {
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            background: '#171e30',
+            maxHeight: '700px',
+            maxWidth: '1500px',
+            border: '0px',
+            width: '100%',
+            borderColor: '#454851',
+        },
+    }
 
-  const qualityRegex = /(4K|720p|1080p|2160p|720P|360P|360p|1080P)/i
+    const qualityRegex = /(4K|720p|1080p|2160p|720P|360P|360p|1080P)/i
 
-  const columns = [
-    {
-      name: 'Name',
-      selector: row => row.name,
-      sortable: true,
-    },
-    {
-      name: 'Action',
+    const columns = [
+        {
+            name: 'Name',
+            selector: row => row.name,
+            sortable: true,
+        },
+        {
+            name: 'Action',
 
-      cell: (row, index) => {
-        let slug = row?.name
-          .toLowerCase()
-          .trim()
-          .replace(/[^\w\s-]/g, '')
-          .replace(/[\s_-]+/g, '-')
-          .replace(/^-+|-+$/g, '')
+            cell: (row, index) => {
+                let slug = row?.name
+                    .toLowerCase()
+                    .trim()
+                    .replace(/[^\w\s-]/g, '')
+                    .replace(/[\s_-]+/g, '-')
+                    .replace(/^-+|-+$/g, '')
 
-        return (
-          <a onClick={() => router.push(`/post-detail/${row?.eid}/${slug}/`)}>
-            Download
-          </a>
-        )
-      },
-      width: '8%',
-      style: {
-        color: '#296ac8',
-        cursor: 'pointer',
-      },
-    },
-    {
-      name: 'Category',
-      selector: row => row.category_str,
-      width: '8%',
-      sortable: true,
-    },
-    {
-      name: 'Res',
-      selector: row =>
-        row.name.match(qualityRegex) ? row.name.match(qualityRegex)[0] : '',
-      width: '6%',
-      sortable: true,
-      sortFunction: (a, b) => {
-        function compareQuality(a, b) {
-          if (a && b) {
-            const regex = /(\d+)p/
-            const qualityA = parseInt(
-              a.name.match(qualityRegex)
-                ? a.name.match(qualityRegex)[0]?.match(regex)
-                : ''
-            )
-            const qualityB = parseInt(
-              b.name.match(qualityRegex)
-                ? b.name.match(qualityRegex)[0]?.match(regex)
-                : ''
-            )
-            return qualityA - qualityB
-          }
-        }
+                return (
+                    <a onClick={() => router.push(`/post-detail/${row?.eid}/${slug}/`)}>
+                        Download
+                    </a>
+                )
+            },
+            width: '8%',
+            style: {
+                color: '#296ac8',
+                cursor: 'pointer',
+            },
+        },
+        {
+            name: 'Category',
+            selector: row => row.category_str,
+            width: '8%',
+            sortable: true,
+        },
+        {
+            name: 'Res',
+            selector: row =>
+                row.name.match(qualityRegex) ? row.name.match(qualityRegex)[0] : '',
+            width: '6%',
+            sortable: true,
+            sortFunction: (a, b) => {
+                function compareQuality(a, b) {
+                    if (a && b) {
+                        const regex = /(\d+)p/
+                        const qualityA = parseInt(
+                            a.name.match(qualityRegex)
+                                ? a.name.match(qualityRegex)[0]?.match(regex)
+                                : ''
+                        )
+                        const qualityB = parseInt(
+                            b.name.match(qualityRegex)
+                                ? b.name.match(qualityRegex)[0]?.match(regex)
+                                : ''
+                        )
+                        return qualityA - qualityB
+                    }
+                }
 
-        return compareQuality(a, b)
-      },
-    },
-    {
-      name: 'Date',
-      selector: row => moment(row?.last_checked).format('DD-MM-YYYY'),
-      width: '9%',
-      sortable: true,
-    },
-    {
-      name: 'Runtime',
-      selector: row => moment.utc(runtime * 1000).format('HH:mm:ss'),
-      width: '9%',
-      sortable: true,
-    },
-    {
-      name: 'Size',
-      selector: row => formatBytes(row?.size),
-      sortable: true,
-      width: '7%',
-      sortFunction: (a, b) => {
-        return a.size - b.size
-      },
-    },
-    {
-      name: 'S',
-      selector: row => row?.seeders,
-      sortable: true,
-      width: '5%',
-      style: {
-        color: '#00FF00',
-      },
-    },
-    {
-      name: 'L',
-      selector: row => row.leechers,
-      sortable: true,
-      width: '5%',
-      style: {
-        color: '#dd0c0e',
-      },
-    },
-  ]
-  createTheme('dark', {
-    background: {
-      default: 'transparent',
-    },
-  })
+                return compareQuality(a, b)
+            },
+        },
+        {
+            name: 'Date',
+            selector: row => moment(row?.last_checked).format('DD-MM-YYYY'),
+            width: '9%',
+            sortable: true,
+        },
+        {
+            name: 'Runtime',
+            selector: row => moment.utc(runtime * 1000).format('HH:mm:ss'),
+            width: '9%',
+            sortable: true,
+        },
+        {
+            name: 'Size',
+            selector: row => formatBytes(row?.size),
+            sortable: true,
+            width: '7%',
+            sortFunction: (a, b) => {
+                return a.size - b.size
+            },
+        },
+        {
+            name: 'S | L',
+            cell: (row, index) => {
+                let l = row?.leechers
+                let s = row?.seeders
+                return (
+                    <span style={{color: "#00FF00"}}>
+              {l} | <span style={{color: "#FF0000"}}>{s}</span>
+            </span>
+                )
+            },
+            sortable: true,
+            sortFunction: (a, b) => {
+                return a?.leechers - b?.leechers
+            },
+            width: '8%',
+            style: {
+                color: '#00FF00',
+            },
+        },
 
-  const customCss = {
-    headCells: {
-      style: {
-        fontSize: '14px',
-        fontWeight: '700',
-        color: theme === 'dark' ? '#C2D8D3' : '#000000',
-      },
-    },
-  }
+    ]
+    createTheme('dark', {
+        background: {
+            default: 'transparent',
+        },
+    })
 
-  console.log('torrent_list', torrent_list)
+    const customCss = {
+        headCells: {
+            style: {
+                fontSize: '14px',
+                fontWeight: '700',
+                color: theme === 'dark' ? '#C2D8D3' : '#000000',
+            },
+        },
+    }
 
-  createTheme('dark', {
-    background: {
-      default: 'transparent',
-    },
-  })
+    console.log('torrent_list', torrent_list)
 
-  return (
-    <>
-      <Modal
-        isOpen={true}
-        style={customStyles}
-        onRequestClose={() => setisTorrent(false)}>
-        {' '}
-        {torrent_list.length > 0 ? (
-          <DataTable
-            columns={columns}
-            data={torrent_list}
-            theme={theme}
-            sortable
-            customStyles={customCss}
-          />
-        ) : (
-          <div className='nosimilar_torrent text-gray-700 '>
-            <h1>Sorry Torrent Not Available Try after some days !!!</h1>
-          </div>
-        )}
-        {/* {
+    createTheme('dark', {
+        background: {
+            default: 'transparent',
+        },
+    })
+
+    return (
+        <>
+            <Modal
+                isOpen={true}
+                style={customStyles}
+                onRequestClose={() => setisTorrent(false)}>
+                {' '}
+                {torrent_list.length > 0 ? (
+                    <DataTable
+                        columns={columns}
+                        data={torrent_list}
+                        theme={theme}
+                        sortable
+                        customStyles={customCss}
+                    />
+                ) : (
+                    <div className='nosimilar_torrent text-gray-700 '>
+                        <h1>Sorry Torrent Not Available Try after some days !!!</h1>
+                    </div>
+                )}
+                {/* {
 
           torrent_list.length>0?
 
@@ -282,9 +285,9 @@ const TorrentList = ({ setisTorrent, torrent_list, runtime }) => {
          </h1>
 
        </div> } */}
-      </Modal>
-    </>
-  )
+            </Modal>
+        </>
+    )
 }
 
 export default TorrentList

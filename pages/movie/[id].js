@@ -129,7 +129,7 @@ export function renderRating(rating) {
   }
 }
 
-function renderLength(runtime) {
+export function renderLength(runtime) {
   if (runtime !== 0 && runtime !== undefined) {
     return runtime + ' min?.'
   } else {
@@ -145,7 +145,7 @@ export function renderLanguage(languages) {
   }
 }
 
-function renderYear(year) {
+export function renderYear(year) {
   if (!year) {
     return 'N/A'
   } else {

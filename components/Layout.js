@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <div className='e bg-light-white text-app-dark-blue dark:bg-app-dark-blue dark:text-app-pure-white lg:flex lg:items-center'>
       <Navigation />
       <ThemeToggler parentComponent={"main"}/>
-      <main className='mx-0 flex flex-col overflow-visible bg-light-white  p-4 py-6   dark:bg-app-dark-blue md:m-6 md:px-0 md:pt-12 lg:ml-[10rem] lg:min-w-[800px] lg:grow'>
+      <main className='mx-0 flex flex-col overflow-visible bg-light-white  p-4 py-6   dark:bg-app-dark-blue md:m-6 md:px-0 md:pt-12 lg:ml-[10rem] lg:min-w-[1200px] lg:grow'>
         {children}
         <Footer />
       </main>

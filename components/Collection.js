@@ -42,13 +42,7 @@ export default function Collection({
                                 ? 'h-scroll relative flex gap-x-4 overflow-x-scroll sm:gap-x-10 2xs:mt-2'
                                 : 'card-collection-wrapper'
                         }>
-                        { isTrending &&
-                            <div className={"absolute flex justify-center items-center w-20 top-0 right-0 z-[999] h-full shadow-lg backdrop-blur-lg"}>
-                              <div className={"text-5xl"}>
-                                >
-                              </div>
-                            </div>
-                        }
+
                         {renderResults(
                             sliceArray(data.results || [], limit),
                             Component,
