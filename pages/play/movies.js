@@ -23,8 +23,6 @@ const servers_ = [
     },
     {
         servername: "Blackvid", link: "https://blackvid.space/embed?tmdb="
-    }, {
-        servername: "Superembed", link: "https://multiembed.mov/directstream.php?video_id="
     }
 ]
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
@@ -73,7 +71,7 @@ const Movies = () => {
                                                 onClick={() => {
                                                     if (server.servername === "Vidsrc.me")
                                                         setVideoServer(server.link + me)
-                                                    else if (server.servername === "Vidsrc.to" || server.servername === "Superembed")
+                                                    else if (server.servername === "Vidsrc.to"  )
                                                         setVideoServer(server.link + to)
                                                     else
                                                         setVideoServer(server.link + data?.imdb.imdb.tmdb_id);
