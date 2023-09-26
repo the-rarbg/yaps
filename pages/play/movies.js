@@ -20,6 +20,11 @@ const servers_ = [
     },
     {
         servername: "Moviesapi.club", link: "https://moviesapi.club/movie/"
+    },
+    {
+        servername: "Blackvid", link: "https://blackvid.space/embed?tmdb="
+    }, {
+        servername: "Superembed", link: "https://multiembed.mov/directstream.php?video_id="
     }
 ]
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
@@ -32,7 +37,7 @@ const Movies = () => {
     const [videoServer, setVideoServer] = useState('')
     const {data, error} = useSWR(`/api/movie/${id}`, fetcher)
     const [MovieDetailsHidden, setMovieDetailsHidden] = useState(false)
-
+    console.log(data);
     return (
         <>
             <Head>
@@ -60,20 +65,21 @@ const Movies = () => {
                                 <div> If current server doesn't work please try other servers beside.</div>
                             </div>
                             <div className={" bg-app-pure-white text-black  w-2/3 h-full"}>
-                                <div className={"w-full flex flex-row gap-7 p-5 justify-start items-center h-10"}>
+                                <div
+                                    className={"w-full flex flex-wrap flex-row gap-7 p-5 justify-start items-center h-10"}>
                                     {servers_.map((server, index) => {
                                         return (
                                             <div
                                                 onClick={() => {
                                                     if (server.servername === "Vidsrc.me")
                                                         setVideoServer(server.link + me)
-                                                    else if (server.servername === "Vidsrc.to")
+                                                    else if (server.servername === "Vidsrc.to" || server.servername === "Superembed")
                                                         setVideoServer(server.link + to)
                                                     else
                                                         setVideoServer(server.link + data?.imdb.imdb.tmdb_id);
                                                 }
                                                 }
-                                                className={"dark:bg-app-semi-dark-blue dark:text-white hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out bg-app-shady-white rounded p-3 w-[8em] text-center h-8"}
+                                                className={"dark:bg-app-semi-dark-blue dark:text-white hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out bg-app-shady-white rounded p-3 w-max text-center h-8"}
                                                 key={index}>
                                                 {server.servername}
                                             </div>
