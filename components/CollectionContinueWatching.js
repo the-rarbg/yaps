@@ -60,15 +60,16 @@ export default function Collection({}) {
                     className={
                         'mb-6 md:mb-10'
                     }>
-                    <Heading title={"Continue Watching"} href={""} isHomePage media_type={"all"} iscontinue_watching={true}/>
+                    <Heading title={"Continue Watching"} href={""} isHomePage media_type={"all"}
+                             iscontinue_watching={true}/>
                     <section
                         className={
                             ' w-[100%] gap-5 overflow-x-scroll p-5 '
                         }>
                         <ul className={"flex gap-10 flex-row"}>
                             {
-                                data.map((data) => {
-                                    return (<li>
+                                data.map((data, index) => {
+                                    return (<li> key={index}
                                             <CardContinueWatching category={data.type} id={data.id} title={data.name}
                                                                   year={data.year}
                                                                   src={data.poster_link}/>
