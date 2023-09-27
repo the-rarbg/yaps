@@ -72,7 +72,7 @@ const Movies = () => {
                     <div onClick={() => setMovieDetailsHidden(!MovieDetailsHidden)}
                          className={"flex flex-row gap-1 items-center hover:text-orange-500 transition duration-300 ease-in-out hover:cursor-pointer"}>
                         <AiOutlineExpand/>
-                        <span>Expand</span>
+                        <span>{MovieDetailsHidden ? 'Expand' : 'Collapse'}</span>
                     </div>
                 </div>
                 <div className={"  w-full flex justify-start  items-center h-36"}>
