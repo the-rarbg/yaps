@@ -54,7 +54,7 @@ const Movies = () => {
         } else {
             if (id || tmdb)
                 localStorage.setItem("userWatched", JSON.stringify({
-                    movies: [id ? id : tmdb], tv: [[]]
+                    movies: [id ? id : tmdb], tv: []
                 }))
         }
     }, [id, tmdb]);

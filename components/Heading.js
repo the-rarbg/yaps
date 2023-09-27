@@ -1,10 +1,12 @@
 import Link from 'next/link'
 
+
 export default function Heading({
                                     href,
                                     isHomePage,
                                     isTrending, // TODO: Do we need this here?
                                     media_type,
+                                    clearHistoryFunction,
                                     iscontinue_watching,
                                     title,
                                 }) {
@@ -26,9 +28,10 @@ export default function Heading({
                 <h2 className='section-title'>{title}</h2>
             )}
             {iscontinue_watching &&
-                <a className='cursor-pointer text-xs font-medium uppercase tracking-wide text-app-greyish-blue hover:underline'>
-                    Clear  history
-                </a>
+                <div onClick={clearHistoryFunction}
+                     className='cursor-pointer text-xs font-medium uppercase tracking-wide text-app-greyish-blue hover:underline'>
+                    Clear history
+                </div>
             }
             {href && <Link href={href} as={href} passHref>
                 <a className='cursor-pointer text-xs font-medium uppercase tracking-wide text-app-greyish-blue hover:underline'>
