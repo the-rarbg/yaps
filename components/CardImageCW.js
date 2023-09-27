@@ -3,7 +3,7 @@ import {shimmer, toBase64} from '../utils'
 
 export default function CardImageCW({src, alt}) {
     return (
-        <div className='relative w-full rounded-lg'>
+        <div className='relative  rounded-lg'>
             <div
                 className={
                     'relative h-[140px] w-[240px] after:absolute after:top-0 after:right-0 after:bottom-0 after:left-0 after:bg-app-dark-blue after:opacity-50 after:content-[""] sm:h-[180px] sm:w-[420px]'

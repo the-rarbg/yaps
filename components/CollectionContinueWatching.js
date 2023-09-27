@@ -18,42 +18,75 @@ export default function Collection({}) {
             localStorage.removeItem("userWatched");
         }
     }
+    const clear_movie = (id, category) => {
+        setDataLoaded(false)
+        if (localStorage) {
+            if (category === "tv") {
+                let data = JSON.parse(localStorage.getItem("userWatched")).tv;
+                let out = []
+                for (let i in data) {
+                    if (data[i][0] !== id) {
+                        out.push(data[i])
+                    }
+                }
+                let new_data = {movies: JSON.parse(localStorage.getItem("userWatched")).movies, tv: out}
+                localStorage.setItem("userWatched", JSON.stringify(new_data));
+            } else {
+                let data = JSON.parse(localStorage.getItem("userWatched")).movies;
+                let out = []
+                for (let i in data) {
+                    if (data[i] !== id) {
+                        out.push(data[i])
+                    }
+                }
+                let new_data = {tv: JSON.parse(localStorage.getItem("userWatched")).tv, movies: out}
+                localStorage.setItem("userWatched", JSON.stringify(new_data));
+            }
+        }
+
+    }
     /*TODO : Currently fetching the data for tv and movie one by one based on the id stored in local storage. */
     useEffect(() => {
             const res = async () => {
                 if (localStorage.getItem("userWatched")) {
-                    const movieIds = JSON.parse(localStorage.getItem("userWatched")).movies
-                    let watchedData = []
-                    for (let i in movieIds) {
-                        await fetch(`${router.asPath}api/movie/${movieIds[i]}`, {
-                            credentials: "include"
-                        }).then(response => response.json()).then(da => {
-                            watchedData.push({
-                                id: movieIds[i],
-                                name: da.detail.original_title,
-                                year: da.detail.release_date.split('-')[0],
-                                poster_link: da.detail.backdrop_path ? `${TMDB_IMAGE_ENDPOINT}/${da.detail.backdrop_path}` : `${TMDB_IMAGE_ENDPOINT}/${da.detail.poster_path}`,
-                                type: 'movie'
-                            });
-                        })
-                    }
-                    const tvIds = JSON.parse(localStorage.getItem("userWatched")) ? JSON.parse(localStorage.getItem("userWatched")).tv : ""
-                    for (let i in tvIds) {
-                        if (tvIds[i] !== [])
-                            await fetch(`${router.asPath}api/tv/${tvIds[i][0]}`, {
+                    if (JSON.parse(localStorage.getItem("userWatched")).movies.length === 0 && JSON.parse(localStorage.getItem("userWatched")).tv.length === 0) {
+                        changeDataStatus(true)
+                        setDataLoaded(true)
+                    } else {
+                        const movieIds = JSON.parse(localStorage.getItem("userWatched")).movies
+                        let watchedData = []
+                        for (let i in movieIds) {
+                            await fetch(`${router.asPath}api/movie/${movieIds[i]}`, {
                                 credentials: "include"
                             }).then(response => response.json()).then(da => {
                                 watchedData.push({
-                                    id: tvIds[i][0],
-                                    name: da.detail.name,
-                                    year: da.detail.first_air_date ? da.detail.first_air_date.split("-")[0] : "",
+                                    id: movieIds[i],
+                                    name: da.detail.original_title,
+                                    year: da.detail.release_date.split('-')[0],
                                     poster_link: da.detail.backdrop_path ? `${TMDB_IMAGE_ENDPOINT}/${da.detail.backdrop_path}` : `${TMDB_IMAGE_ENDPOINT}/${da.detail.poster_path}`,
-                                    type: 'tv'
+                                    type: 'movie'
                                 });
                             })
+                        }
+                        const tvIds = JSON.parse(localStorage.getItem("userWatched")) ? JSON.parse(localStorage.getItem("userWatched")).tv : ""
+                        for (let i in tvIds) {
+                            if (tvIds[i] !== [])
+                                await fetch(`${router.asPath}api/tv/${tvIds[i][0]}`, {
+                                    credentials: "include"
+                                }).then(response => response.json()).then(da => {
+                                    watchedData.push({
+                                        id: tvIds[i][0],
+                                        name: da.detail.name,
+                                        year: da.detail.first_air_date ? da.detail.first_air_date.split("-")[0] : "",
+                                        poster_link: da.detail.backdrop_path ? `${TMDB_IMAGE_ENDPOINT}/${da.detail.backdrop_path}` : `${TMDB_IMAGE_ENDPOINT}/${da.detail.poster_path}`,
+                                        type: 'tv'
+                                    });
+                                })
+                        }
+                        setData(watchedData)
+                        setDataLoaded(true)
+                        changeDataStatus(false)
                     }
-                    setData(watchedData)
-                    setDataLoaded(true)
                 } else {
                     setDataLoaded(true)
                     changeDataStatus(true)
@@ -62,7 +95,7 @@ export default function Collection({}) {
             res();
         }
         ,
-        [data]
+        [dataLoaded]
     )
     ;
     return (
@@ -86,6 +119,7 @@ export default function Collection({}) {
                                         return (<li key={index}>
                                                 <CardContinueWatching category={data.type} id={data.id}
                                                                       title={data.name}
+                                                                      clearHistoryFunction={clear_movie}
                                                                       year={data.year}
                                                                       src={data.poster_link}/>
                                             </li>

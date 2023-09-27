@@ -5,20 +5,15 @@ import {AiOutlineDown,AiOutlineRight} from "react-icons/ai";
 import useSWR from "swr";
 import {BsFillLightbulbFill} from "react-icons/bs";
 
-const servers_ = [
-    {
-        servername: "Vidsrc.me", link: "https://vidsrc.me/embed/tv?",
-    },
-    {
-        servername: "Vidsrc.to", link: "https://vidsrc.to/embed/tv/"
-    },
-    {
-        servername: "Moviesapi.club", link: "https://moviesapi.club/tv/"
-    },
-    {
-        servername: "Blackvid", link: "https://blackvid.space/embed?tmdb="
-    }
-]
+const servers_ = [{
+    servername: "Vidsrc.to", link: "https://vidsrc.to/embed/movie/"
+}, {
+    servername: "Vidsrc.me", link: "https://vidsrc.me/embed/movie?",
+}, {
+    servername: "Moviesapi.club", link: "https://moviesapi.club/movie/"
+}, {
+    servername: "Blackvid", link: "https://blackvid.space/embed?tmdb="
+}]
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 const Tv = () => {
@@ -78,7 +73,6 @@ const Tv = () => {
             let tvPresent = -1
             if (id || tmdb) {
                 for (let i in data.tv) {
-                    console.log(data.tv[i], id, tmdb)
                     if (id) {
                         if (data.tv[i][0] === id) {
                             tvPresent = i
@@ -171,7 +165,7 @@ const Tv = () => {
                 <div
                     className={"w-full h-16 pb-2 text-3xl"}>{data?.detail.name} S{tvDetails.season} E{tvDetails.episode}</div>
                 <iframe
-                    src={videoServer ? videoServer : `https://vidsrc.me/embed/tv?tmdb=${tmdb ? tmdb : id}&season=${tvDetails.season}&episode=${tvDetails.episode}`}
+                    src={videoServer ? videoServer : `https://vidsrc.to/embed/tv/${tmdb ? tmdb : id}/${tvDetails.season}/${tvDetails.episode}`}
                     className={"z-50"}
                     style={{width: '100%', height: '92vh'}}
                     allowFullScreen="allowfullscreen"></iframe>

@@ -3,11 +3,12 @@ import {useRouter} from 'next/router';
 import Head from 'next/head'
 import useSWR from "swr";
 import {BsFillLightbulbFill} from "react-icons/bs";
+import {useTheme} from "next-themes";
 
 const servers_ = [{
-    servername: "Vidsrc.me", link: "https://vidsrc.me/embed/movie?",
-}, {
     servername: "Vidsrc.to", link: "https://vidsrc.to/embed/movie/"
+}, {
+    servername: "Vidsrc.me", link: "https://vidsrc.me/embed/movie?",
 }, {
     servername: "Moviesapi.club", link: "https://moviesapi.club/movie/"
 }, {
@@ -19,6 +20,7 @@ const Movies = () => {
     const router = useRouter()
     const {id, tmdb} = router.query;
     const me = tmdb ? `tmdb=${tmdb}` : `imdb=${id}`
+    const {theme} = useTheme();
     const to = tmdb ? `${tmdb}` : `${id}`
     const [lightStatus, switchLight] = useState(false)
     const [videoServer, setVideoServer] = useState('')
@@ -64,7 +66,7 @@ const Movies = () => {
         <div
             className={`w-full  ${lightStatus ? '' : 'h-full'} z-[999] `}>
             <div className={` w-full  flex flex-col  h-full`}>
-                <iframe src={videoServer ? videoServer : servers_[1].link + to}
+                <iframe src={videoServer ? videoServer : servers_[0].link + to}
                         className={`z-[998] ${lightStatus ? 'absolute left-0 lg:left-[20%] h-[80vh] lg:w-2/3 w-full ' : 'w-full h-[95vh]'}`}
                         allowFullScreen="allowfullscreen"></iframe>
                 <div
@@ -78,12 +80,13 @@ const Movies = () => {
                 <div className={`${lightStatus ? 'hidden' : 'flex'}  w-full flex justify-start  items-center h-36`}>
                     <div className={"rounded w-full h-full flex flex-row "}>
                         <div
-                            className={"p-2 h-full bg-app-shady-white dark:bg-app-grey dark:text-black text-center w-1/3"}>
+                            className={`${theme === 'dark' ? 'bg-[#1e1e1e]' : 'bg-[#c5cc89]'} p-2 h-full  flex justify-center items-center flex-col text-center w-1/3`}>
                             {`You are watching `}
                             <div className={" font-bold"}>{data ? data.imdb.imdb.name : ""}</div>
                             <div> If current server doesn't work please try other servers beside.</div>
                         </div>
-                        <div className={" bg-app-pure-white text-black  w-2/3 h-full"}>
+                        <div
+                            className={`${theme === 'dark' ? 'bg-[#171e31]' : 'bg-app-shady-white'} text-black  w-2/3 h-full`}>
                             <div
                                 className={"w-full flex flex-wrap flex-row gap-7 p-5 justify-start items-center h-10"}>
                                 {servers_.map((server, index) => {
@@ -91,9 +94,10 @@ const Movies = () => {
                                         onClick={() => {
                                             if (server.servername === "Vidsrc.me") setVideoServer(server.link + me)
                                             else if (server.servername === "Vidsrc.to") setVideoServer(server.link + to)
+
                                             else setVideoServer(server.link + data?.imdb.imdb.tmdb_id);
                                         }}
-                                        className={"dark:bg-app-semi-dark-blue dark:text-white hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out bg-app-shady-white rounded p-3 w-max text-center h-8"}
+                                        className={`${theme === 'dark' ? 'bg-app-dark-blue' : 'bg-[#c5cc89]'} dark:text-white hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out  rounded p-3 w-max text-center h-8`}
                                         key={index}>
                                         {server.servername}
                                     </div>)
