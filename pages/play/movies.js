@@ -11,6 +11,7 @@ import FilmSynopsis from '../../components/FilmSynopsis'
 import {renderLanguage, renderLength, renderRating, renderStatus, renderYear} from "../movie/[id]";
 import {AiOutlineExpand} from "react-icons/ai";
 import {BsFillLightbulbFill} from "react-icons/bs";
+import {BiCollapse} from "react-icons/bi";
 
 const servers_ = [{
     servername: "Vidsrc.me", link: "https://vidsrc.me/embed/movie?",
@@ -30,7 +31,7 @@ const Movies = () => {
     const to = tmdb ? `${tmdb}` : `${id}`
     const [lightStatus, switchLight] = useState(false)
     const [videoServer, setVideoServer] = useState('')
-    const {data, error} = useSWR(`/api/movie/${id}`, fetcher)
+    const {data} = useSWR(`/api/movie/${id}`, fetcher)
     const [MovieDetailsHidden, setMovieDetailsHidden] = useState(true)
     useEffect(() => {
         if (localStorage.getItem("userWatched")) {
@@ -76,8 +77,9 @@ const Movies = () => {
                 <div
                     className={`${lightStatus ? 'w-1/2 absolute ' : 'w-full '} p-4 pl-0 bg-transparent gap-10 z-[999] flex flex-row justify-start  top-[100%] lg:top-[90%] items-center `}>
                     <div onClick={() => setMovieDetailsHidden(!MovieDetailsHidden)}
-                         className={"flex flex-row gap-1 items-center hover:text-orange-500 transition duration-300 ease-in-out hover:cursor-pointer"}>
-                        <AiOutlineExpand/>
+                         className={`${lightStatus ? 'hidden' : 'flex'} flex-row gap-1 items-center hover:text-orange-500 transition duration-300 ease-in-out hover:cursor-pointer`}>
+                        {MovieDetailsHidden ?
+                            <AiOutlineExpand/>:<BiCollapse/>  }
                         <span>{MovieDetailsHidden ? 'Expand' : 'Collapse'}</span>
                     </div>
                     <div onClick={() => switchLight(!lightStatus)}
