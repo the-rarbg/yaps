@@ -58,6 +58,9 @@ const Movies = () => {
         <div
             className={` top-0 left-0 z-[997] bg-black transition duration-300 ease-in-out ${lightStatus ? 'opacity-1 fixed w-full h-screen ' : 'opacity-0 h-0 w-0'}`}>
         </div>
+        <div className={"text-4xl"}>
+            {data ? data.imdb.imdb.name : ""}
+        </div>
         <div
             className={`w-full  ${lightStatus ? '' : 'h-full'} z-[999] `}>
             <div className={` w-full  flex flex-col  h-full`}>
