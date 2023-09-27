@@ -16,9 +16,7 @@ export default function Collection({
                                        type = 'movie'
                                    }) {
     const {data, error} = useSWR(endpoint, fetcher)
-
     if (error) return <div>Error occurred</div>
-
     return (
         <div className={"relative"}>
             {data ? (

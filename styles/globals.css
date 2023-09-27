@@ -749,7 +749,6 @@ td {
   border-right: #5a6a90 solid 1px;
   z-index: 89;
 }
-*/
 
 /* Transparent Backdrop */
 .backdrop {
@@ -792,4 +791,23 @@ td {
   z-index: 900;
   animation: myAnim 0.3s ease-in-out forwards;
 
+}
+
+.dropdown-scroll:hover{
+  background-color: #242424;
+}
+::-webkit-scrollbar{
+  width: 10px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #3b3b3b;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #8e8e8e;
 }

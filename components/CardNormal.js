@@ -10,7 +10,7 @@ export default function CardNormal({ id, category, rating, src, title, year }) {
           if (category === 'movie') {
               window.open(`/movie/${id}`)
           } else if (category === 'tv') {
-              window.ope(`/tv/${id}`)
+              window.open(`/tv/${id}`)
           }
       } else {
           if (category === 'movie') {

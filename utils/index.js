@@ -11,7 +11,6 @@ export const pathToSearchTV = '/search/tv/'
 
 
 export const fetcher = url => fetch(url).then(res => {
-
     return res.json()
 })
 
@@ -37,7 +36,6 @@ export const toBase64 = str =>
         : window.btoa(str)
 
 export const renderResults = (array, Component, media_type) => {
-    console.log(array)
     return array.map(item => (
         <Component
             key={item.id || uuidv4()}
