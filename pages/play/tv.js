@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {useRouter} from 'next/router';
 import Head from 'next/head'
-import {AiOutlineDown, AiOutlineExpand} from "react-icons/ai";
+import {AiOutlineDown, AiOutlineExpand, AiOutlineRight} from "react-icons/ai";
 import useSWR from "swr";
 
 const servers_ = [
@@ -132,15 +132,18 @@ const Tv = () => {
                         <AiOutlineExpand/>
                         <span>Expand</span>
                     </div>
-                    <div className={"relative w-32 "}>
-                        <div className={"flex z-50 justify-center items-center flex-row gap-2"} onClick={() => {
-                            setSeasonDropDown(!seasonDropDown)
-                            setEpisodeDropDown(false)
-                        }}>
-                            Select Season<span className={"pt-1"}><AiOutlineDown/></span>
+                    <div className={"relative w-44 "}>
+                        <div
+                            className={"flex z-50 justify-center items-center bg-[#151515] text-white cursor-pointer outline-0 rounded  flex-row gap-2"}
+                            onClick={() => {
+                                setSeasonDropDown(!seasonDropDown)
+                                setEpisodeDropDown(false)
+                            }}>
+                            Season {tvDetails.season}<span className={"pt-1 transition duration-300 ease-in-out"}>{seasonDropDown ? <AiOutlineDown/> :
+                            <AiOutlineRight/>}</span>
                         </div>
                         <div
-                            className={` flex-col z-40  overflow-y-scroll p-2 h-32 bg-black text-white w-32 absolute justify-center transition duration-300 ease-in-out items-center ${seasonDropDown ? 'translate-y-0 opacity-1' : 'translate-y-[-150%]   opacity-0'} `}>
+                            className={` flex-col  z-40 bg-app-semi-dark-blue font-normal overflow-y-scroll  h-44  text-white w-44 absolute justify-center transition duration-300 ease-in-out items-center ${seasonDropDown ? 'translate-y-0 opacity-1' : 'translate-y-[-150%]   opacity-0'} `}>
                             <ul className={""}>
                                 {season !== [] ? season.map((season, index) => {
                                     return (
@@ -148,7 +151,7 @@ const Tv = () => {
                                             setTvDetails({season: season, episode: 1})
                                             setSeasonDropDown(false)
                                         }}
-                                            className={`relative hover:bg-amber-700 hover:cursor-pointer pl-2 flex items-center justify-evenly w-full h-5 ${tvDetails.season === season ? 'bg-amber-700' : ''}`}>
+                                            className={`relative dropdown-scroll  hover:bg-amber-700 hover:cursor-pointer pl-2 flex items-center justify-evenly w-full h-12 ${tvDetails.season === season ? 'bg-amber-700' : ''}`}>
                                             Season <span>{season}</span>
                                         </li>
                                     )
@@ -157,15 +160,16 @@ const Tv = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className={"relative w-32 "}>
-                        <div className={"flex z-50 justify-center items-center flex-row gap-2"} onClick={() => {
+                    <div className={"relative w-44 "}>
+                        <div className={"flex z-50 rounded justify-center items-center bg-[#151515] text-white flex-row gap-2"} onClick={() => {
                             setEpisodeDropDown(!episodeDropDown)
                             setSeasonDropDown(false)
                         }}>
-                            Select Episode<span className={"pt-1"}><AiOutlineDown/></span>
+                            Episode {tvDetails.episode}<span className={"pt-1 transition duration-300 ease-in-out"}>{episodeDropDown ? <AiOutlineDown/> :
+                            <AiOutlineRight/>}</span>
                         </div>
                         <div
-                            className={` flex-col z-40  overflow-y-scroll p-2 h-32 bg-black text-white w-32 absolute justify-center transition duration-300 ease-in-out items-center ${episodeDropDown ? 'translate-y-0 opacity-1' : 'translate-y-[-150%]   opacity-0'} `}>
+                            className={` flex-col   z-40 bg-app-semi-dark-blue font-normal overflow-y-scroll  h-44  text-white w-44 absolute justify-center transition duration-300 ease-in-out items-center ${episodeDropDown ? 'translate-y-0 opacity-1' : 'translate-y-[-150%]   opacity-0'} `}>
                             <ul className={""}>
                                 {episodes[tvDetails.season] ? episodes[tvDetails.season].map((episode, index) => {
                                     return (
@@ -175,7 +179,7 @@ const Tv = () => {
                                             })
                                             setEpisodeDropDown(false)
                                         }}
-                                            className={`relative hover:bg-amber-700 hover:cursor-pointer pl-2 flex items-center justify-evenly w-full h-5 ${tvDetails.episode === episode ? 'bg-amber-700' : ''}`}>
+                                            className={`relative dropdown-scroll  hover:bg-amber-700 hover:cursor-pointer pl-2 flex items-center justify-evenly w-full h-12 ${tvDetails.episode === episode ? 'bg-amber-700' : ''}`}>
                                             Episode <span>{episode}</span>
                                         </li>
                                     )
@@ -211,7 +215,7 @@ const Tv = () => {
                                                     setVideoServer(`${server.link}${tmdb}&season=${tvDetails.season}&episode=${tvDetails.episode}`);
                                             }
                                             }
-                                            className={`dark:bg-app-semi-dark-blue dark:text-white hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out rounded p-3 w-max text-center h-8 ${videoServer.includes(server.servername.toLowerCase()) ? 'bg-amber-700':'bg-app-shady-white' }`}
+                                            className={`dark:bg-app-semi-dark-blue dark:text-white hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out rounded p-3 w-max text-center h-8 ${videoServer.includes(server.servername.toLowerCase()) ? 'bg-amber-700' : 'bg-app-shady-white'}`}
                                             key={index}>
                                             {server.servername}
                                         </div>
