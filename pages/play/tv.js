@@ -24,11 +24,12 @@ const Tv = () => {
     const router = useRouter()
     const {id, tmdb} = router.query;
 
-    const {data, error} = useSWR(`/api/tv/${id ? id : tmdb}`, fetcher)
+    const {data, error} = useSWR(`/api/tv/${tmdb}`, fetcher)
     const [MovieDetailsHidden, setMovieDetailsHidden] = useState(false)
     const [tvDetails, setTvDetails] = useState({
         episode: 1, season: 1
     })
+    console.log(data)
     const [season, SetSeason] = useState([]);
     const [episodes, setEpisodes] = useState({})
     const [seasonDropDown, setSeasonDropDown] = useState(false)
@@ -37,9 +38,14 @@ const Tv = () => {
     useEffect(() => {
         let temp = []
         if (data)
-            for (let i = 1; i < data.detail.seasons.length; i++) {
-                temp.push(i);
-            }
+            if (data.detail.seasons[0].name.includes("Specials"))
+                for (let i = 1; i < data.detail.seasons.length; i++) {
+                    temp.push(i);
+                }
+            else
+                for (let i = 1; i <= data.detail.seasons.length; i++) {
+                    temp.push(i);
+                }
         SetSeason(temp)
         let episode = [];
         let c = 1;
@@ -116,9 +122,9 @@ const Tv = () => {
                 <div
                     className={"w-full h-16 pb-2 text-3xl"}>{data?.detail.name} S{tvDetails.season} E{tvDetails.episode}</div>
                 <iframe
-                    src={videoServer ? videoServer : `https://vidsrc.me/embed/tv?tmdb=${tmdb}&season=${tvDetails.season}&episode=${tvDetails.episode}`}
+                    src={videoServer ? videoServer : `https://vidsrc.me/embed/tv?tmdb=${tmdb ? tmdb : id}&season=${tvDetails.season}&episode=${tvDetails.episode}`}
                     className={"z-50"}
-                     style={{width: '100%', height: '92vh'}}
+                    style={{width: '100%', height: '92vh'}}
                     allowFullScreen="allowfullscreen"></iframe>
                 <div className={"w-full p-4 pl-0 bg-transparent flex gap-10 flex-row justify-start items-center"}>
                     <div onClick={() => setMovieDetailsHidden(!MovieDetailsHidden)}
@@ -136,7 +142,7 @@ const Tv = () => {
                         <div
                             className={` flex-col z-40  overflow-y-scroll p-2 h-32 bg-black text-white w-32 absolute justify-center transition duration-300 ease-in-out items-center ${seasonDropDown ? 'translate-y-0 opacity-1' : 'translate-y-[-150%]   opacity-0'} `}>
                             <ul className={""}>
-                                {season.map((season, index) => {
+                                {season !== [] ? season.map((season, index) => {
                                     return (
                                         <li key={index} onClick={() => {
                                             setTvDetails({season: season, episode: 1})
@@ -146,7 +152,7 @@ const Tv = () => {
                                             Season <span>{season}</span>
                                         </li>
                                     )
-                                })
+                                }) : (<li>No Seasons</li>)
                                 }
                             </ul>
                         </div>
@@ -161,7 +167,7 @@ const Tv = () => {
                         <div
                             className={` flex-col z-40  overflow-y-scroll p-2 h-32 bg-black text-white w-32 absolute justify-center transition duration-300 ease-in-out items-center ${episodeDropDown ? 'translate-y-0 opacity-1' : 'translate-y-[-150%]   opacity-0'} `}>
                             <ul className={""}>
-                                {episodes[tvDetails.season] && episodes[tvDetails.season].map((episode, index) => {
+                                {episodes[tvDetails.season] ? episodes[tvDetails.season].map((episode, index) => {
                                     return (
                                         <li key={index} onClick={() => {
                                             setTvDetails(prev => {
@@ -173,7 +179,7 @@ const Tv = () => {
                                             Episode <span>{episode}</span>
                                         </li>
                                     )
-                                })
+                                }) : (<li>No Episode</li>)
                                 }
                             </ul>
                         </div>
@@ -205,7 +211,7 @@ const Tv = () => {
                                                     setVideoServer(`${server.link}${tmdb}&season=${tvDetails.season}&episode=${tvDetails.episode}`);
                                             }
                                             }
-                                            className={"dark:bg-app-semi-dark-blue dark:text-white hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out bg-app-shady-white rounded p-3 w-max text-center h-8"}
+                                            className={`dark:bg-app-semi-dark-blue dark:text-white hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out rounded p-3 w-max text-center h-8 ${videoServer.includes(server.servername.toLowerCase()) ? 'bg-amber-700':'bg-app-shady-white' }`}
                                             key={index}>
                                             {server.servername}
                                         </div>
