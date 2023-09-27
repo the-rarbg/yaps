@@ -69,8 +69,9 @@ export default function Collection({}) {
                         <ul className={"flex gap-10 flex-row"}>
                             {
                                 data.map((data, index) => {
-                                    return (<li> key={index}
-                                            <CardContinueWatching key={index} category={data.type} id={data.id} title={data.name}
+                                    return (<li key={index}>
+                                            <CardContinueWatching category={data.type} id={data.id}
+                                                                  title={data.name}
                                                                   year={data.year}
                                                                   src={data.poster_link}/>
                                         </li>
