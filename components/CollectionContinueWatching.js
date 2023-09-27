@@ -70,7 +70,7 @@ export default function Collection({}) {
                             {
                                 data.map((data, index) => {
                                     return (<li> key={index}
-                                            <CardContinueWatching category={data.type} id={data.id} title={data.name}
+                                            <CardContinueWatching key={index} category={data.type} id={data.id} title={data.name}
                                                                   year={data.year}
                                                                   src={data.poster_link}/>
                                         </li>

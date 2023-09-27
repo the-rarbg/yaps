@@ -6,6 +6,7 @@ export default function CardContinueWatching({
                                                  id,
                                                  category,
                                                  year,
+                                                 key,
                                                  src,
                                                  title,
                                              }) {
@@ -28,7 +29,7 @@ export default function CardContinueWatching({
     }
 
     return (
-        <a className='relative w-full cursor-pointer' target={"_blank"} onClick={handleClick}>
+        <a key={key} className='relative w-full cursor-pointer' target={"_blank"} onClick={handleClick}>
             <CardImageCW isTrending src={src}/>
             <CardInfoCW
                 id={id}
