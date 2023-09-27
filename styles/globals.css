@@ -800,6 +800,7 @@ td {
   width: 10px;
   height: 7px;
 }
+
 ::-webkit-scrollbar-track{
   background-color: #3b3b3b;
 }

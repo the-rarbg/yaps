@@ -4,7 +4,8 @@ import Collection from '../components/Collection'
 import SearchBar from '../components/SearchBar'
 import {pathToSearchAll} from '../utils'
 import CollectionContinueWatching from "../components/CollectionContinueWatching";
-
+import {ThemeToggler} from "../components/ThemeToggler";
+import {useTheme} from "next-themes";
 export default function Home() {
     const limitNormal = 6
     const limitTrending = 10

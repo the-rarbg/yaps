@@ -29,7 +29,7 @@ const Movies = () => {
     const to = tmdb ? `${tmdb}` : `${id}`
     const [videoServer, setVideoServer] = useState('')
     const {data, error} = useSWR(`/api/movie/${id}`, fetcher)
-    const [MovieDetailsHidden, setMovieDetailsHidden] = useState(false)
+    const [MovieDetailsHidden, setMovieDetailsHidden] = useState(true)
     useEffect(() => {
         if (localStorage.getItem("userWatched")) {
             let data = JSON.parse(localStorage.getItem("userWatched"))
