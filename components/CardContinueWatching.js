@@ -1,15 +1,14 @@
 import {useRouter} from 'next/router'
-import CardImage from './CardImage'
-import CardInfo from './CardInfo'
+import CardImageCW from "./CardImageCW";
+import CardInfoCW from "./CardInfoCW";
 
-export default function CardTrending({
-                                         id,
-                                         category,
-                                         rating,
-                                         src,
-                                         title,
-                                         year,
-                                     }) {
+export default function CardContinueWatching({
+                                                 id,
+                                                 category,
+                                                 year,
+                                                 src,
+                                                 title,
+                                             }) {
     const router = useRouter()
 
     const handleClick = (e) => {
@@ -29,13 +28,11 @@ export default function CardTrending({
     }
 
     return (
-        <a className='relative w-full top-[100%] cursor-pointer' target={"_blank"} onClick={handleClick}>
-            <CardImage isTrending src={src} alt={title}/>
-            <CardInfo
-                isTrending
+        <a className='relative w-full cursor-pointer' target={"_blank"} onClick={handleClick}>
+            <CardImageCW isTrending src={src}/>
+            <CardInfoCW
                 id={id}
                 category={category}
-                rating={rating}
                 title={title}
                 year={year}
             />

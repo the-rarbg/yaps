@@ -3,8 +3,7 @@ import CardTrending from '../components/CardTrending'
 import Collection from '../components/Collection'
 import SearchBar from '../components/SearchBar'
 import {pathToSearchAll} from '../utils'
-import {ThemeToggler} from "../components/ThemeToggler";
-import {useTheme} from "next-themes";
+import CollectionContinueWatching from "../components/CollectionContinueWatching";
 
 export default function Home() {
     const limitNormal = 6
@@ -15,6 +14,9 @@ export default function Home() {
                 <title>Home | Yaps</title>
             </Head>
             <SearchBar searchPath={pathToSearchAll}/>
+            {/*Continue watching*/}
+            <CollectionContinueWatching
+            />
             {/* Collection of different groups of movies */}
             <Collection
                 isHomePage

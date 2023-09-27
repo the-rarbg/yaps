@@ -72,31 +72,75 @@ const Tv = () => {
         }
     }, [seasonDropDown, episodeDropDown]);
     useEffect(() => {
-        if (data !== undefined) {
-            let inputstrings = `${data?.detail.name}season`
-            let inputStringe = `${data?.detail.name}episode`
-            if (localStorage.getItem(inputstrings.replace(/\s+/g, "").toLowerCase())) {
-                setTvDetails(prev => {
-                    return {
-                        ...prev, season: parseInt(localStorage.getItem(inputstrings.replace(/\s+/g, "").toLowerCase())
-                        )
+        if (localStorage.getItem("userWatched")) {
+            let data = JSON.parse(localStorage.getItem("userWatched"))
+            let tvPresent = -1
+            if (id || tmdb) {
+                for (let i in data.tv) {
+                    console.log(data.tv[i], id, tmdb)
+                    if (id) {
+                        if (data.tv[i][0] === id) {
+                            tvPresent = i
+                        }
+                    } else {
+                        if (data.tv[i][0] === tmdb) {
+                            tvPresent = i
+                        }
                     }
-                })
-            } else {
-                localStorage.setItem(inputstrings.replace(/\s+/g, "").toLowerCase(), tvDetails.season)
+                }
             }
-            if (localStorage.getItem(inputStringe.replace(/\s+/g, "").toLowerCase())) {
-                setTvDetails(prev => {
-                    return {
-                        ...prev, episode: parseInt(localStorage.getItem(inputStringe.replace(/\s+/g, "").toLowerCase())
-                        )
+            if (id || tmdb)
+                if (tvPresent !== -1) {
+                    setTvDetails({season: data.tv[i][1], episode: data.tv[i][2]})
+                } else {
+                    if (id || tmdb) {
+                        if (id)
+                            data.tv.push([id, tvDetails.season, tvDetails.episode])
+                        else data.tv.push([tmdb, tvDetails.season, tvDetails.episode])
+                        localStorage.setItem("userWatched", JSON.stringify(data))
                     }
-                })
-            } else {
-                localStorage.setItem(inputStringe.replace(/\s+/g, "").toLowerCase(), tvDetails.episode)
+                }
+        } else {
+            if (id || tmdb)
+                localStorage.setItem("userWatched", JSON.stringify({
+                    movies: [], tv: [[id ? id : tmdb, tvDetails.season, tvDetails.episode]]
+                }))
+        }
+    }, [id, tmdb]);
+    useEffect(() => {
+        if (data !== undefined) {
+            if (localStorage.getItem('userWatched')) {
+                let dataa = JSON.parse(localStorage.getItem("userWatched"))
+                let tvPresent = -1
+                if (id || tmdb) {
+                    for (let i in dataa.tv) {
+                        if (id) {
+                            if (dataa.tv[i][0] === id) {
+                                tvPresent = i
+                            }
+                        } else {
+                            if (dataa.tv[i][0] === tmdb) {
+                                tvPresent = i
+                            }
+                        }
+                    }
+                }
+                if (id || tmdb)
+                    if (tvPresent !== -1) {
+                        if (id) dataa.tv[tvPresent] = [id, tvDetails.season, tvDetails.episode]
+                        else dataa.tv[tvPresent] = [tmdb, tvDetails.season, tvDetails.episode]
+                        localStorage.setItem("userWatched", JSON.stringify(dataa))
+                    } else {
+                        if (id || tmdb) {
+                            if (id)
+                                dataa.tv.push([id, tvDetails.season, tvDetails.episode])
+                            else dataa.tv.push([tmdb, tvDetails.season, tvDetails.episode])
+                            localStorage.setItem("userWatched", JSON.stringify(dataa))
+                        }
+                    }
             }
         }
-    }, [data]);
+    }, [tvDetails]);
     useEffect(() => {
         if (data !== undefined) {
             let inputstrings = `${data?.detail.name}season`
@@ -139,7 +183,8 @@ const Tv = () => {
                                 setSeasonDropDown(!seasonDropDown)
                                 setEpisodeDropDown(false)
                             }}>
-                            Season {tvDetails.season}<span className={"pt-1 transition duration-300 ease-in-out"}>{seasonDropDown ? <AiOutlineDown/> :
+                            Season {tvDetails.season}<span
+                            className={"pt-1 transition duration-300 ease-in-out"}>{seasonDropDown ? <AiOutlineDown/> :
                             <AiOutlineRight/>}</span>
                         </div>
                         <div
@@ -161,11 +206,14 @@ const Tv = () => {
                         </div>
                     </div>
                     <div className={"relative w-44 "}>
-                        <div className={"flex z-50 rounded justify-center items-center bg-[#151515] text-white flex-row gap-2"} onClick={() => {
-                            setEpisodeDropDown(!episodeDropDown)
-                            setSeasonDropDown(false)
-                        }}>
-                            Episode {tvDetails.episode}<span className={"pt-1 transition duration-300 ease-in-out"}>{episodeDropDown ? <AiOutlineDown/> :
+                        <div
+                            className={"flex z-50 rounded justify-center items-center bg-[#151515] text-white flex-row gap-2"}
+                            onClick={() => {
+                                setEpisodeDropDown(!episodeDropDown)
+                                setSeasonDropDown(false)
+                            }}>
+                            Episode {tvDetails.episode}<span
+                            className={"pt-1 transition duration-300 ease-in-out"}>{episodeDropDown ? <AiOutlineDown/> :
                             <AiOutlineRight/>}</span>
                         </div>
                         <div
