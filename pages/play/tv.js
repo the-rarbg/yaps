@@ -3,6 +3,7 @@ import {useRouter} from 'next/router';
 import Head from 'next/head'
 import {AiOutlineDown, AiOutlineExpand, AiOutlineRight} from "react-icons/ai";
 import useSWR from "swr";
+import {BsFillLightbulbFill} from "react-icons/bs";
 
 const servers_ = [
     {
@@ -35,6 +36,8 @@ const Tv = () => {
     const [seasonDropDown, setSeasonDropDown] = useState(false)
     const [episodeDropDown, setEpisodeDropDown] = useState(false)
     const [videoServer, setVideoServer] = useState('')
+    const [lightStatus, switchLight] = useState(false)
+
     useEffect(() => {
         let temp = []
         if (data)
@@ -162,7 +165,10 @@ const Tv = () => {
             <Head>
                 <title>Play Tv | Yaps</title>
             </Head>
-            <div className={` ${MovieDetailsHidden ? 'w-full' : 'min-w-2/3 '} flex flex-col  h-full`}>
+            <div
+                className={`w-full h-screen  top-0 left-0 z-[997] bg-black transition duration-300 ease-in-out ${lightStatus ? 'opacity-1 fixed' : 'opacity-0 h-0 w-0'}`}>
+            </div>
+            <div className={` ${MovieDetailsHidden ? 'w-full' : 'min-w-2/3 '} flex flex-col   ${lightStatus ? '' : 'h-full'} z-[999] h-full`}>
                 <div
                     className={"w-full h-16 pb-2 text-3xl"}>{data?.detail.name} S{tvDetails.season} E{tvDetails.episode}</div>
                 <iframe
@@ -174,7 +180,12 @@ const Tv = () => {
                     <div onClick={() => setMovieDetailsHidden(!MovieDetailsHidden)}
                          className={"flex flex-row gap-1 items-center hover:text-orange-500 transition duration-300 ease-in-out hover:cursor-pointer"}>
                         <AiOutlineExpand/>
-                        <span>Expand</span>
+                        <span>{MovieDetailsHidden ? 'Expand' : 'Collapse'}</span>
+                    </div>
+                    <div onClick={() => switchLight(!lightStatus)}
+                         className={"flex flex-row gap-1 items-center hover:text-orange-500 transition duration-300 ease-in-out hover:cursor-pointer"}>
+                        <BsFillLightbulbFill/>
+                        <span>{MovieDetailsHidden ? 'Light' : 'Light'}</span>
                     </div>
                     <div className={"relative w-44 "}>
                         <div
@@ -238,7 +249,7 @@ const Tv = () => {
                     </div>
 
                 </div>
-                <div className={"  w-full flex justify-start  items-center h-36"}>
+                <div className={` ${lightStatus ?'hidden':'flex'} w-full  justify-start  items-center h-36`}>
                     <div className={"rounded w-full h-full flex flex-row "}>
                         <div
                             className={"p-2 h-full bg-app-shady-white dark:bg-app-grey dark:text-black text-center w-1/3"}>

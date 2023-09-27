@@ -10,6 +10,7 @@ import FilmRating from '../../components/FilmRating'
 import FilmSynopsis from '../../components/FilmSynopsis'
 import {renderLanguage, renderLength, renderRating, renderStatus, renderYear} from "../movie/[id]";
 import {AiOutlineExpand} from "react-icons/ai";
+import {BsFillLightbulbFill} from "react-icons/bs";
 
 const servers_ = [{
     servername: "Vidsrc.me", link: "https://vidsrc.me/embed/movie?",
@@ -27,6 +28,7 @@ const Movies = () => {
     const {id, tmdb} = router.query;
     const me = tmdb ? `tmdb=${tmdb}` : `imdb=${id}`
     const to = tmdb ? `${tmdb}` : `${id}`
+    const [lightStatus, switchLight] = useState(false)
     const [videoServer, setVideoServer] = useState('')
     const {data, error} = useSWR(`/api/movie/${id}`, fetcher)
     const [MovieDetailsHidden, setMovieDetailsHidden] = useState(true)
@@ -63,19 +65,28 @@ const Movies = () => {
             <title>Play Movies | Yaps</title>
         </Head>
         <div
-            className={`${MovieDetailsHidden ? 'lg:grid-row-1 lg:grid-cols-2' : 'lg:grid-row-2 lg:grid-cols-1'} grid w-full h-full  grid-cols-1 grid-rows-2`}>
+            className={`w-full h-screen  top-0 left-0 z-[997] bg-black transition duration-300 ease-in-out ${lightStatus ? 'opacity-1 fixed' : 'opacity-0 h-0 w-0'}`}>
+        </div>
+        <div
+            className={`${MovieDetailsHidden ? 'lg:grid-row-1 lg:grid-cols-2' : 'lg:grid-row-2 lg:grid-cols-1'} grid w-full  ${lightStatus ? '' : 'h-full'} z-[999] grid-cols-1 grid-rows-2`}>
             <div className={` ${MovieDetailsHidden ? 'w-full' : 'min-w-2/3 '} flex flex-col  h-full`}>
                 <iframe src={videoServer ? videoServer : servers_[0].link + me}
-                        className={`w-full ${MovieDetailsHidden ? 'h-[60vh]' : 'h-[95vh]'}`}
+                        className={`z-[998] ${lightStatus ? 'absolute left-0 lg:left-[20%] h-[80vh] lg:w-2/3 w-full ' : MovieDetailsHidden ? 'w-full h-[60vh]' : 'w-full h-[95vh]'}`}
                         allowFullScreen="allowfullscreen"></iframe>
-                <div className={"w-full p-4 pl-0 bg-transparent flex flex-row justify-start items-center"}>
+                <div
+                    className={`${lightStatus ? 'w-1/2 absolute ' : 'w-full '} p-4 pl-0 bg-transparent gap-10 z-[999] flex flex-row justify-start  top-[100%] lg:top-[90%] items-center `}>
                     <div onClick={() => setMovieDetailsHidden(!MovieDetailsHidden)}
                          className={"flex flex-row gap-1 items-center hover:text-orange-500 transition duration-300 ease-in-out hover:cursor-pointer"}>
                         <AiOutlineExpand/>
                         <span>{MovieDetailsHidden ? 'Expand' : 'Collapse'}</span>
                     </div>
+                    <div onClick={() => switchLight(!lightStatus)}
+                         className={"flex flex-row gap-1 items-center hover:text-orange-500 transition duration-300 ease-in-out hover:cursor-pointer"}>
+                        <BsFillLightbulbFill/>
+                        <span>{MovieDetailsHidden ? 'Light' : 'Light'}</span>
+                    </div>
                 </div>
-                <div className={"  w-full flex justify-start  items-center h-36"}>
+                <div className={`${lightStatus ? 'hidden' : 'flex'}  w-full flex justify-start  items-center h-36`}>
                     <div className={"rounded w-full h-full flex flex-row "}>
                         <div
                             className={"p-2 h-full bg-app-shady-white dark:bg-app-grey dark:text-black text-center w-1/3"}>
@@ -103,7 +114,8 @@ const Movies = () => {
                     </div>
                 </div>
             </div>
-            <div className={` ${MovieDetailsHidden ? '' : 'hidden'} min-w-1/3 h-full`}>
+            <div
+                className={` ${MovieDetailsHidden ? '' : 'hidden'} ${lightStatus ? 'hidden' : 'flex'} min-w-1/3 h-full`}>
                 <section
                     className='flex flex-row ml-10 lg:mt-0 mt-10 lg:flex-col lg:justify-end justify-center items-center lg:items-baseline'>
                     <FilmImage

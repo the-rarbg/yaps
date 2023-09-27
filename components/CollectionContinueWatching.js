@@ -78,7 +78,7 @@ export default function Collection({}) {
                                  iscontinue_watching={true}/>
                         <section
                             className={
-                                ' w-[100%] gap-5 overflow-x-scroll p-5 '
+                                ' w-[100%] gap-5 overflow-x-scroll pb-2 '
                             }>
                             <ul className={"flex gap-10 flex-row"}>
                                 {
