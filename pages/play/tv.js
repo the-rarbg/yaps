@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import {useRouter} from 'next/router';
 import Head from 'next/head'
-import {AiOutlineDown, AiOutlineExpand, AiOutlineRight} from "react-icons/ai";
+import {AiOutlineDown,AiOutlineRight} from "react-icons/ai";
 import useSWR from "swr";
 import {BsFillLightbulbFill} from "react-icons/bs";
-import {BiCollapse} from "react-icons/bi";
 
 const servers_ = [
     {
@@ -27,11 +26,9 @@ const Tv = () => {
     const {id, tmdb} = router.query;
 
     const {data} = useSWR(`/api/tv/${tmdb}`, fetcher)
-    const [MovieDetailsHidden, setMovieDetailsHidden] = useState(false)
     const [tvDetails, setTvDetails] = useState({
         episode: 1, season: 1
     })
-    console.log(data)
     const [season, SetSeason] = useState([]);
     const [episodes, setEpisodes] = useState({})
     const [seasonDropDown, setSeasonDropDown] = useState(false)
@@ -170,7 +167,7 @@ const Tv = () => {
                 className={`w-full h-screen  top-0 left-0 z-[997] bg-black transition duration-300 ease-in-out ${lightStatus ? 'opacity-1 fixed' : 'opacity-0 h-0 w-0'}`}>
             </div>
             <div
-                className={` ${MovieDetailsHidden ? 'w-full' : 'min-w-2/3 '} flex flex-col   ${lightStatus ? '' : 'h-full'} z-[999] h-full`}>
+                className={` w-full flex flex-col   ${lightStatus ? '' : 'h-full'} z-[999] h-full`}>
                 <div
                     className={"w-full h-16 pb-2 text-3xl"}>{data?.detail.name} S{tvDetails.season} E{tvDetails.episode}</div>
                 <iframe
@@ -179,17 +176,10 @@ const Tv = () => {
                     style={{width: '100%', height: '92vh'}}
                     allowFullScreen="allowfullscreen"></iframe>
                 <div className={"w-full p-4 pl-0 bg-transparent flex gap-10 flex-row justify-start items-center"}>
-                    <div onClick={() => setMovieDetailsHidden(!MovieDetailsHidden)}
-                         className={`${lightStatus ? 'hidden' : 'flex'} flex flex-row gap-1 items-center hover:text-orange-500 transition duration-300 ease-in-out hover:cursor-pointer`}>
-
-                        {MovieDetailsHidden ?
-                            <AiOutlineExpand/> : <BiCollapse/>}
-                        <span>{MovieDetailsHidden ? 'Expand' : 'Collapse'}</span>
-                    </div>
                     <div onClick={() => switchLight(!lightStatus)}
                          className={"flex flex-row gap-1 items-center hover:text-orange-500 transition duration-300 ease-in-out hover:cursor-pointer"}>
                         <BsFillLightbulbFill/>
-                        <span>{MovieDetailsHidden ? 'Light' : 'Light'}</span>
+                        <span>Light</span>
                     </div>
                     <div className={"relative w-44 "}>
                         <div

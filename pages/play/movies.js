@@ -2,16 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {useRouter} from 'next/router';
 import Head from 'next/head'
 import useSWR from "swr";
-import FilmGenres from '../../components/FilmGenres'
-import FilmHeading from '../../components/FilmHeading'
-import FilmImage from '../../components/FilmImage'
-import FilmInfo from '../../components/FilmInfo'
-import FilmRating from '../../components/FilmRating'
-import FilmSynopsis from '../../components/FilmSynopsis'
-import {renderLanguage, renderLength, renderRating, renderStatus, renderYear} from "../movie/[id]";
-import {AiOutlineExpand} from "react-icons/ai";
 import {BsFillLightbulbFill} from "react-icons/bs";
-import {BiCollapse} from "react-icons/bi";
 
 const servers_ = [{
     servername: "Vidsrc.me", link: "https://vidsrc.me/embed/movie?",
@@ -32,7 +23,6 @@ const Movies = () => {
     const [lightStatus, switchLight] = useState(false)
     const [videoServer, setVideoServer] = useState('')
     const {data} = useSWR(`/api/movie/${id}`, fetcher)
-    const [MovieDetailsHidden, setMovieDetailsHidden] = useState(true)
     useEffect(() => {
         if (localStorage.getItem("userWatched")) {
             let data = JSON.parse(localStorage.getItem("userWatched"))
@@ -69,23 +59,17 @@ const Movies = () => {
             className={` top-0 left-0 z-[997] bg-black transition duration-300 ease-in-out ${lightStatus ? 'opacity-1 fixed w-full h-screen ' : 'opacity-0 h-0 w-0'}`}>
         </div>
         <div
-            className={`${MovieDetailsHidden ? 'lg:grid-row-1 lg:grid-cols-2' : 'lg:grid-row-2 lg:grid-cols-1'} grid w-full  ${lightStatus ? '' : 'h-full'} z-[999] grid-cols-1 grid-rows-2`}>
-            <div className={` ${MovieDetailsHidden ? 'w-full' : 'min-w-2/3 '} flex flex-col  h-full`}>
-                <iframe src={videoServer ? videoServer : servers_[0].link + me}
-                        className={`z-[998] ${lightStatus ? 'absolute left-0 lg:left-[20%] h-[80vh] lg:w-2/3 w-full ' : MovieDetailsHidden ? 'w-full h-[60vh]' : 'w-full h-[95vh]'}`}
+            className={`w-full  ${lightStatus ? '' : 'h-full'} z-[999] `}>
+            <div className={` w-full  flex flex-col  h-full`}>
+                <iframe src={videoServer ? videoServer : servers_[1].link + to}
+                        className={`z-[998] ${lightStatus ? 'absolute left-0 lg:left-[20%] h-[80vh] lg:w-2/3 w-full ' : 'w-full h-[95vh]'}`}
                         allowFullScreen="allowfullscreen"></iframe>
                 <div
                     className={`${lightStatus ? 'w-1/2 absolute ' : 'w-full '} p-4 pl-0 bg-transparent gap-10 z-[999] flex flex-row justify-start  top-[100%] lg:top-[90%] items-center `}>
-                    <div onClick={() => setMovieDetailsHidden(!MovieDetailsHidden)}
-                         className={`${lightStatus ? 'hidden' : 'flex'} flex-row gap-1 items-center hover:text-orange-500 transition duration-300 ease-in-out hover:cursor-pointer`}>
-                        {MovieDetailsHidden ?
-                            <AiOutlineExpand/>:<BiCollapse/>  }
-                        <span>{MovieDetailsHidden ? 'Expand' : 'Collapse'}</span>
-                    </div>
                     <div onClick={() => switchLight(!lightStatus)}
                          className={"flex flex-row gap-1 items-center hover:text-orange-500 transition duration-300 ease-in-out hover:cursor-pointer"}>
                         <BsFillLightbulbFill/>
-                        <span>{MovieDetailsHidden ? 'Light' : 'Light'}</span>
+                        <span>Light</span>
                     </div>
                 </div>
                 <div className={`${lightStatus ? 'hidden' : 'flex'}  w-full flex justify-start  items-center h-36`}>
@@ -115,33 +99,6 @@ const Movies = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div
-                className={` ${MovieDetailsHidden ? '' : 'hidden'} ${lightStatus ? 'hidden' : 'flex'} min-w-1/3 h-full`}>
-                <section
-                    className='flex flex-row ml-10 lg:mt-0 mt-10 lg:flex-col lg:justify-end justify-center items-center lg:items-baseline'>
-                    <FilmImage
-                        src={data?.detail?.poster_path}
-                        title={data?.detail?.title}
-                    />
-                    <section>
-                        <FilmHeading
-                            from={'movie'}
-                            tagline={data?.detail?.tagline}
-                            title={data?.detail?.title}
-                        />
-                        <FilmRating number={renderRating(data?.detail?.vote_average)}/>
-                        <FilmSynopsis synopsis={data?.detail?.overview}/>
-                        <FilmInfo
-                            media_type={data?.imdb.imdb.content_type.toLowerCase()}
-                            language={renderLanguage(data?.detail?.spoken_languages || [])}
-                            length={renderLength(data?.detail?.runtime)}
-                            status={renderStatus(data?.detail?.status)}
-                            year={renderYear(data?.detail?.release_date)}
-                        />
-                        <FilmGenres genres={data?.detail?.genres || []}/>
-                    </section>
-                </section>
             </div>
         </div>
     </>)
