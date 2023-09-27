@@ -65,7 +65,7 @@ const Movies = () => {
             <title>Play Movies | Yaps</title>
         </Head>
         <div
-            className={`w-full h-screen  top-0 left-0 z-[997] bg-black transition duration-300 ease-in-out ${lightStatus ? 'opacity-1 fixed' : 'opacity-0 h-0 w-0'}`}>
+            className={` top-0 left-0 z-[997] bg-black transition duration-300 ease-in-out ${lightStatus ? 'opacity-1 fixed w-full h-screen ' : 'opacity-0 h-0 w-0'}`}>
         </div>
         <div
             className={`${MovieDetailsHidden ? 'lg:grid-row-1 lg:grid-cols-2' : 'lg:grid-row-2 lg:grid-cols-1'} grid w-full  ${lightStatus ? '' : 'h-full'} z-[999] grid-cols-1 grid-rows-2`}>
