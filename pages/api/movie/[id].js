@@ -7,10 +7,6 @@ export default async function handler(req, res) {
     const response = await fetch(getMovieDetail(id))
     const response2 = await fetch(getMovieCasts(id))
 
-   
-   
-   
-   
     const data = await response.json()
     const data2 = await response2.json()
     const response3 = await fetch(getLinkByIMDB(data.imdb_id));

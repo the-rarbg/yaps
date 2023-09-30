@@ -1,7 +1,5 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useRouter } from 'next/router'
-import {  useState } from 'react'
-import { FaImdb, FaLink, FaPlay } from 'react-icons/fa'
+import {  FaPlay } from 'react-icons/fa'
 import {BsDownload} from "react-icons/bs";
 
 
@@ -17,8 +15,6 @@ const handlegetLink =()=>{
   return (
     
     <div className='mb-10 flex flex-wrap'>
-    
-       
         {!props?.imdb ? null : (
        <a
           
@@ -35,7 +31,6 @@ const handlegetLink =()=>{
 
    {!(props?.imdb||props?.tmdb) ? null : (
        <a
-          
        onClick={()=>{
          if(router?.pathname==="/tv/[id]"){
           router.push(`/play/tv/?${props?.tmdb?(`tmdb=${props?.tmdb}`):(`id=${props?.imdb}`)}`)
