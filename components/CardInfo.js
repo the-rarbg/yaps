@@ -52,7 +52,7 @@ export default function CardInfo({
   )
 }
 
-function renderYear(year) {
+export function renderYear(year) {
   if (!year) {
     return 'N/A'
   } else {
@@ -60,7 +60,7 @@ function renderYear(year) {
   }
 }
 
-function renderCategoryIcon(category) {
+export function renderCategoryIcon(category) {
   if (category === 'movie') {
     return <IconCategoryMovie className='pl-1 text-base dark:fill-white fill-black ' />
   } else {
@@ -68,7 +68,7 @@ function renderCategoryIcon(category) {
   }
 }
 
-function renderCategoryText(category) {
+export function renderCategoryText(category) {
   if (category === 'movie') {
     return 'Movie'
   } else {
@@ -76,7 +76,7 @@ function renderCategoryText(category) {
   }
 }
 
-function renderRating(rating) {
+export function renderRating(rating) {
   if (rating === true) {
     return '18+'
   } else {
