@@ -10,7 +10,7 @@ export default function CardInfoCW({
     return (
         <div
             className={
-                'absolute left-4 bottom-4 z-40 h-fit w-fit truncate text-ellipsis '
+                'absolute left-4 bottom-4 z-40 h-fit w-full truncate text-ellipsis '
             }
         >
             <div
