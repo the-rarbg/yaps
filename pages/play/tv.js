@@ -21,7 +21,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json())
 const Tv = () => {
     const router = useRouter()
     const {id, tmdb} = router.query;
-    const theme = useTheme();
+    const {theme, setTheme} = useTheme();
     const {data} = useSWR(`/api/tv/${tmdb}`, fetcher)
     const [tvDetails, setTvDetails] = useState({
         episode: 1, season: 1
@@ -30,7 +30,7 @@ const Tv = () => {
     const [episodes, setEpisodes] = useState({})
     const [seasonDropDown, setSeasonDropDown] = useState(false)
     const [episodeDropDown, setEpisodeDropDown] = useState(false)
-    const [videoServer, setVideoServer] = useState('')
+    const [videoServer, setVideoServer] = useState(`vidsrc.to`)
     const [lightStatus, switchLight] = useState(false)
     const [nextBtn, showNextBtn] = useState(true);
     const [prevBtn, showPrevBtn] = useState(true);
@@ -72,6 +72,7 @@ const Tv = () => {
         }
     }, [seasonDropDown, episodeDropDown, nextprevbtnclicked]);
     useEffect(() => {
+        console.log(theme)
         if (localStorage.getItem("userWatched")) {
             let data = JSON.parse(localStorage.getItem("userWatched"))
             let tvPresent = -1
@@ -175,12 +176,11 @@ const Tv = () => {
                 <div
                     className={"w-full h-16 pb-2 text-3xl"}>{data?.detail.name} S{tvDetails.season} E{tvDetails.episode}</div>
                 <iframe
-                    src={videoServer ? videoServer : `https://vidsrc.to/embed/tv/${tmdb ? tmdb : id}/${tvDetails.season}/${tvDetails.episode}`}
+                    src={videoServer !== 'vidsrc.to' ? videoServer : `https://vidsrc.to/embed/tv/${tmdb ? tmdb : id}/${tvDetails.season}/${tvDetails.episode}`}
                     className={"z-50"}
                     style={{width: '100%', height: '92vh'}}
                     allowFullScreen="allowfullscreen"></iframe>
                 <div className={"w-full p-4 pl-0 bg-transparent flex gap-10 flex-row justify-between items-center"}>
-
                     <div>
                         <div className={"relative w-44 flex justify-start items-center gap-1"}>
                             <div className={"relative"}>
@@ -203,7 +203,7 @@ const Tv = () => {
                                         }
                                     }
                                 }}
-                                                           className={`${prevBtn ? 'block' : 'hidden'} hover:scale-125 transition control-button duration-300 ease-in-out`}/>
+                                className={`${prevBtn ? 'block' : 'hidden'} hover:scale-125 transition control-button duration-300 ease-in-out`}/>
                                 <div
                                     className={"bg-[#222222] absolute left-5 z-50 hidden w-10 text-center tooltip-div"}>
                                     Prev
@@ -213,7 +213,7 @@ const Tv = () => {
                                 let current_Episode = tvDetails.episode;
                                 let current_Season = tvDetails.season;
                                 setnextprevbtnclicked(true)
-                                if(episodes[tvDetails.season]) {
+                                if (episodes[tvDetails.season]) {
                                     if (episodes[tvDetails.season].indexOf(current_Episode) === episodes[tvDetails.season].length - 1) {
                                         if (season.indexOf(tvDetails.season) !== season.length - 1) {
                                             setTvDetails({season: current_Season + 1, episode: 1})
@@ -245,7 +245,7 @@ const Tv = () => {
                         </div>
                         <div className={"relative w-32 "}>
                             <div
-                                className={"flex z-50 justify-center items-center bg-[#151515] text-white cursor-pointer outline-0 rounded  flex-row gap-2"}
+                                className={"flex z-50 justify-center items-center bg-[#151515] dark:bg-inherit   text-white cursor-pointer outline-0 rounded  flex-row gap-2"}
                                 onClick={() => {
                                     setSeasonDropDown(!seasonDropDown)
                                     setEpisodeDropDown(false)
@@ -256,7 +256,7 @@ const Tv = () => {
                                 <AiOutlineRight/>}</span>
                             </div>
                             <div
-                                className={` flex-col  z-40 bg-app-semi-dark-blue font-normal overflow-y-scroll  h-44  text-white w-44 absolute justify-center transition duration-300 ease-in-out items-center ${seasonDropDown ? 'translate-y-0 opacity-1' : 'translate-y-[-150%]   opacity-0'} `}>
+                                className={` flex-col  z-40  font-normal overflow-y-scroll  h-44  text-white w-44 absolute justify-center transition duration-300 ease-in-out items-center ${seasonDropDown ? 'translate-y-0 opacity-1' : 'translate-y-[-150%]   opacity-0'} `}>
                                 <ul className={""}>
                                     {season !== [] ? season.map((season, index) => {
                                         return (
@@ -276,7 +276,7 @@ const Tv = () => {
                         </div>
                         <div className={"relative w-32 "}>
                             <div
-                                className={"flex z-50 rounded justify-center items-center bg-[#151515] text-white flex-row gap-2"}
+                                className={"flex z-50 rounded justify-center items-center bg-[#151515] dark:bg-inherit   text-white flex-row gap-2"}
                                 onClick={() => {
                                     setEpisodeDropDown(!episodeDropDown)
                                     setSeasonDropDown(false)
@@ -309,15 +309,17 @@ const Tv = () => {
                     </div>
                 </div>
 
-                <div className={` ${lightStatus ? 'hidden' : 'flex'} w-full  justify-start  items-center h-36`}>
+                <div
+                    className={` ${lightStatus ? 'hidden' : 'flex'} w-full justify-start  items-center h-36`}>
                     <div className={"rounded w-full h-full flex flex-row "}>
                         <div
-                            className={`${theme.theme === 'dark' ? 'bg-app-dark-blue text-white':' text-black'} p-2 h-full text-center w-1/3`}>
+                            className={`dark:text-white text-black p-2 h-full text-center w-1/3`}>
                             {`You are watching `}
                             <div className={" font-bold"}>{data ? data.detail.name : ""}</div>
                             <div> If current server doesn't work please try other servers beside.</div>
                         </div>
-                        <div className={`${theme.theme === 'dark' ? 'bg-app-dark-blue text-white':' text-black'} w-2/3 h-full`}>
+                        <div
+                            className={` w-2/3 h-full`}>
                             <div
                                 className={"w-full flex flex-wrap flex-row gap-7 p-5 justify-start items-center h-10"}>
                                 {servers_.map((server, index) => {
@@ -334,7 +336,7 @@ const Tv = () => {
                                                     setVideoServer(`${server.link}${tmdb}&season=${tvDetails.season}&episode=${tvDetails.episode}`);
                                             }
                                             }
-                                            className={`dark:bg-app-semi-dark-blue dark:text-white hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out rounded p-3 w-max text-center h-8 ${videoServer.includes(server.servername.toLowerCase()) ? 'bg-amber-700' : 'bg-app-shady-white'}`}
+                                            className={`  ${videoServer.includes(server.servername.toLowerCase()) ? 'bg-amber-700' : ''} dark:text-white hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out rounded p-3 w-max text-center h-8 `}
                                             key={index}>
                                             {server.servername}
                                         </div>
