@@ -76,7 +76,7 @@ export default function Collection({}) {
                                 }).then(response => response.json()).then(da => {
                                     watchedData.push({
                                         id: tvIds[i][0],
-                                        name: da.detail.name,
+                                        name: da.detail.name + ` S${tvIds[i][1]} E${tvIds[i][2]}`,
                                         year: da.detail.first_air_date ? da.detail.first_air_date.split("-")[0] : "",
                                         poster_link: da.detail.backdrop_path ? `${TMDB_IMAGE_ENDPOINT}/${da.detail.backdrop_path}` : `${TMDB_IMAGE_ENDPOINT}/${da.detail.poster_path}`,
                                         type: 'tv'
