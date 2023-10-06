@@ -45,7 +45,7 @@ export default function Collection({}) {
         }
 
     }
-    /*TODO : Currently fetching the data for tv and movie one by one based on the id stored in local storage. */
+    /*Note : Currently fetching the data for tv and movie one by one based on the id stored in local storage. */
     useEffect(() => {
             const res = async () => {
                 if (localStorage.getItem("userWatched")) {

@@ -17,15 +17,15 @@ export default function CardContinueWatching({
         if (e.target.tagName !== "svg") {
             if (e.ctrlKey) {
                 if (category === 'movie') {
-                    window.open(`/movie/${id}`)
+                    window.open(`/play/movies/${id}`)
                 } else if (category === 'tv') {
-                    window.open(`/tv/${id}`)
+                    window.open(`/play/tv/${id}`)
                 }
             } else {
                 if (category === 'movie') {
-                    router.push(`/movie/${id}`)
+                    router.push(`/play/movies/${id}`)
                 } else if (category === 'tv') {
-                    router.push(`/tv/${id}`)
+                    router.push(`/play/tv/${id}`)
                 }
             }
         }
