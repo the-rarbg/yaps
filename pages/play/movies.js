@@ -58,7 +58,7 @@ const Movies = () => {
             <title>Play Movies | Yaps</title>
         </Head>
         <div
-            className={` top-0 left-0 z-[997] bg-black transition duration-300 ease-in-out ${lightStatus ? 'opacity-1 fixed w-full h-screen ' : 'opacity-0 h-0 w-0'}`}>
+            className={` top-0 left-0 z-[997] bg-[#222222] transition duration-300 ease-in-out ${lightStatus ? 'opacity-1 fixed w-full h-screen ' : 'opacity-0 h-0 w-0'}`}>
         </div>
         <div className={"text-4xl"}>
             {data ? data.imdb.imdb.name : ""}
@@ -70,7 +70,7 @@ const Movies = () => {
                         className={`z-[998] ${lightStatus ? 'absolute left-0 lg:left-[20%] h-[80vh] lg:w-2/3 w-full ' : 'w-full h-[95vh]'}`}
                         allowFullScreen="allowfullscreen"></iframe>
                 <div
-                    className={`${lightStatus ? 'w-1/2 absolute ' : 'w-full '} p-4 pl-0 bg-transparent gap-10 z-[999] flex flex-row justify-start  top-[100%] lg:top-[90%] items-center `}>
+                    className={`${lightStatus ? 'w-1/2 absolute text-white ' : 'w-full '} p-4 pl-0 bg-transparent gap-10 z-[999] flex flex-row justify-start  top-[100%] lg:top-[90%] items-center `}>
                     <div onClick={() => switchLight(!lightStatus)}
                          className={"flex flex-row gap-1 items-center hover:text-orange-500 transition duration-300 ease-in-out hover:cursor-pointer"}>
                         <BsFillLightbulbFill/>
@@ -80,13 +80,13 @@ const Movies = () => {
                 <div className={`${lightStatus ? 'hidden' : 'flex'}  w-full flex justify-start  items-center h-36`}>
                     <div className={"rounded w-full h-full flex flex-row "}>
                         <div
-                            className={`${theme === 'dark' ? 'bg-[#1e1e1e]' : 'bg-[#c5cc89]'} p-2 h-full  flex justify-center items-center flex-col text-center w-1/3`}>
+                            className={`${theme === 'dark' ? 'bg-app-dark-blue' : ''} p-2 h-full  flex justify-center items-center flex-col text-center w-1/3`}>
                             {`You are watching `}
                             <div className={" font-bold"}>{data ? data.imdb.imdb.name : ""}</div>
                             <div> If current server doesn't work please try other servers beside.</div>
                         </div>
                         <div
-                            className={`${theme === 'dark' ? 'bg-[#171e31]' : 'bg-app-shady-white'} text-black  w-2/3 h-full`}>
+                            className={`${theme === 'dark' ? 'bg-app-dark-blue' : ''} text-black  w-2/3 h-full`}>
                             <div
                                 className={"w-full flex flex-wrap flex-row gap-7 p-5 justify-start items-center h-10"}>
                                 {servers_.map((server, index) => {
@@ -97,7 +97,7 @@ const Movies = () => {
 
                                             else setVideoServer(server.link + data?.imdb.imdb.tmdb_id);
                                         }}
-                                        className={`${theme === 'dark' ? 'bg-app-dark-blue' : 'bg-[#c5cc89]'} dark:text-white hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out  rounded p-3 w-max text-center h-8`}
+                                        className={`${theme === 'dark' ? 'bg-app-dark-blue' : ''} dark:text-white hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out  rounded p-3 w-max text-center h-8`}
                                         key={index}>
                                         {server.servername}
                                     </div>)
