@@ -23,7 +23,7 @@ const Movies = () => {
     const {theme} = useTheme();
     const to = tmdb ? `${tmdb}` : `${id}`
     const [lightStatus, switchLight] = useState(false)
-    const [videoServer, setVideoServer] = useState('')
+    const [videoServer, setVideoServer] = useState('vidsrc.to')
     const {data} = useSWR(`/api/movie/${id}`, fetcher)
     useEffect(() => {
         if (localStorage.getItem("userWatched")) {
@@ -66,7 +66,7 @@ const Movies = () => {
         <div
             className={`w-full  ${lightStatus ? '' : 'h-full'} z-[999] `}>
             <div className={` w-full  flex flex-col  h-full`}>
-                <iframe src={videoServer ? videoServer : servers_[0].link + to}
+                <iframe src={videoServer !== 'vidsrc.to' ? videoServer : servers_[0].link + to}
                         className={`z-[998] ${lightStatus ? 'absolute left-0 lg:left-[20%] h-[80vh] lg:w-2/3 w-full ' : 'w-full h-[95vh]'}`}
                         allowFullScreen="allowfullscreen"></iframe>
                 <div
@@ -97,7 +97,7 @@ const Movies = () => {
 
                                             else setVideoServer(server.link + data?.imdb.imdb.tmdb_id);
                                         }}
-                                        className={`${theme === 'dark' ? 'bg-app-dark-blue' : ''} dark:text-white hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out  rounded p-3 w-max text-center h-8`}
+                                        className={` ${videoServer.includes(server.servername.toLowerCase()) ? 'bg-amber-700' : ''} dark:text-white hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out  rounded p-3 w-max text-center h-8`}
                                         key={index}>
                                         {server.servername}
                                     </div>)
