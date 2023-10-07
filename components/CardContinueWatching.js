@@ -17,26 +17,31 @@ export default function CardContinueWatching({
         if (e.target.tagName !== "svg") {
             if (e.ctrlKey) {
                 if (category === 'movie') {
-                    window.open(`/movie/${id}`)
+                    window.open(`/play/movies?id=${id}`)
                 } else if (category === 'tv') {
-                    window.open(`/tv/${id}`)
+                    if (id.includes('tt'))
+                        window.open(`/play/tv?id=${id}`)
+                    else
+                        window.open(`/play/tv?tmdb=${id}`)
                 }
             } else {
                 if (category === 'movie') {
-                    router.push(`/movie/${id}`)
+                    router.push(`/play/movies?id=${id}`)
                 } else if (category === 'tv') {
-                    router.push(`/tv/${id}`)
+                    if (id.includes('tt'))
+                        router.push(`/play/tv?id=${id}`)
+                    else
+                        router.push(`/play/tv?tmdb=${id}`)
                 }
             }
-        }
-        else{
+        } else {
             e.preventDefault()
         }
     }
 
     return (
         <div className='relative w-full cursor-pointer test'>
-            <div className={"relative continue-card w-full transition duration-400 ease-in-out"}  onClick={handleClick}>
+            <div className={"relative continue-card w-full transition duration-400 ease-in-out"} onClick={handleClick}>
                 <CardImageCW isTrending src={src}/>
                 <CardInfoCW
                     id={id}

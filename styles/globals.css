@@ -826,13 +826,20 @@ td {
     transition: opacity 0.4s ease-in-out;
     opacity: 0;
 }
-.continue-card:hover{
-    filter:blur(5px);
+
+.continue-card:hover {
+    filter: blur(5px);
     backdrop-filter: blur(5px);
 }
+
 .continue-card:hover + .close-button {
     opacity: 1;
 }
-.close-button:hover{
+
+.close-button:hover {
     opacity: 1;
+}
+
+.control-button:hover + .tooltip-div {
+    display: block;
 }
