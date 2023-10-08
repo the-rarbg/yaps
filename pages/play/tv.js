@@ -163,6 +163,14 @@ const Tv = () => {
             else if (videoServer.includes("blackvid.space")) setVideoServer(`https://blackvid.space/embed?tmdb=${tmdb}&season=${tvDetails.season}&episode=${tvDetails.episode}`);
         }
     }, [tvDetails]);
+    //adding event listener for window to catch left click to remove light setting
+    useEffect(() => {
+        document.addEventListener("mousedown", (event) => {
+            if (event.target !== "iframe") {
+                switchLight(false)
+            }
+        })
+    }, [])
     return (
         <>
             <Head>
@@ -203,7 +211,7 @@ const Tv = () => {
                                         }
                                     }
                                 }}
-                                className={`${prevBtn ? 'block' : 'hidden'} hover:scale-125 transition control-button duration-300 ease-in-out`}/>
+                                                           className={`${prevBtn ? 'block' : 'hidden'} hover:scale-125 transition control-button duration-300 ease-in-out`}/>
                                 <div
                                     className={"bg-[#222222] absolute left-5 z-50 hidden w-10 text-center tooltip-div"}>
                                     Prev
