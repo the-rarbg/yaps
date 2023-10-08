@@ -264,7 +264,7 @@ const Tv = () => {
                                                 setTvDetails({season: season, episode: 1})
                                                 setSeasonDropDown(false)
                                             }}
-                                                className={`relative dropdown-scroll  hover:bg-amber-700 hover:cursor-pointer pl-2 flex items-center justify-evenly w-full h-12 ${tvDetails.season === season ? 'bg-amber-700' : ''}`}>
+                                                className={`relative dropdown-scroll bg-app-semi-dark-blue  hover:bg-amber-700 hover:cursor-pointer pl-2 flex items-center justify-evenly w-full h-12 ${tvDetails.season === season ? 'bg-amber-700' : ''}`}>
                                                 Season <span>{season}</span>
                                             </li>
                                         )
