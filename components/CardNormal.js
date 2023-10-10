@@ -23,7 +23,7 @@ export default function CardNormal({ id, category, rating, src, title, year }) {
 
   return (
     <div
-      className='card-hover-animation mb-4 grow basis-1/5 2xs:w-[130px] xs:w-full cursor-pointer'
+      className='transition duration-300 ease-in-out hover:scale-110 mb-4 grow basis-1/5 2xs:w-[130px] xs:w-full cursor-pointer'
       onClick={handleClick}>
       <CardImage src={src} alt={title} />
       <CardInfo
