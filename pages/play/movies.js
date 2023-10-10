@@ -53,6 +53,13 @@ const Movies = () => {
                 }))
         }
     }, [id, tmdb]);
+    useEffect(() => {
+        document.addEventListener("mousedown", (event) => {
+            if (event.target !== "iframe") {
+                switchLight(false)
+            }
+        })
+    }, [])
     return (<>
         <Head>
             <title>Play Movies | Yaps</title>
