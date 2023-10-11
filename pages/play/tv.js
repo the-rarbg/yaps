@@ -166,7 +166,7 @@ const Tv = () => {
     //adding event listener for window to catch left click to remove light setting
     useEffect(() => {
         document.addEventListener("mousedown", (event) => {
-            if (event.target !== "iframe") {
+            if (event.target !== "iframe" && event.target.tagName.toLowerCase() !== "span") {
                 switchLight(false)
             }
         })
@@ -245,7 +245,7 @@ const Tv = () => {
 
                         </div>
                     </div>
-                    <div className={"flex justify-center gap-10 items-center"}>
+                    <div className={`flex justify-center gap-10 items-center ${lightStatus ? 'text-white' : ''}`}>
                         <div onClick={() => switchLight(!lightStatus)}
                              className={"flex flex-row gap-1 items-center hover:text-orange-500 transition duration-300 ease-in-out hover:cursor-pointer"}>
                             <BsFillLightbulbFill/>

@@ -55,7 +55,7 @@ const Movies = () => {
     }, [id, tmdb]);
     useEffect(() => {
         document.addEventListener("mousedown", (event) => {
-            if (event.target !== "iframe") {
+            if (event.target !== "iframe" && event.target.tagName.toLowerCase() !== "span") {
                 switchLight(false)
             }
         })
@@ -65,7 +65,7 @@ const Movies = () => {
             <title>Play Movies | Yaps</title>
         </Head>
         <div
-            className={` top-0 left-0 z-[997] bg-[#222222] transition duration-300 ease-in-out ${lightStatus ? 'opacity-1 fixed w-full h-screen ' : 'opacity-0 h-0 w-0'}`}>
+            className={` top-0 left-0 z-[997] bg-black  transition duration-300 ease-in-out ${lightStatus ? 'opacity-0.5 fixed w-full h-screen ' : 'opacity-0 h-0 w-0'}`}>
         </div>
         <div className={"text-4xl"}>
             {data ? data.imdb.imdb.name : ""}
@@ -77,7 +77,7 @@ const Movies = () => {
                         className={`z-[998] ${lightStatus ? 'absolute left-0 lg:left-[20%] h-[80vh] lg:w-2/3 w-full ' : 'w-full h-[95vh]'}`}
                         allowFullScreen="allowfullscreen"></iframe>
                 <div
-                    className={`${lightStatus ? 'w-1/2 absolute text-white ' : 'w-full '} p-4 pl-0 bg-transparent gap-10 z-[999] flex flex-row justify-start  top-[100%] lg:top-[90%] items-center `}>
+                    className={`${lightStatus ? 'w-1/2 absolute text-white dark:text-black ' : 'w-full '} p-4 pl-0 bg-transparent gap-10 z-[999] flex flex-row justify-start  top-[100%] lg:top-[90%] items-center `}>
                     <div onClick={() => switchLight(!lightStatus)}
                          className={"flex flex-row gap-1 items-center hover:text-orange-500 transition duration-300 ease-in-out hover:cursor-pointer"}>
                         <BsFillLightbulbFill/>
