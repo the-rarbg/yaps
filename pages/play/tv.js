@@ -168,6 +168,8 @@ const Tv = () => {
         document.addEventListener("mousedown", (event) => {
             if (event.target !== "iframe" && event.target.tagName.toLowerCase() !== "span") {
                 switchLight(false)
+                setEpisodeDropDown(false)
+                setSeasonDropDown(false)
             }
         })
     }, [])
