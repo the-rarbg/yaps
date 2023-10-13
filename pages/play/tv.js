@@ -9,7 +9,6 @@ import {
   BiSolidSkipPreviousCircle,
 } from 'react-icons/bi'
 import { useTheme } from 'next-themes'
-import { TMDB_IMAGE_ENDPOINT } from '../../utils'
 
 const servers_ = [
   {
@@ -233,303 +232,272 @@ const Tv = () => {
           lightStatus ? 'opacity-1 fixed h-screen ' : 'h-0 w-0 opacity-0'
         }`}></div>
       <div
-        className={
-          'grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1'
-        }>
+        className={` flex w-full flex-col   ${
+          lightStatus ? '' : 'h-full'
+        } z-[999] h-full`}>
+        {/*<img src={`${TMDB_IMAGE_ENDPOINT}/${images}`}/>*/}
+        <div className={'h-16 w-full pb-2 text-3xl'}>
+          {data?.detail.name} S{tvDetails.season} E{tvDetails.episode}
+        </div>
+        <iframe
+          src={
+            videoServer !== 'vidsrc.to'
+              ? videoServer
+              : `https://vidsrc.to/embed/tv/${tmdb ? tmdb : id}/${
+                  tvDetails.season
+                }/${tvDetails.episode}`
+          }
+          className={'z-50 '}
+          style={{ width: '100%', height: '92vh' }}
+          allowFullScreen='allowfullscreen'></iframe>
         <div
-          className={` flex w-full flex-col   ${
-            lightStatus ? '' : 'h-full'
-          } z-[999] h-full`}>
-          {/*<img src={`${TMDB_IMAGE_ENDPOINT}/${images}`}/>*/}
-          <div className={'h-16 w-full pb-2 text-3xl'}>
-            {data?.detail.name} S{tvDetails.season} E{tvDetails.episode}
-          </div>
-          <iframe
-            src={
-              videoServer !== 'vidsrc.to'
-                ? videoServer
-                : `https://vidsrc.to/embed/tv/${tmdb ? tmdb : id}/${
-                    tvDetails.season
-                  }/${tvDetails.episode}`
-            }
-            className={'z-50 '}
-            style={{ width: '140%', height: '92vh' }}
-            allowFullScreen='allowfullscreen'></iframe>
-          <div
-            className={
-              'flex w-full flex-row items-center justify-between gap-10 bg-transparent p-4 pl-0'
-            }>
-            <div>
-              <div
-                className={
-                  'relative flex w-44 items-center justify-start gap-1'
-                }>
-                <div className={'relative'}>
-                  <BiSolidSkipPreviousCircle
-                    size={35}
-                    onClick={() => {
-                      setnextprevbtnclicked(true)
-                      let current_Episode = tvDetails.episode
-                      let current_Season = tvDetails.season
-                      if (episodes[current_Season]) {
-                        if (
-                          episodes[current_Season].indexOf(current_Episode) ===
-                          0
-                        ) {
-                          if (season.indexOf(tvDetails.season) !== 0) {
-                            setTvDetails({
-                              season: current_Season - 1,
-                              episode:
-                                episodes[current_Season - 1][
-                                  episodes[current_Season].length - 1
-                                ],
-                            })
-                          }
-                        } else {
-                          setTvDetails(prev => {
-                            return { ...prev, episode: current_Episode - 1 }
-                          })
-                        }
-                      }
-                    }}
-                    className={`${
-                      prevBtn ? 'block' : 'hidden'
-                    } control-button transition duration-300 ease-in-out hover:scale-125`}
-                  />
-                  <div
-                    className={
-                      'tooltip-div absolute left-5 z-50 hidden w-10 bg-[#222222] text-center'
-                    }>
-                    Prev
-                  </div>
-                </div>
-                <div
-                  className={'relative'}
+          className={
+            'flex w-full flex-row items-center justify-between gap-10 bg-transparent p-4 pl-0'
+          }>
+          <div>
+            <div
+              className={'relative flex w-44 items-center justify-start gap-1'}>
+              <div className={'relative'}>
+                <BiSolidSkipPreviousCircle
+                  size={35}
                   onClick={() => {
+                    setnextprevbtnclicked(true)
                     let current_Episode = tvDetails.episode
                     let current_Season = tvDetails.season
-                    setnextprevbtnclicked(true)
-                    if (episodes[tvDetails.season]) {
+                    if (episodes[current_Season]) {
                       if (
-                        episodes[tvDetails.season].indexOf(current_Episode) ===
-                        episodes[tvDetails.season].length - 1
+                        episodes[current_Season].indexOf(current_Episode) === 0
                       ) {
-                        if (
-                          season.indexOf(tvDetails.season) !==
-                          season.length - 1
-                        ) {
+                        if (season.indexOf(tvDetails.season) !== 0) {
                           setTvDetails({
-                            season: current_Season + 1,
-                            episode: 1,
+                            season: current_Season - 1,
+                            episode:
+                              episodes[current_Season - 1][
+                                episodes[current_Season].length - 1
+                              ],
                           })
                         }
                       } else {
                         setTvDetails(prev => {
-                          return { ...prev, episode: current_Episode + 1 }
+                          return { ...prev, episode: current_Episode - 1 }
                         })
                       }
                     }
-                  }}>
-                  <BiSolidSkipNextCircle
-                    size={35}
-                    className={`${
-                      nextBtn ? 'block' : 'hidden'
-                    } control-button transition duration-300 ease-in-out hover:scale-125`}
-                  />
-                  <div
-                    className={
-                      'tooltip-div absolute left-5 z-50 hidden w-10 bg-[#222222] text-center'
-                    }>
-                    Next
-                  </div>
+                  }}
+                  className={`${
+                    prevBtn ? 'block' : 'hidden'
+                  } control-button transition duration-300 ease-in-out hover:scale-125`}
+                />
+                <div
+                  className={
+                    'tooltip-div absolute left-5 z-50 hidden w-10 bg-[#222222] text-center'
+                  }>
+                  Prev
                 </div>
               </div>
-            </div>
-            <div
-              className={`flex items-center justify-center gap-10 ${
-                lightStatus ? 'text-white' : ''
-              }`}>
               <div
-                onClick={() => switchLight(!lightStatus)}
-                className={
-                  'flex flex-row items-center gap-1 transition duration-300 ease-in-out hover:cursor-pointer hover:text-orange-500'
-                }>
-                <BsFillLightbulbFill />
-                <span>Light</span>
-              </div>
-              <div className={'relative w-32 '}>
+                className={'relative'}
+                onClick={() => {
+                  let current_Episode = tvDetails.episode
+                  let current_Season = tvDetails.season
+                  setnextprevbtnclicked(true)
+                  if (episodes[tvDetails.season]) {
+                    if (
+                      episodes[tvDetails.season].indexOf(current_Episode) ===
+                      episodes[tvDetails.season].length - 1
+                    ) {
+                      if (
+                        season.indexOf(tvDetails.season) !==
+                        season.length - 1
+                      ) {
+                        setTvDetails({
+                          season: current_Season + 1,
+                          episode: 1,
+                        })
+                      }
+                    } else {
+                      setTvDetails(prev => {
+                        return { ...prev, episode: current_Episode + 1 }
+                      })
+                    }
+                  }
+                }}>
+                <BiSolidSkipNextCircle
+                  size={35}
+                  className={`${
+                    nextBtn ? 'block' : 'hidden'
+                  } control-button transition duration-300 ease-in-out hover:scale-125`}
+                />
                 <div
                   className={
-                    'z-50 flex cursor-pointer flex-row items-center justify-center   gap-2 rounded bg-[#151515] text-white  outline-0 dark:bg-inherit'
-                  }
-                  onClick={() => {
-                    setSeasonDropDown(!seasonDropDown)
-                    setEpisodeDropDown(false)
-                  }}>
-                  Season {tvDetails.season}
-                  <span className={'pt-1 transition duration-300 ease-in-out'}>
-                    {seasonDropDown ? <AiOutlineDown /> : <AiOutlineRight />}
-                  </span>
-                </div>
-                <div
-                  className={` absolute  z-40  h-44 w-44  flex-col  items-center justify-center overflow-y-scroll font-normal text-white transition duration-300 ease-in-out ${
-                    seasonDropDown
-                      ? 'opacity-1 translate-y-0'
-                      : 'translate-y-[-150%]   opacity-0'
-                  } `}>
-                  <ul className={''}>
-                    {season !== [] ? (
-                      season.map((season, index) => {
-                        return (
-                          <li
-                            key={index}
-                            onClick={() => {
-                              setTvDetails({ season: season, episode: 1 })
-                              setSeasonDropDown(false)
-                            }}
-                            className={`dropdown-scroll relative flex  h-12 w-full items-center justify-evenly bg-app-semi-dark-blue pl-2 hover:cursor-pointer hover:bg-amber-700 ${
-                              tvDetails.season === season ? 'bg-amber-700' : ''
-                            }`}>
-                            Season <span>{season}</span>
-                          </li>
-                        )
-                      })
-                    ) : (
-                      <li>No Seasons</li>
-                    )}
-                  </ul>
-                </div>
-              </div>
-              <div className={'relative w-32 '}>
-                <div
-                  className={
-                    'z-50 flex flex-row items-center justify-center gap-2 rounded   bg-[#151515] text-white dark:bg-inherit'
-                  }
-                  onClick={() => {
-                    setEpisodeDropDown(!episodeDropDown)
-                    setSeasonDropDown(false)
-                  }}>
-                  Episode {tvDetails.episode}
-                  <span className={'pt-1 transition duration-300 ease-in-out'}>
-                    {episodeDropDown ? <AiOutlineDown /> : <AiOutlineRight />}
-                  </span>
-                </div>
-                <div
-                  className={` absolute   z-40 h-44 w-44 flex-col  items-center  justify-center overflow-y-scroll bg-app-semi-dark-blue font-normal text-white transition duration-300 ease-in-out ${
-                    episodeDropDown
-                      ? 'opacity-1 translate-y-0'
-                      : 'translate-y-[-150%]   opacity-0'
-                  } `}>
-                  <ul className={''}>
-                    {episodes[tvDetails.season] ? (
-                      episodes[tvDetails.season].map((episode, index) => {
-                        return (
-                          <li
-                            key={index}
-                            onClick={() => {
-                              setTvDetails(prev => {
-                                return { ...prev, episode: episode }
-                              })
-                              setEpisodeDropDown(false)
-                            }}
-                            className={`dropdown-scroll relative  flex h-12 w-full items-center justify-evenly pl-2 hover:cursor-pointer hover:bg-amber-700 ${
-                              tvDetails.episode === episode
-                                ? 'bg-amber-700'
-                                : ''
-                            }`}>
-                            Episode <span>{episode}</span>
-                          </li>
-                        )
-                      })
-                    ) : (
-                      <li>No Episode</li>
-                    )}
-                  </ul>
+                    'tooltip-div absolute left-5 z-50 hidden w-10 bg-[#222222] text-center'
+                  }>
+                  Next
                 </div>
               </div>
             </div>
           </div>
-
           <div
-            className={` ${
-              lightStatus ? 'hidden' : 'flex'
-            } h-36 w-full  items-center justify-start`}>
-            <div className={'flex h-full w-full flex-row rounded '}>
+            className={`flex items-center justify-center gap-10 ${
+              lightStatus ? 'text-white' : ''
+            }`}>
+            <div
+              onClick={() => switchLight(!lightStatus)}
+              className={
+                'flex flex-row items-center gap-1 transition duration-300 ease-in-out hover:cursor-pointer hover:text-orange-500'
+              }>
+              <BsFillLightbulbFill />
+              <span>Light</span>
+            </div>
+            <div className={'relative w-32 '}>
               <div
-                className={`h-full w-1/3 p-2 text-center text-black dark:text-white`}>
-                {`You are watching `}
-                <div className={' font-bold'}>
-                  {data ? data.detail.name : ''}
-                </div>
-                <div>
-                  {' '}
-                  If current server doesn't work please try other servers
-                  beside.
-                </div>
+                className={
+                  'z-50 flex cursor-pointer flex-row items-center justify-center   gap-2 rounded bg-[#151515] text-white  outline-0 dark:bg-inherit'
+                }
+                onClick={() => {
+                  setSeasonDropDown(!seasonDropDown)
+                  setEpisodeDropDown(false)
+                }}>
+                Season {tvDetails.season}
+                <span className={'pt-1 transition duration-300 ease-in-out'}>
+                  {seasonDropDown ? <AiOutlineDown /> : <AiOutlineRight />}
+                </span>
               </div>
-              <div className={` h-full w-2/3`}>
-                <div
-                  className={
-                    'flex h-10 w-full flex-row flex-wrap items-center justify-start gap-7 p-5'
-                  }>
-                  {servers_.map((server, index) => {
-                    return (
-                      <div
-                        onClick={() => {
-                          if (server.servername === 'Vidsrc.me')
-                            setVideoServer(
-                              `${server.link}${
-                                tmdb ? `tmdb=${tmdb}` : `imdb=${id}`
-                              }&season=${tvDetails.season}&episode=${
-                                tvDetails.episode
-                              }`
-                            )
-                          else if (server.servername === 'Vidsrc.to')
-                            setVideoServer(
-                              `${server.link}${tmdb ? `${tmdb}` : `${id}`}/${
-                                tvDetails.season
-                              }/${tvDetails.episode}`
-                            )
-                          else if (server.servername === 'Moviesapi.club')
-                            setVideoServer(
-                              `${server.link}${tmdb}-${tvDetails.season}-${tvDetails.episode}`
-                            )
-                          else
-                            setVideoServer(
-                              `${server.link}${tmdb}&season=${tvDetails.season}&episode=${tvDetails.episode}`
-                            )
-                        }}
-                        className={`  ${
-                          videoServer.includes(server.servername.toLowerCase())
-                            ? 'bg-amber-700'
-                            : ''
-                        } h-8 w-max rounded p-3 text-center transition duration-300 ease-in-out hover:scale-110 hover:cursor-pointer dark:text-white `}
-                        key={index}>
-                        {server.servername}
-                      </div>
-                    )
-                  })}
-                </div>
+              <div
+                className={` absolute  z-40  h-44 w-44  flex-col  items-center justify-center overflow-y-scroll font-normal text-white transition duration-300 ease-in-out ${
+                  seasonDropDown
+                    ? 'opacity-1 translate-y-0'
+                    : 'translate-y-[-150%]   opacity-0'
+                } `}>
+                <ul className={''}>
+                  {season !== [] ? (
+                    season.map((season, index) => {
+                      return (
+                        <li
+                          key={index}
+                          onClick={() => {
+                            setTvDetails({ season: season, episode: 1 })
+                            setSeasonDropDown(false)
+                          }}
+                          className={`dropdown-scroll relative flex  h-12 w-full items-center justify-evenly bg-app-semi-dark-blue pl-2 hover:cursor-pointer hover:bg-amber-700 ${
+                            tvDetails.season === season ? 'bg-amber-700' : ''
+                          }`}>
+                          Season <span>{season}</span>
+                        </li>
+                      )
+                    })
+                  ) : (
+                    <li>No Seasons</li>
+                  )}
+                </ul>
+              </div>
+            </div>
+            <div className={'relative w-32 '}>
+              <div
+                className={
+                  'z-50 flex flex-row items-center justify-center gap-2 rounded   bg-[#151515] text-white dark:bg-inherit'
+                }
+                onClick={() => {
+                  setEpisodeDropDown(!episodeDropDown)
+                  setSeasonDropDown(false)
+                }}>
+                Episode {tvDetails.episode}
+                <span className={'pt-1 transition duration-300 ease-in-out'}>
+                  {episodeDropDown ? <AiOutlineDown /> : <AiOutlineRight />}
+                </span>
+              </div>
+              <div
+                className={` absolute   z-40 h-44 w-44 flex-col  items-center  justify-center overflow-y-scroll bg-app-semi-dark-blue font-normal text-white transition duration-300 ease-in-out ${
+                  episodeDropDown
+                    ? 'opacity-1 translate-y-0'
+                    : 'translate-y-[-150%]   opacity-0'
+                } `}>
+                <ul className={''}>
+                  {episodes[tvDetails.season] ? (
+                    episodes[tvDetails.season].map((episode, index) => {
+                      return (
+                        <li
+                          key={index}
+                          onClick={() => {
+                            setTvDetails(prev => {
+                              return { ...prev, episode: episode }
+                            })
+                            setEpisodeDropDown(false)
+                          }}
+                          className={`dropdown-scroll relative  flex h-12 w-full items-center justify-evenly pl-2 hover:cursor-pointer hover:bg-amber-700 ${
+                            tvDetails.episode === episode ? 'bg-amber-700' : ''
+                          }`}>
+                          Episode <span>{episode}</span>
+                        </li>
+                      )
+                    })
+                  ) : (
+                    <li>No Episode</li>
+                  )}
+                </ul>
               </div>
             </div>
           </div>
         </div>
+
         <div
-          className={` float-right flex w-full flex-col   ${
-            lightStatus ? '' : 'h-full'
-          } z-[999] h-full`}>
-          <div className={'float-end'}>
-            {season.map((season, index) => {
-              return (
-                <div>
-                  <iframe
-                    src={`https://vidsrc.to/embed/tv/${tmdb ? tmdb : id}/${
-                      tvDetails.season
-                    }/${tvDetails.episode}`}
-                    allowFullScreen='allowfullscreen'></iframe>
-                </div>
-              )
-            })}
+          className={` ${
+            lightStatus ? 'hidden' : 'flex'
+          } h-36 w-full  items-center justify-start`}>
+          <div className={'flex h-full w-full flex-row rounded '}>
+            <div
+              className={`h-full w-1/3 p-2 text-center text-black dark:text-white`}>
+              {`You are watching `}
+              <div className={' font-bold'}>{data ? data.detail.name : ''}</div>
+              <div>
+                {' '}
+                If current server doesn't work please try other servers beside.
+              </div>
+            </div>
+            <div className={` h-full w-2/3`}>
+              <div
+                className={
+                  'flex h-10 w-full flex-row flex-wrap items-center justify-start gap-7 p-5'
+                }>
+                {servers_.map((server, index) => {
+                  return (
+                    <div
+                      onClick={() => {
+                        if (server.servername === 'Vidsrc.me')
+                          setVideoServer(
+                            `${server.link}${
+                              tmdb ? `tmdb=${tmdb}` : `imdb=${id}`
+                            }&season=${tvDetails.season}&episode=${
+                              tvDetails.episode
+                            }`
+                          )
+                        else if (server.servername === 'Vidsrc.to')
+                          setVideoServer(
+                            `${server.link}${tmdb ? `${tmdb}` : `${id}`}/${
+                              tvDetails.season
+                            }/${tvDetails.episode}`
+                          )
+                        else if (server.servername === 'Moviesapi.club')
+                          setVideoServer(
+                            `${server.link}${tmdb}-${tvDetails.season}-${tvDetails.episode}`
+                          )
+                        else
+                          setVideoServer(
+                            `${server.link}${tmdb}&season=${tvDetails.season}&episode=${tvDetails.episode}`
+                          )
+                      }}
+                      className={`  ${
+                        videoServer.includes(server.servername.toLowerCase())
+                          ? 'bg-amber-700'
+                          : ''
+                      } h-8 w-max rounded p-3 text-center transition duration-300 ease-in-out hover:scale-110 hover:cursor-pointer dark:text-white `}
+                      key={index}>
+                      {server.servername}
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </div>
