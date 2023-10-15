@@ -488,7 +488,7 @@ const Tv = () => {
                       }}
                       className={`  ${
                         videoServer.includes(server.servername.toLowerCase())
-                          ? 'bg-amber-700'
+                          ? 'bg-app-greyish-blue'
                           : ''
                       } h-8 w-max rounded p-3 text-center transition duration-300 ease-in-out hover:scale-110 hover:cursor-pointer dark:text-white `}
                       key={index}>
