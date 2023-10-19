@@ -23,20 +23,20 @@ const Upload = () => {
     let temp = data && JSON.parse(data)
 
     const _data = temp && temp?.genre.map((item, index) => {
-      return { value:item, label:item };
+      return { value: item, label: item };
     })
     setFormInput(temp)
     setImageArray(temp?.images)
     setSelectedOption(temp?.genre)
     setFileInput(temp?.images)
 
-   
-  setSelectedOption(_data)
+
+    setSelectedOption(_data)
     return setToken(localStorage.getItem("access_token"));
   }, [])
-useEffect(()=>{
+  useEffect(() => {
 
-},[])
+  }, [])
 
   console.log("formInput", formInput)
   console.log("select", selectedOption)
@@ -203,7 +203,7 @@ useEffect(()=>{
     }
 
     let data = {
-      eid:formInput?.eid,
+      eid: formInput?.eid,
       name: formInput?.name,
       category_str: formInput?.category_str,
       short_name: formInput?.short_name,
@@ -240,7 +240,7 @@ useEffect(()=>{
     })
   }
 
-  
+
 
 
   console.log("pppp", errors)
@@ -303,14 +303,14 @@ useEffect(()=>{
         <div className='text-center justify-center mt-2'> <span className='text-[16px]  font-bold mt-3 pt-3'>You can get Image URL from : <a href="https://freeimage.host/" className='text-blue-600' target="_blank" rel="noreferrer">https://freeimage.host/</a></span>  </div>
         <div className="mt-[3rem] justify-center pt-5 pb-2 bg-gray-200 bg-opacity-10 rounded-lg border-gray-200 border-opacity-30 flex relative">
 
-          <form onSubmit={(e)=>{
-            if(formInput?.eid){
+          <form onSubmit={(e) => {
+            if (formInput?.eid) {
               handleUpdated(e)
             }
-            else{
-            handleUpload(e)
+            else {
+              handleUpload(e)
             }
-            }} className='w-[85%]'>
+          }} className='w-[85%]'>
             <div className="grid gap-6 mb-6 md:grid-cols-2">
               <div>
                 <label htmlFor="first_name" className="block mb-2 text-sm font-light text-gray-900 dark:text-white">Title name</label>
@@ -412,7 +412,7 @@ useEffect(()=>{
                 classNamePrefix="react-select"
                 defaultValue={selectedOption}
                 onChange={setSelectedOption}
-              
+
                 isMulti={true}
                 options={genre}
                 isSearchable
@@ -421,7 +421,7 @@ useEffect(()=>{
                   colors: {
                     ...theme.colors,
                     primary25: '#55aa7b',
-  
+
                   },
                 })}
 
@@ -447,10 +447,10 @@ useEffect(()=>{
             <div className="mb-6">
               <label htmlFor="info_hash" className="block mb-2 text-sm font-light text-gray-900 dark:text-white">Add Images Urls</label>
               {
-              fileInput&&  fileInput.map((item, index) => {
+                fileInput && fileInput.map((item, index) => {
                   return (
                     <div key={index} className='flex relative'>
-                      <input type="text" name={"image" + index} id="info_hash" className="bg-gray-50 mb-2 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Image url" value={formInput?.[`image${index}`]||item} onChange={(e) => {
+                      <input type="text" name={"image" + index} id="info_hash" className="bg-gray-50 mb-2 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Image url" value={formInput?.[`image${index}`] || item} onChange={(e) => {
 
                         let _data = [...imageArray]
                         _data[index] = e.target.value;
