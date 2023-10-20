@@ -1,0 +1,2512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://yaps.cc/</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/latest-top-10</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/search</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/login?page=upload</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/faq</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10752?name=War&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/37?name=Western&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10759?name=Action%20&amp;%20Adventure&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/16?name=Animation&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/35?name=Comedy&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/80?name=Crime&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/99?name=Documentary&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/18?name=Drama&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10751?name=Family&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10762?name=Kids&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/9648?name=Mystery&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10763?name=News&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10764?name=Reality&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10765?name=Sci-Fi%20&amp;%20Fantasy&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10766?name=Soap&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10767?name=Talk&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10768?name=War%20&amp;%20Politics&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/37?name=Western&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10752?name=War&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10752?name=War&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/37?name=Western&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/37?name=Western&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10759?name=Action%20&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10759?name=Action%20&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/16?name=Animation&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/16?name=Animation&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/35?name=Comedy&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/35?name=Comedy&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/80?name=Crime&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/80?name=Crime&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/99?name=Documentary&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/99?name=Documentary&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/18?name=Drama&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/18?name=Drama&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10751?name=Family&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10751?name=Family&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10762?name=Kids&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10762?name=Kids&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/9648?name=Mystery&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/9648?name=Mystery&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10763?name=News&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10763?name=News&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10764?name=Reality&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10764?name=Reality&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10765?name=Sci-Fi%20&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10765?name=Sci-Fi%20&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10766?name=Soap&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10766?name=Soap&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10767?name=Talk&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10767?name=Talk&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10768?name=War%20&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10768?name=War%20&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/37?name=Western&amp;page=0</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/37?name=Western&amp;page=2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10752?name=War&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10752?name=War&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/37?name=Western&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/37?name=Western&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10759?name=Action%20&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10759?name=Action%20&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10759?name=Action%20&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/16?name=Animation&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/16?name=Animation&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/35?name=Comedy&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/35?name=Comedy&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/80?name=Crime&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/80?name=Crime&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/99?name=Documentary&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/99?name=Documentary&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/18?name=Drama&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/18?name=Drama&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10751?name=Family&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10751?name=Family&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10762?name=Kids&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10762?name=Kids&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/9648?name=Mystery&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/9648?name=Mystery&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10763?name=News&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10763?name=News&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10764?name=Reality&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10764?name=Reality&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10765?name=Sci-Fi%20&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10765?name=Sci-Fi%20&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10765?name=Sci-Fi%20&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10766?name=Soap&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10766?name=Soap&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10767?name=Talk&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10767?name=Talk&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10768?name=War%20&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10768?name=War%20&amp;page=1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10768?name=War%20&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/37?name=Western&amp;page=-1</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/37?name=Western&amp;page=3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10752?name=War&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10752?name=War&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/37?name=Western&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/37?name=Western&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10759?name=Action%20&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10759?name=Action%20&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/16?name=Animation&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/16?name=Animation&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/35?name=Comedy&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/35?name=Comedy&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/80?name=Crime&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/80?name=Crime&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/99?name=Documentary&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/99?name=Documentary&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/18?name=Drama&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/18?name=Drama&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10751?name=Family&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10751?name=Family&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10762?name=Kids&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10762?name=Kids&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/9648?name=Mystery&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/9648?name=Mystery&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10763?name=News&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10763?name=News&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10764?name=Reality&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10764?name=Reality&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10765?name=Sci-Fi%20&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10765?name=Sci-Fi%20&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10766?name=Soap&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10766?name=Soap&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10767?name=Talk&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10767?name=Talk&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10768?name=War%20&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10768?name=War%20&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/37?name=Western&amp;page=-2</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/37?name=Western&amp;page=4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10752?name=War&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10752?name=War&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/37?name=Western&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/37?name=Western&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10759?name=Action%20&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10759?name=Action%20&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/16?name=Animation&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/16?name=Animation&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/35?name=Comedy&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/35?name=Comedy&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/80?name=Crime&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/80?name=Crime&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/99?name=Documentary&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/99?name=Documentary&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/18?name=Drama&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/18?name=Drama&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10751?name=Family&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10751?name=Family&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10762?name=Kids&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10762?name=Kids&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/9648?name=Mystery&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/9648?name=Mystery&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10763?name=News&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10763?name=News&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10764?name=Reality&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10764?name=Reality&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10765?name=Sci-Fi%20&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10765?name=Sci-Fi%20&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10766?name=Soap&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10766?name=Soap&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10767?name=Talk&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10767?name=Talk&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10768?name=War%20&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10768?name=War%20&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/37?name=Western&amp;page=-3</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/37?name=Western&amp;page=5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10752?name=War&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10752?name=War&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/37?name=Western&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/37?name=Western&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10759?name=Action%20&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10759?name=Action%20&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/16?name=Animation&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/16?name=Animation&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/35?name=Comedy&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/35?name=Comedy&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/80?name=Crime&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/80?name=Crime&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/99?name=Documentary&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/99?name=Documentary&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/18?name=Drama&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/18?name=Drama&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10751?name=Family&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10751?name=Family&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10762?name=Kids&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10762?name=Kids&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/9648?name=Mystery&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/9648?name=Mystery&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10763?name=News&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10763?name=News&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10764?name=Reality&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10764?name=Reality&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10765?name=Sci-Fi%20&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10765?name=Sci-Fi%20&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10766?name=Soap&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10766?name=Soap&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10767?name=Talk&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10767?name=Talk&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10768?name=War%20&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10768?name=War%20&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/37?name=Western&amp;page=-4</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/37?name=Western&amp;page=6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10752?name=War&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10752?name=War&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/37?name=Western&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/37?name=Western&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10759?name=Action%20&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10759?name=Action%20&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/16?name=Animation&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/16?name=Animation&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/35?name=Comedy&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/35?name=Comedy&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/80?name=Crime&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/80?name=Crime&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/99?name=Documentary&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/99?name=Documentary&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/18?name=Drama&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/18?name=Drama&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10751?name=Family&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10751?name=Family&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10762?name=Kids&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10762?name=Kids&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/9648?name=Mystery&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/9648?name=Mystery&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10763?name=News&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10763?name=News&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10764?name=Reality&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10764?name=Reality&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10765?name=Sci-Fi%20&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10765?name=Sci-Fi%20&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10766?name=Soap&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10766?name=Soap&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10767?name=Talk&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10767?name=Talk&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10768?name=War%20&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/10768?name=War%20&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/37?name=Western&amp;page=-5</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/tv/genre/37?name=Western&amp;page=7</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/28?name=Action&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/12?name=Adventure&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/16?name=Animation&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/35?name=Comedy&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/80?name=Crime&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/99?name=Documentary&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/18?name=Drama&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10751?name=Family&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/14?name=Fantasy&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/36?name=History&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/27?name=Horror&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10402?name=Music&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/9648?name=Mystery&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10749?name=Romance&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/878?name=Science%20Fiction&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10770?name=TV%20Movie&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/53?name=Thriller&amp;page=8</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://yaps.cc/movie/genre/10752?name=War&amp;page=-6</loc>
+  <lastmod>2023-10-19T07:15:25+00:00</lastmod>
+  <priority>0.13</priority>
+</url>
+
+
+</urlset>
