@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+ 
+
+ 
+
+sitemap: https://yaps.cc/sitemap.xml
