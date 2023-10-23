@@ -4,12 +4,12 @@ const faqData = [
   {
     question: 'What is YAPS?',
     answer:
-      'YAPS (Yet another piracy site) is a torrent site that allows users to download and share copyrighted content such as movies, music, software, and more.',
+      'YAPS (Yet Another Piracy Site) is a torrent site that allows users to download and share copyrighted content such as movies, music, software, and more.',
   },
   {
     question: 'How does YAPS work?',
     answer:
-      'Users can search for their desired content on YAPS and download it using a BitTorrent client. YAPS operates on a peer-to-peer network, meaning that users download files from other users who have already downloaded them',
+      'Users can search for their desired content on YAPS and download it using a BitTorrent client. YAPS operates on a peer-to-peer network, meaning that users download files from other users who have already downloaded them.',
   },
   {
     question: 'How can I protect my privacy while using YAPS?',
@@ -22,14 +22,14 @@ const faqData = [
       "YAPS is a user-driven platform, and the availability of content depends on what other users have uploaded. If you can't find what you're looking for, it may not be available on YAPS.",
   },
   {
-    question: 'Is it safe to download from Yaps?',
+    question: 'Is it safe to download from YAPS?',
     answer:
-      "We allow only verified torrents to be uploaded on our site.Yet there are no absolutes when it comes to protection .User should always scan/test whatever they download and don't take anything for granted. Mistakes often happen as the uploaders are also humans, or someone could just simply want to trick us. From our side, as a site, we try our best to keep you protected but that does NOT mean you should let your guards down.",
+      "We allow only verified torrents to be uploaded on our site. However, there are no absolutes when it comes to protection. Users should always scan/test whatever they download and don't take anything for granted. Mistakes often happen as the uploaders are also humans, or someone could just simply want to trick us. From our side, as a site, we try our best to keep you protected but that does NOT mean you should let your guards down.",
   },
   {
-    question: 'Is there any rule to maintain  the ratio ?',
+    question: 'Are there any rules about ratios?',
     answer:
-      "No ,currently we don't have any rule to maintain the ratio .But the users are still advised to maintain their ratio instead of Hit and Run .",
+      "No. Currently, we don't have any rule to maintain the ratio, but the users are still advised to maintain their ratio instead of doing a Hit and Run.",
   },
   {
     question: 'What is Hit and Run ?',
@@ -37,9 +37,14 @@ const faqData = [
       'Hit and Run is a term used to describe a user who downloads a torrent and then does not seed it back for other users to download. This is considered bad etiquette and is frowned upon by the community.',
   },
   {
+    question: 'How long should I seed for?',
+    answer:
+      'Generally speaking, you should try to seed for as long as possible. However, if you are not able to, 1:1 or 2:1 are great ratios. For example, if you were to download a 1GB file, you should try to upload/seed 1 or 2 GBs.',
+  },
+  {
     question: 'What is the difference between a seed and a leech?',
     answer:
-      ' A "Seed" is a user who has a complete copy of the file being shared and is actively sharing it with others while "Leech" is a user who is downloading the file but is not sharing it with others.',
+      'A "Seed" is a user who has a complete copy of the file being shared and is actively sharing it with others, while a "Leech" is a user who is downloading the file but is not sharing it with others.',
   },
 ]
 
