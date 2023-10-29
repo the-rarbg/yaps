@@ -21,7 +21,7 @@ const Latest = () => {
     // { name: "Music", cat: "Music", time: "10D", color: "#411eed" },
     // { name: "Anime", cat: "Anime", time: "10D", color: "#001F1F" },
     // { name: "Books", cat: "Books", time: "10D", color: "#fD1Df1" },
-    // { name: "XXX", cat: "XXX", time: "10D", color: "#Fc3799" },
+    // { name: "XXX", cat: "XXX", time: "10D", color: "#Fc3799" },  
     // { name: "Other", cat: "Other", time: "10D", color: "#ff0000" }]
     let data = [
         {name: 'Movie', cat: 'Movies', time: '10D', color: '#ee7633'},
