@@ -13,6 +13,7 @@
 
 # PM2 Deployment
 ```
+npm build
 pm2 start npm --name prod -- run "start"
 ```
 # For DEV
