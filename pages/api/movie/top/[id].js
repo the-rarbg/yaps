@@ -2,7 +2,7 @@ import { getUrl2, movieTopRated } from '../../../../lib/tmdb'
 
 export default async function handler(req, res) {
   const { id } = req.query
-  
+
   try {
     const url = getUrl2(movieTopRated, id)
     const response = await fetch(url)
