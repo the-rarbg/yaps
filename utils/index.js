@@ -4,6 +4,8 @@ export const TMDB_ENDPOINT = "https://api.themoviedb.org/3"
 export const TMDB_API_KEY = "d0e6107be30f2a3cb0a34ad2a90ceb6f"
 export const TMDB_IMAGE_ENDPOINT = 'https://image.tmdb.org/t/p/w500'
 
+export const GOMO_ENDPOINT = "https://user.gomo.to/user-api"
+export const GOMO_API_KEY = "bzVpam5LZWlwV3ByWkhPZ25LR2JuNmloWVphaW9LK1hsS2FYbEthWGxBPT0"
 
 export const pathToSearchAll = '/search/'
 export const pathToSearchMovie = '/search/movie/'
