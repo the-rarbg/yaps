@@ -27,6 +27,10 @@ const servers_ = [
     servername: 'Blackvid',
     link: 'https://blackvid.space/embed?tmdb=',
   },
+  {
+    servername: 'Gomo.to',
+    link: 'https://gomo.to/show/',
+  },
 ]
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
@@ -482,7 +486,22 @@ const Tv = () => {
                           setVideoServer(
                             `${server.link}${tmdb}-${tvDetails.season}-${tvDetails.episode}`
                           )
-                        else
+                        else if (server.servername === 'Gomo.to') {
+                          let splitString = data.detail.name
+                            .split(/[\s:]+/)
+                            .join('-')
+                          let seasonString = tvDetails.season.toString()
+                          if (seasonString.length === 1) {
+                            seasonString = '0' + seasonString
+                          }
+                          let episodeString = tvDetails.episode.toString()
+                          if (episodeString.length === 1) {
+                            episodeString = '0' + episodeString
+                          }
+                          setVideoServer(
+                            `${server.link}${splitString}/${seasonString}-${episodeString}`
+                          )
+                        } else
                           setVideoServer(
                             `${server.link}${tmdb}&season=${tvDetails.season}&episode=${tvDetails.episode}`
                           )

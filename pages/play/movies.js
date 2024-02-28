@@ -3,29 +3,8 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import { AiOutlineDown, AiOutlineRight } from 'react-icons/ai'
 import useSWR from 'swr'
-import axios from 'axios'
-
-import {
-  BiSolidSkipNextCircle,
-  BiSolidSkipPreviousCircle,
-} from 'react-icons/bi'
 import { BsFillLightbulbFill } from 'react-icons/bs'
 import { useTheme } from 'next-themes'
-import ReactPlayer from 'react-player'
-import 'video-react/dist/video-react.css' // import css
-import { Player } from 'video-react'
-
-export const loginSubtitlesApi = apikey => {
-  const url = 'https://api.opensubtitles.com/api/v1/subtitles?query=hello'
-  const options = {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Api-Key': apikey,
-    },
-  }
-  return axios.post(url, { headers: options })
-}
 
 const servers_ = [
   {
@@ -48,6 +27,10 @@ const servers_ = [
     servername: 'Blackvid',
     link: 'https://blackvid.space/embed?tmdb=',
   },
+  {
+    servername: 'Gomo.to',
+    link: 'https://gomo.to/movie/',
+  },
 ]
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
@@ -61,13 +44,12 @@ const Movies = () => {
   const to = tmdb ? `${tmdb}` : `${id}`
 
   const superembed = tmdb ? `=${tmdb}&tmdb=1` : `=${id}`
+  const superembed = tmdb ? `=${tmdb}&tmdb=1` : `=${id}`
 
   const [lightStatus, switchLight] = useState(false)
   const [videoServer, setVideoServer] = useState(defaultServer)
   const [subtitleDropDownVisible, setSubtitleDropDownStatus] = useState(false)
   const { data } = useSWR(`/api/movie/${id}`, fetcher)
-  // const { sub_data } = useSWR(`/api/movie/subtitle/${id ? id : tmdb}`, fetcher)
-
   const [current_Subtitle, setCurrentSubtitle] = useState('')
 
   useEffect(() => {
@@ -103,8 +85,6 @@ const Movies = () => {
     }
   }, [id, tmdb])
   useEffect(() => {
-    // loading subtitles
-
     document.addEventListener('mousedown', event => {
       if (
         event.target !== 'iframe' &&
@@ -114,7 +94,6 @@ const Movies = () => {
       }
     })
   }, [])
-
   useEffect(() => {
     if (id || tmdb)
       fetch(`/api/movie/subtitle/${id ? id : tmdb}`)
@@ -148,7 +127,6 @@ const Movies = () => {
             ? 'opacity-0.5 fixed h-screen w-full '
             : 'h-0 w-0 opacity-0'
         }`}></div>
-
       <div className={'text-4xl'}>{data ? data.imdb.imdb.name : ''}</div>
       <div className={`w-full  ${lightStatus ? '' : 'h-full'} z-[999] `}>
         <div className={` flex  h-full w-full  flex-col`}>
@@ -168,7 +146,7 @@ const Movies = () => {
             className={`${
               lightStatus
                 ? 'absolute w-1/2 text-white dark:text-black '
-                : 'w-1/2'
+                : 'w-full '
             } top-[100%] z-[999] flex flex-row items-center justify-start gap-10 bg-transparent  p-4 pl-0 lg:top-[90%] `}>
             <div
               onClick={() => switchLight(!lightStatus)}
@@ -263,7 +241,11 @@ const Movies = () => {
                             setVideoServer(server.link + to)
                           else if (server.servername === 'Superembed.stream')
                             setVideoServer(server.link + superembed)
-                          else
+                          else if (server.servername === 'Gomo.to') {
+                            let splitString = data.imdb.imdb.name.split(' ')
+                            let joinedString = splitString.join('-')
+                            setVideoServer(server.link + joinedString)
+                          } else
                             setVideoServer(
                               server.link + data?.imdb.imdb.tmdb_id
                             )
