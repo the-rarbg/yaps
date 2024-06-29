@@ -1,5 +1,5 @@
 import axios from "axios";
-export const API_BASE = 'https://t-rb.org';
+export const API_BASE = 'https://therarbg.to';
 //const API_BASE = 'https://therarbg.com';
 let token;
 

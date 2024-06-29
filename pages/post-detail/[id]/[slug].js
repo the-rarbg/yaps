@@ -35,9 +35,8 @@ const Details = () => {
   let temp = '&tr='
   let tracker = ''
   trackers.map(item => {
-    tracker = tracker + temp + item
+    tracker =  tracker + temp + item
   })
-
   const router = useRouter()
   let id
   let slug
@@ -65,7 +64,7 @@ const Details = () => {
       .then(res => {
         setLoader(false)
 
-        let url = `magnet:?xt=urn:btih:${res?.data?.info_hash}&dn=${res?.data?.name}${trackers}`
+        let url = `magnet:?xt=urn:btih:${res?.data?.info_hash}&dn=${res?.data?.name}${tracker}`
         let url_t = `https://m2t.mirrorbay.org/info-hash/${res?.data?.info_hash}/${res?.data?.name}/?apikey=therarbg`
         setMagnateDownload(url)
         setTorrentDownload(url_t)
