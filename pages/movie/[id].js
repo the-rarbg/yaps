@@ -22,7 +22,7 @@ import Heading from '../../components/Heading'
 export default function Movie() {
   const router = useRouter()
   const { id } = router?.query
-  const { data: movie, error: movieError } = useSWR(`/api/movie/${id}`, fetcher)
+  const { data: movie, error: movieError } = useSWR(router.isReady ? `/api/movie/${id}` : null, fetcher)
   const[isTorrent,setisTorrent]=useState(false)
 const handleClose =()=>{
   setisTorrent(true)

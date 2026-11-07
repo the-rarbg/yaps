@@ -1,3 +1,4 @@
+import { thumbnailUrl } from '../utils'
 import React from 'react'
 import { useRouter } from 'next/router'
 import { useTheme } from 'next-themes'
@@ -54,10 +55,10 @@ const Card = props => {
           style={{
             backgroundImage: `url("${
               props.item[`thumbnail`]
-                ? props.item[`thumbnail`]
+                ? thumbnailUrl(props.item[`thumbnail`])
                 : props.categoryId === 'XXX'
-                ? 'https://i.therarbg.com/xnp.jpg'
-                : 'https://i.therarbg.com/np.jpg'
+                ? 'https://i.rar.pics/xnp.jpg'
+                : 'https://i.rar.pics/np.jpg'
             }")`,
             width: '50px',
             height: '50px',

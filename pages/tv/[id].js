@@ -17,7 +17,7 @@ import { renderLanguage, renderRating, renderStatus } from '../movie/[id]'
 export default function TV() {
   const router = useRouter()
   const { id } = router.query
-  const { data: tv, error: tvError } = useSWR(`/api/tv/${id}`, fetcher)
+  const { data: tv, error: tvError } = useSWR(router.isReady ? `/api/tv/${id}` : null, fetcher)
 
   if (tvError) return <div>{tvError}</div>
   if (!tv) return <div>{tvError}</div>

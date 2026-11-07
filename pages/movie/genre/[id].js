@@ -15,7 +15,7 @@ export default function GenreMovie({ data, id, name, page }) {
   return (
     <div>
       <Head>
-        <title>{name} - Movies | Yaps</title>
+        <title>{name ? `${name} - Movies | Yaps` : 'Movies | Yaps'}</title>
       </Head>
       <SearchBar
         placeholder='Search for movies'
@@ -45,7 +45,10 @@ export default function GenreMovie({ data, id, name, page }) {
 }
 
 export async function getServerSideProps(context) {
-  const { id, name, page } = context.query
+  const { id, name = '' } = context.query
+  // TMDB rejects a missing or out-of-range page (400, no `results`), and a
+  // link without ?page= is the normal case for a typed or crawled URL
+  const page = Math.min(500, Math.max(1, parseInt(context.query.page, 10) || 1))
   const url = getUrl(discoverMovie, id, name, page)
   const response = await fetch(url)
   const data = await response.json()

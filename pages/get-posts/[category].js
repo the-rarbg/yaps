@@ -14,7 +14,8 @@ import {useTheme} from 'next-themes'
 const Latest = () => {
     const router = useRouter()
     const {category} = router.query
-    const categoryId = category ? category.split(':')[1] : null
+    // links are /get-posts/category:TV; accept a bare /get-posts/TV too
+    const categoryId = category ? (category.includes(':') ? category.split(':')[1] : category) : null
 
     // { name: "TV-Show", cat: "TV", time: "10D", color: "#7a1fb8" },
     // { name: "Games", cat: "Games", time: "10D", color: "#AD1F2F" },
@@ -84,13 +85,19 @@ const Latest = () => {
     const [search, setSearch] = useState(false)
     const {theme, setTheme} = useTheme()
     setTheme(theme)
+    // Page 1 of a category is loaded by the effect below once the router has
+    // the query; this one only appends the next pages. Both used to run on
+    // mount -- Movies page 1 plus category:undefined -- and whichever answered
+    // last won, so a TV page could end up listing Movies.
     useEffect(() => {
-        fetchMovieList(cat)
+        if (page > 1) fetchMovieList(cat)
     }, [page])
     useEffect(() => {
-        fetchMovieListRefresh(category?.split(':')[1])
-        setCat(category?.split(':')[1])
-    }, [category])
+        if (!router.isReady) return
+        setPage(1)
+        setCat(categoryId)
+        fetchMovieListRefresh(categoryId || 'Movies')
+    }, [router.isReady, category])
 
     const fetchMovieList = cat => {
         let category = cat ? cat : 'Movies'
@@ -100,7 +107,7 @@ const Latest = () => {
             .then(res => {
                 console.log('page', res?.data?.results)
                 setLoader(false)
-                setMovieList([...movieList, ...res.data.results])
+                setMovieList(prev => [...prev, ...(res.data.results || [])])
             })
             .catch(err => {
                 console.log('error', err)
@@ -116,7 +123,7 @@ const Latest = () => {
             .then(res => {
                 console.log('page', res?.data?.results)
                 setLoader(false)
-                setMovieList(res.data.results)
+                setMovieList(res.data.results || [])
             })
             .catch(err => {
                 console.log('error', err)

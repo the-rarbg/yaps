@@ -34,7 +34,10 @@ const Tv = () => {
   const router = useRouter()
   const { id, tmdb } = router.query
   const { theme, setTheme } = useTheme()
-  const { data } = useSWR(`/api/tv/${tmdb}`, fetcher)
+  // no request until there is a tmdb id (was /api/tv/undefined); an error
+  // response has no detail, so everything below reads `seasons`
+  const { data } = useSWR(tmdb ? `/api/tv/${tmdb}` : null, fetcher)
+  const seasons = data?.detail?.seasons || []
   const [tvDetails, setTvDetails] = useState({
     episode: 1,
     season: 1,
@@ -50,22 +53,22 @@ const Tv = () => {
   const [nextprevbtnclicked, setnextprevbtnclicked] = useState(false)
   useEffect(() => {
     let temp = []
-    if (data)
-      if (data.detail.seasons[0].name.includes('Specials'))
-        for (let i = 1; i < data.detail.seasons.length; i++) {
+    if (seasons.length)
+      if (seasons[0].name.includes('Specials'))
+        for (let i = 1; i < seasons.length; i++) {
           temp.push(i)
         }
       else
-        for (let i = 1; i <= data.detail.seasons.length; i++) {
+        for (let i = 1; i <= seasons.length; i++) {
           temp.push(i)
         }
     SetSeason(temp)
     let episode = []
     let c = 1
-    if (data) {
-      if (data.detail.seasons[0].name.includes('Specials')) {
+    if (seasons.length) {
+      if (seasons[0].name.includes('Specials')) {
         for (let k = 0; k < temp.length; k++) {
-          for (let i = 1; i < data.detail.seasons[c].episode_count + 1; i++)
+          for (let i = 1; i < (seasons[c]?.episode_count || 0) + 1; i++)
             episode.push(i)
           episodes[c] = episode
           c++
@@ -74,7 +77,7 @@ const Tv = () => {
       } else {
         c = 0
         for (let k = 0; k < temp.length; k++) {
-          for (let i = 1; i < data.detail.seasons[c].episode_count + 1; i++)
+          for (let i = 1; i < (seasons[c]?.episode_count || 0) + 1; i++)
             episode.push(i)
           episodes[c + 1] = episode
           c++
@@ -82,7 +85,7 @@ const Tv = () => {
         }
       }
     }
-  }, [seasonDropDown, episodeDropDown, nextprevbtnclicked])
+  }, [data, seasonDropDown, episodeDropDown, nextprevbtnclicked])
   useEffect(() => {
     console.log(theme)
     if (localStorage.getItem('userWatched')) {
@@ -169,8 +172,8 @@ const Tv = () => {
       } else {
         showNextBtn(true)
       }
-      let inputstrings = `${data?.detail.name}season`
-      let inputStringe = `${data?.detail.name}episode`
+      let inputstrings = `${data?.detail?.name}season`
+      let inputStringe = `${data?.detail?.name}episode`
       if (
         localStorage.getItem(inputstrings.replace(/\s+/g, '').toLowerCase())
       ) {
@@ -209,7 +212,7 @@ const Tv = () => {
         )
     }
   }, [tvDetails])
-  console.log(data?.detail?.seasons[0].poster_path)
+  console.log(seasons[0]?.poster_path)
 
   //adding event listener for window to catch left click to remove light setting
   useEffect(() => {
@@ -237,7 +240,7 @@ const Tv = () => {
         } z-[999] h-full`}>
         {/*<img src={`${TMDB_IMAGE_ENDPOINT}/${images}`}/>*/}
         <div className={'h-16 w-full pb-2 text-3xl'}>
-          {data?.detail.name} S{tvDetails.season} E{tvDetails.episode}
+          {data?.detail?.name} S{tvDetails.season} E{tvDetails.episode}
         </div>
         <iframe
           src={
@@ -448,7 +451,7 @@ const Tv = () => {
             <div
               className={`h-full w-1/3 p-2 text-center text-black dark:text-white`}>
               {`You are watching `}
-              <div className={' font-bold'}>{data ? data.detail.name : ''}</div>
+              <div className={' font-bold'}>{data?.detail?.name || ''}</div>
               <div>
                 {' '}
                 If current server doesn't work please try other servers beside.

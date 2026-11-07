@@ -56,7 +56,7 @@ export default function Collection({}) {
                         const movieIds = JSON.parse(localStorage.getItem("userWatched")).movies
                         let watchedData = []
                         for (let i in movieIds) {
-                            await fetch(`${router.asPath}api/movie/${movieIds[i]}`, {
+                            await fetch(`/api/movie/${movieIds[i]}`, {
                                 credentials: "include"
                             }).then(response => response.json()).then(da => {
                                 watchedData.push({
@@ -71,7 +71,7 @@ export default function Collection({}) {
                         const tvIds = JSON.parse(localStorage.getItem("userWatched")) ? JSON.parse(localStorage.getItem("userWatched")).tv : ""
                         for (let i in tvIds) {
                             if (tvIds[i] !== [])
-                                await fetch(`${router.asPath}api/tv/${tvIds[i][0]}`, {
+                                await fetch(`/api/tv/${tvIds[i][0]}`, {
                                     credentials: "include"
                                 }).then(response => response.json()).then(da => {
                                     watchedData.push({

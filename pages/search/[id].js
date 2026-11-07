@@ -12,7 +12,7 @@ export default function Search({ data, id, page }) {
   const isLast = data ? currentPage === data.total_pages : false
 
   const filteredResults = data
-    ? data.results.filter(item => item.media_type !== 'person')
+    ? (data.results || []).filter(item => item.media_type !== 'person')
     : []
 
   return (
@@ -51,7 +51,10 @@ export default function Search({ data, id, page }) {
 }
 
 export async function getServerSideProps(context) {
-  const { id, page } = context.query
+  const { id } = context.query
+  // TMDB rejects a missing or out-of-range page (400, no `results`), and a
+  // link without ?page= is the normal case for a typed or crawled URL
+  const page = Math.min(500, Math.max(1, parseInt(context.query.page, 10) || 1))
   const url = search(id, page)
   const response = await fetch(url)
   const data = await response.json()

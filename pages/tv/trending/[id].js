@@ -12,7 +12,7 @@ export default function TrendingTVSeries() {
   const router = useRouter()
   const { id } = router.query
   const currentPage = Number(id)
-  const { data, error } = useSWR(`/api/tv/trending/${currentPage}`, fetcher)
+  const { data, error } = useSWR(router.isReady ? `/api/tv/trending/${currentPage}` : null, fetcher)
   const isFirst = currentPage === 1
   const isLast = data ? currentPage === data.total_pages : false
 

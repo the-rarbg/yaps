@@ -33,7 +33,7 @@ const Movies = () => {
   const to = tmdb ? `${tmdb}` : `${id}`
   const [lightStatus, switchLight] = useState(false)
   const [videoServer, setVideoServer] = useState('vidsrc.to')
-  const { data } = useSWR(`/api/movie/${id}`, fetcher)
+  const { data } = useSWR(tmdb || id ? `/api/movie/${tmdb || id}` : null, fetcher)
   useEffect(() => {
     if (localStorage.getItem('userWatched')) {
       let data = JSON.parse(localStorage.getItem('userWatched'))
@@ -87,7 +87,7 @@ const Movies = () => {
             ? 'opacity-0.5 fixed h-screen w-full '
             : 'h-0 w-0 opacity-0'
         }`}></div>
-      <div className={'text-4xl'}>{data ? data.imdb.imdb.name : ''}</div>
+      <div className={'text-4xl'}>{data?.imdb?.imdb?.name || data?.detail?.title || ''}</div>
       <div className={`w-full  ${lightStatus ? '' : 'h-full'} z-[999] `}>
         <div className={` flex  h-full w-full  flex-col`}>
           <iframe
@@ -126,7 +126,7 @@ const Movies = () => {
                 } flex h-full  w-1/3 flex-col items-center justify-center p-2 text-center`}>
                 {`You are watching `}
                 <div className={' font-bold'}>
-                  {data ? data.imdb.imdb.name : ''}
+                  {data?.imdb?.imdb?.name || data?.detail?.title || ''}
                 </div>
                 <div>
                   {' '}
@@ -152,7 +152,7 @@ const Movies = () => {
                             setVideoServer(server.link + to)
                           else
                             setVideoServer(
-                              server.link + data?.imdb.imdb.tmdb_id
+                              server.link + (data?.imdb?.imdb?.tmdb_id || data?.detail?.id || to)
                             )
                         }}
                         className={` ${

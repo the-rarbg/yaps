@@ -12,7 +12,7 @@ export default function PopularMovies() {
   const router = useRouter()
   const { id } = router.query
   const currentPage = Number(id)
-  const { data, error } = useSWR(`/api/movie/popular/${currentPage}`, fetcher)
+  const { data, error } = useSWR(router.isReady ? `/api/movie/popular/${currentPage}` : null, fetcher)
   const isFirst = currentPage === 1
   const isLast = data ? currentPage === data.total_pages : false
 

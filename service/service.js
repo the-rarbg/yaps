@@ -29,11 +29,12 @@ export const getSearchResult = (search,category) => {
 }
 
 export const moviesTopListApi = (page, category, time) => {
-  let url = `${API_BASE}/?format=json`;
+  // the top-10 view itself; `/` is whatever the rarbg home page currently is
+  let url = `${API_BASE}/top-ten-post/?format=json`;
   return axios.get(url, { headers: headersApplicationJson })
 }
 export const movieDetailsPost = (id,slug) => {
-  let url = `${API_BASE}/post-detail/${id}/${slug}/?format=json`;
+  let url = `${API_BASE}/post-detail/${id}/${slug}/?format=json&recomendations=true`;
   return axios.get(url, { headers: headersApplicationJson })
 }
 

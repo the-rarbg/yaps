@@ -1,21 +1,24 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import useSWR from 'swr'
 import CollectionSearch from '../../components/CollectionSearch'
 import Loading from '../../components/Loading'
 import PageTitle from '../../components/PageTitle'
 import PaginationImproved from '../../components/PaginationImproved'
 import SearchBar from '../../components/SearchBar'
-import { getUrl, movieUpcoming } from '../../lib/tmdb'
 import { fetcher, pathToSearchMovie } from '../../utils'
 
 export default function UpcomingMovies() {
   const router = useRouter()
   const { page } = router.query
-  const [currentPage, setCurrentPage] = useState(Number(page))
-  const url = getUrl(movieUpcoming) + `&page=${currentPage}`
-  const { data, error } = useSWR(url, fetcher)
+  const [currentPage, setCurrentPage] = useState(1)
+  // the query is empty on the first render (was Number(undefined) = NaN), and
+  // the server route keeps the TMDB key out of the browser
+  useEffect(() => {
+    if (router.isReady) setCurrentPage(Math.max(1, parseInt(page, 10) || 1))
+  }, [router.isReady, page])
+  const { data, error } = useSWR(router.isReady ? `/api/movie/upcoming/${currentPage}` : null, fetcher)
   const isFirst = currentPage === 1
   const isLast = data ? currentPage === data.total_pages : false
 
@@ -31,7 +34,7 @@ export default function UpcomingMovies() {
       <PageTitle title='upcoming movies' />
       {data ? (
         <>
-          <CollectionSearch isGenre arr={data.results} />
+          <CollectionSearch isGenre arr={data.results || []} />
           <PaginationImproved
             currentPageAdvance={currentPage + 1}
             currentPage={currentPage}

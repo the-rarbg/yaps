@@ -10,6 +10,7 @@ import moment from 'moment'
 import { formatBytes } from '../../../Common/CardExpanded'
 import YouTube from 'react-youtube'
 import ToastMsg from '../../../Common/ToastMsg'
+import { thumbnailUrl } from '../../../utils'
 import Head from 'next/head'
 const Details = () => {
   let trackers = [
@@ -156,8 +157,8 @@ const Details = () => {
             <img
               src={
                 data?.thumbnail
-                  ? data?.thumbnail
-                  : 'https://i.therarbg.com/np.jpg'
+                  ? thumbnailUrl(data.thumbnail)
+                  : 'https://i.rar.pics/np.jpg'
               }
               width={800}
               height={100}
@@ -317,7 +318,7 @@ const Details = () => {
             <div
               className='dark:bg-card h-[300px] w-full overflow-y-scroll rounded-lg border-gray-200 border-opacity-30  bg-white bg-opacity-10 pt-2'
               style={{ marginTop: '17px' }}>
-              {data?.recomendations.length > 0 ? (
+              {data?.recomendations?.length > 0 ? (
                 data?.recomendations?.map((item, index) => {
                   return (
                     <div

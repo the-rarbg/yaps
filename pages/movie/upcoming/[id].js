@@ -12,7 +12,7 @@ export default function UpcomingMovies() {
   const router = useRouter()
   const { id } = router.query
   const currentPage = Number(id)
-  const { data, error } = useSWR(`/api/movie/upcoming/${id}`, fetcher)
+  const { data, error } = useSWR(router.isReady ? `/api/movie/upcoming/${id}` : null, fetcher)
   const isFirst = currentPage === 1
   const isLast = data ? currentPage === data.total_pages : false
 

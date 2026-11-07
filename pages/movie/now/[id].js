@@ -12,7 +12,7 @@ export default function NowPlayingMovies() {
   const router = useRouter()
   const { id } = router.query
   const currentPage = Number(id)
-  const { data, error } = useSWR(`/api/movie/now/${currentPage}`, fetcher)
+  const { data, error } = useSWR(router.isReady ? `/api/movie/now/${currentPage}` : null, fetcher)
   const isFirst = currentPage === 1
   const isLast = data ? currentPage === data.total_pages : false
   

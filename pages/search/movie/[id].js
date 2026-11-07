@@ -47,7 +47,10 @@ export default function SearchMovie({ data, id, page }) {
 }
 
 export async function getServerSideProps(context) {
-  const { id, page } = context.query
+  const { id } = context.query
+  // TMDB rejects a missing or out-of-range page (400, no `results`), and a
+  // link without ?page= is the normal case for a typed or crawled URL
+  const page = Math.min(500, Math.max(1, parseInt(context.query.page, 10) || 1))
   const url = searchMovie(id, page)
   const response = await fetch(url)
   const data = await response.json()

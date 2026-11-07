@@ -4,6 +4,15 @@ export const TMDB_ENDPOINT = "https://api.themoviedb.org/3"
 export const TMDB_API_KEY = "d0e6107be30f2a3cb0a34ad2a90ceb6f"
 export const TMDB_IMAGE_ENDPOINT = 'https://image.tmdb.org/t/p/w500'
 
+// trb stores new thumbnails as paths on its image CDN ('/009/abc.jpg'); older
+// rows and IMDb images are full URLs. Same rule as trb.utils.thumbnail_url.
+export const THUMBNAIL_CDN = 'https://i.rar.pics'
+export const thumbnailUrl = value => {
+  if (!value) return ''
+  if (/^https?:\/\//.test(value)) return value
+  return THUMBNAIL_CDN + (value.startsWith('/') ? value : '/' + value)
+}
+
 
 export const pathToSearchAll = '/search/'
 export const pathToSearchMovie = '/search/movie/'
